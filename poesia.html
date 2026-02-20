@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.P. Torrescusa | Poesía</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .inner-page main {
+            padding-top: 10vh;
+            min-height: 80vh;
+        }
+
+        .poetry {
+            padding-top: 15vh !important;
+        }
+    </style>
+</head>
+
+<body class="loading inner-page">
+
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <div class="preloader">
+        <div class="preloader-text">Poesía</div>
+    </div>
+
+    <!-- Navegación multipágina -->
+    <nav class="navbar scrolled">
+        <div class="logo hover-target"><a href="index.html">APT.</a></div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="hover-target">Inicio</a></li>
+            <li><a href="biografia.html" class="hover-target">Biografía</a></li>
+            <li><a href="obras.html" class="hover-target">Obras</a></li>
+            <li><a href="personajes.html" class="hover-target">Personajes</a></li>
+            <li><a href="poesia.html" class="hover-target active-link" style="color: var(--c-text-main);">Poesía</a>
+            </li>
+        </ul>
+        <div class="nav-actions">
+            <button class="theme-toggle hover-target" aria-label="Cambiar tema">
+                <span class="icon-dark">🌙</span>
+                <span class="icon-light">☀️</span>
+            </button>
+            <div class="hamburger hover-target">
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="poetry" class="poetry">
+            <!-- Usando la foto de naturaleza mística para el fondo -->
+            <div class="poetry-bg parallax-bg" style="background-image: url('Contenido/Fotos Ángel/IMG_3534.jpeg');">
+            </div>
+            <div class="container">
+                <div class="poetry-header fade-up">
+                    <h1 class="section-title">Fases del Fénix</h1>
+                </div>
+                <div class="poetry-masonry">
+                    <div class="poem-card fade-up">
+                        <span class="poem-meta">I. Cenizas</span>
+                        <p>"La oscuridad de la pérdida y el vacío. Mirar el dolor de frente tras la caída."</p>
+                    </div>
+                    <div class="poem-card fade-up delay-1">
+                        <span class="poem-meta">II. Combustión</span>
+                        <p>"El ardor de la lucha. Una crítica a un mundo que constantemente pone fronteras al amor."</p>
+                    </div>
+                    <div class="poem-card fade-up delay-2">
+                        <span class="poem-meta">III. Renacimiento</span>
+                        <p>"El descubrimiento de un amor que sana y abraza todas y cada una de las cicatrices."</p>
+                    </div>
+                    <div class="poem-card fade-up delay-3">
+                        <span class="poem-meta">IV. Vuelo</span>
+                        <p>"La celebración de un sentimiento que trasciende por completo la distancia y el tiempo."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">A.P. Torrescusa</div>
+                <div class="footer-social">
+                    <a href="https://instagram.com" target="_blank" class="hover-target">Instagram</a>
+                    <a href="https://twitter.com" target="_blank" class="hover-target">X</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 A.P. Torrescusa. Todos los derechos reservados.</p>
+                <a href="#" class="back-to-top hover-target">Volver arriba ↑</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

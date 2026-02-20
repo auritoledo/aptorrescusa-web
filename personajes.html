@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.P. Torrescusa | Personajes</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .inner-page main {
+            padding-top: 15vh;
+            min-height: 80vh;
+        }
+    </style>
+</head>
+
+<body class="loading inner-page">
+
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <div class="preloader">
+        <div class="preloader-text">Personajes</div>
+    </div>
+
+    <!-- Navegación multipágina -->
+    <nav class="navbar scrolled">
+        <div class="logo hover-target"><a href="index.html">APT.</a></div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="hover-target">Inicio</a></li>
+            <li><a href="biografia.html" class="hover-target">Biografía</a></li>
+            <li><a href="obras.html" class="hover-target">Obras</a></li>
+            <li><a href="personajes.html" class="hover-target active-link"
+                    style="color: var(--c-text-main);">Personajes</a></li>
+            <li><a href="poesia.html" class="hover-target">Poesía</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button class="theme-toggle hover-target" aria-label="Cambiar tema">
+                <span class="icon-dark">🌙</span>
+                <span class="icon-light">☀️</span>
+            </button>
+            <div class="hamburger hover-target">
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="characters" class="characters" style="padding-top: 5vh; background: transparent;">
+            <div class="container">
+                <div class="section-header fade-up text-left">
+                    <h1 class="section-title">Enciclopedia de Personajes</h1>
+                    <p class="section-subtitle">Habitantes de Monte Redondo - "Los Portadores del Ojo Verde"</p>
+                </div>
+                <div class="characters-grid">
+                    <!-- Protagonista -->
+                    <div class="character-card fade-up">
+                        <div class="char-image-wrapper">
+                            <img src="Contenido/Portadores del ojo verde/Personajes libro/Humanos/Nuevos humanos/Unai.png"
+                                alt="Unai">
+                        </div>
+                        <div class="char-content">
+                            <div class="char-name">Unai</div>
+                            <div class="char-role">El Guardián Marcado</div>
+                            <p class="char-desc">Un joven marcado con el enigmático Ojo Verde. Emprende un peligroso
+                                viaje hacia las cumbres para encontrar a los otros Portadores y recuperar Las Trufas
+                                Doradas.</p>
+                        </div>
+                    </div>
+                    <!-- Coprotagonista -->
+                    <div class="character-card fade-up delay-1">
+                        <div class="char-image-wrapper">
+                            <img src="Contenido/Portadores del ojo verde/Personajes libro/Humanos/Nuevos humanos/Eneko_2.png"
+                                alt="Eneko">
+                        </div>
+                        <div class="char-content">
+                            <div class="char-name">Eneko</div>
+                            <div class="char-role">El Primo Leal</div>
+                            <p class="char-desc">Acompaña a Unai en su misión. Aunque no posee la marca y no puede ver
+                                ni oír los velos del mundo mágico, su vínculo y valentía son vitales para la aventura.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Entes -->
+                    <div class="character-card fade-up delay-2">
+                        <div class="char-image-wrapper">
+                            <!-- Adjusted path for Sylvanimas as per user request -->
+                            <img src="Contenido/Portadores del ojo verde/Personajes libro/Sylvanimas/Magicos/Nuevos Sylvanimas/Sylvanimamacho.webp"
+                                onerror="this.src='Contenido/Portadores del ojo verde/Personajes libro/Sylvanimas/Sylvanimamacho.webp'"
+                                alt="Silvánimas">
+                        </div>
+                        <div class="char-content">
+                            <div class="char-name">Silvánimas</div>
+                            <div class="char-role">Espíritus del Bosque</div>
+                            <p class="char-desc">Entidades ancestrales de los que dependen los humanos para sobrevivir.
+                                Su hogar, Monte Redondo, muere lentamente, esperando ser restaurado por la magia
+                                antigua.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">A.P. Torrescusa</div>
+                <div class="footer-social">
+                    <a href="https://instagram.com" target="_blank" class="hover-target">Instagram</a>
+                    <a href="https://twitter.com" target="_blank" class="hover-target">X</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 A.P. Torrescusa. Todos los derechos reservados.</p>
+                <a href="#" class="back-to-top hover-target">Volver arriba ↑</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

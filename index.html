@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="loading">
+<body class="loading landing-page">
 
     <!-- Custom Cursor -->
     <div class="cursor"></div>
@@ -29,16 +29,15 @@
         <div class="preloader-text">A.P. Torrescusa</div>
     </div>
 
-    <!-- Navegación -->
+    <!-- Navegación multipágina -->
     <nav class="navbar">
-        <div class="logo hover-target">APT.</div>
+        <div class="logo hover-target"><a href="index.html">APT.</a></div>
         <ul class="nav-links">
-            <li><a href="#hero" class="hover-target">Inicio</a></li>
-            <li><a href="#about" class="hover-target">Biografía</a></li>
-            <li><a href="#books" class="hover-target">Obras</a></li>
-            <li><a href="#characters" class="hover-target">Personajes</a></li>
-            <li><a href="#poetry" class="hover-target">Poesía</a></li>
-            <li><a href="#contact" class="hover-target">Contacto</a></li>
+            <li><a href="index.html" class="hover-target active-link">Inicio</a></li>
+            <li><a href="biografia.html" class="hover-target">Biografía</a></li>
+            <li><a href="obras.html" class="hover-target">Obras</a></li>
+            <li><a href="personajes.html" class="hover-target">Personajes</a></li>
+            <li><a href="poesia.html" class="hover-target">Poesía</a></li>
         </ul>
         <div class="nav-actions">
             <button class="theme-toggle hover-target" aria-label="Cambiar tema">
@@ -52,268 +51,42 @@
         </div>
     </nav>
 
-    <!-- Main Content -->
+    <!-- Main Content: Pure Fullscreen Hero -->
     <main>
-        <!-- Hero Section -->
-        <section id="hero" class="hero">
-            <div class="hero-bg"></div>
-            <div class="hero-content">
-                <div class="reveal-text">
-                    <h1 class="hero-title">A.P.<br>Torrescusa</h1>
+        <section id="hero-fullscreen" class="hero-fullscreen">
+            <!-- Imagen de fondo principal generada por IA -->
+            <div class="hero-fs-bg">
+                <img src="Contenido/hero_angel_magico_v2.png" alt="A.P. Torrescusa en Monte Redondo"
+                    id="hero-img-element" class="parallax-img-bg">
+            </div>
+
+            <div class="hero-fs-overlay"></div>
+
+            <div class="hero-fs-content">
+                <div class="title-container reveal-text">
+                    <h1 class="hero-fs-title">A.P. Torrescusa</h1>
+                    <p class="hero-fs-subtitle delay-1 fade-up">Autor, Escritor y Poeta.</p>
                 </div>
-                <div class="reveal-text delay-1">
-                    <p class="hero-subtitle">Autor, Escritor y Poeta.</p>
+
+                <!-- Animaciones posicionales fijas -->
+                <div class="floating-phrases">
+                    <!-- Las frases rotarán mediante main.js o CSS animation -->
+                    <div class="floating-phrase pos-1 phrase-anim fade">"Escribo porque hay heridas que necesitan
+                        convertirse en tinta."</div>
+                    <div class="floating-phrase pos-2 phrase-anim fade">"Hay marcas en la piel que son llaves a un mundo
+                        oculto."</div>
+                    <div class="floating-phrase pos-3 phrase-anim fade">"La vida empezó después de los cuarenta."</div>
+                    <div class="floating-phrase pos-4 phrase-anim fade">"El fuego no destruye, a veces da alas para
+                        volar."</div>
                 </div>
-                <!-- Frases animadas del Hero -->
-                <div class="hero-phrases fade-up delay-2">
-                    <div class="phrase active">"Escribo porque hay heridas que necesitan convertirse en tinta."</div>
-                    <div class="phrase">"Hay marcas en la piel que son llaves a un mundo oculto."</div>
-                    <div class="phrase">"La vida empezó después de los cuarenta."</div>
-                    <div class="phrase">"El fuego no destruye, a veces da alas para volar."</div>
+
+                <div class="hero-fs-cta delay-2 fade-up">
+                    <a href="obras.html" class="btn-primary hover-target">Explorar el Universo</a>
                 </div>
             </div>
-            <div class="hero-image-wrapper reveal-image">
-                <!-- Foto mágica AI / Alternativa si falla -->
-                <img src="Contenido/hero_angel_magico.png" id="hero-img-element" alt="A.P. Torrescusa con Silvánimas"
-                    class="hero-image parallax-img cinematic-filter">
-            </div>
-            <div class="scroll-indicator">
-                <span>Descubrir</span>
-                <div class="line-down"></div>
-            </div>
-        </section>
 
-        <!-- Biografía Section -->
-        <section id="about" class="about">
-            <div class="about-container">
-                <div class="about-left">
-                    <div class="sticky-text">
-                        <h2 class="section-title reveal-text fade-up">Tinta de<br>cicatrices</h2>
-                    </div>
-                </div>
-                <div class="about-right">
-                    <div class="about-portrait fade-up delay-1">
-                        <img src="Contenido/Fotos Ángel/IMG_8874.jpeg" alt="Ángel Escribiendo"
-                            class="cinematic-filter inline-portrait">
-                    </div>
-                    <h3 class="bio-subtitle fade-up">Orígenes y el desafío de la dislexia</h3>
-                    <p class="fade-up">Ángel Pérez Torrescusa nació en Extremadura y se crio en el País Vasco.
-                        Actualmente escribe desde Castro Urdiales, donde el mar y las rocas acompañan sus reflexiones.
-                        Su vida ha estado marcada por duras experiencias y por el desafío de la dislexia, que lejos de
-                        detenerlo, se transformó en una fortaleza para forjar una relación única con las palabras.</p>
-
-                    <h3 class="bio-subtitle fade-up mt-20">Filosofía literaria</h3>
-                    <p class="fade-up">Para Torrescusa, escribir es un acto de "alquimia personal". Su filosofía
-                        creativa se basa en no glorificar el sufrimiento ni borrar sus marcas, sino en "escribir con
-                        tinta de cicatrices", utilizando el dolor y las batallas íntimas como materia prima. Sus textos
-                        ofrecen "brasas" para que el lector ilumine sus propias sombras.</p>
-
-                    <h3 class="bio-subtitle fade-up mt-20">Resiliencia y madurez</h3>
-                    <p class="fade-up">El autor se describe a sí mismo como un superviviente. Tras sufrir traiciones,
-                        adoptó una postura sanadora: <strong>"Memoria tengo; odio, nunca"</strong>. Esa sanación le
-                        enseñó a no mirar atrás, descubriendo que, tras rendirse a la orilla de sí mismo, su verdadera
-                        vida comenzó después de los cuarenta.</p>
-
-                    <blockquote class="fade-up mt-20">"Escribo porque hay heridas que necesitan convertirse en tinta."
-                    </blockquote>
-                </div>
-            </div>
-        </section>
-
-        <!-- Libros Section (Bookmundo) -->
-        <section id="books" class="books">
-            <div class="container">
-                <div class="section-header fade-up">
-                    <h2 class="section-title">Obras Publicadas</h2>
-                    <p class="section-subtitle">Adquiere tus ejemplares</p>
-                </div>
-
-                <div class="books-showcase">
-                    <!-- El Amor del Fénix -->
-                    <div class="book-item fade-up">
-                        <div class="book-visual hover-target">
-                            <img src="Contenido/El amor del fénix/El_amor_del_fénix.jpg"
-                                alt="Portada El Amor del Fénix">
-                            <div class="book-overlay">
-                                <span>Poesía</span>
-                            </div>
-                        </div>
-                        <div class="book-details">
-                            <span class="book-year">Poemario</span>
-                            <h3 class="book-title">El amor del fénix</h3>
-                            <p class="book-desc">Un viaje íntimo de cenizas, combustión, renacimiento y vuelo. Un
-                                poemario sobre resiliencia que demuestra que siempre es posible volver a empezar.</p>
-                            <div class="purchase-links mt-20">
-                                <a href="https://publishes.bookmundo.com/books/22013370" target="_blank"
-                                    class="btn-purchase hover-target">Tapa Blanda</a>
-                                <a href="https://publishes.bookmundo.com/books/22013863" target="_blank"
-                                    class="btn-purchase hover-target">Tapa Dura</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Los Portadores del Ojo Verde -->
-                    <div class="book-item fade-up delay-1">
-                        <div class="book-visual hover-target">
-                            <!-- Sustituir portada_portadores.jpg por la imagen guardada de la portada -->
-                            <img src="Contenido/portada_portadores.jpg" alt="Portada Los Portadores del Ojo Verde"
-                                id="portadores-cover-img">
-                            <div class="book-overlay">
-                                <span>Fantasía</span>
-                            </div>
-                        </div>
-                        <div class="book-details">
-                            <span class="book-year">Novela Fansatía</span>
-                            <h3 class="book-title">Los Portadores del Ojo Verde</h3>
-                            <p class="book-desc">Fantasía con realismo mágico en un bosque vivo. Unai, joven marcado con
-                                el enigma, emprende un viaje para salvar Monte Redondo recuperando Las Trufas Doradas.
-                            </p>
-                            <div class="purchase-links mt-20">
-                                <a href="https://publishes.bookmundo.com/books/22027500" target="_blank"
-                                    class="btn-purchase hover-target">Tapa Blanda</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Personajes Section [NEW] -->
-        <section id="characters" class="characters">
-            <div class="container">
-                <div class="section-header fade-up text-left">
-                    <h2 class="section-title">Personajes</h2>
-                    <p class="section-subtitle">Habitantes de Monte Redondo</p>
-                </div>
-                <div class="characters-grid">
-                    <!-- Protagonista -->
-                    <div class="character-card fade-up">
-                        <div class="char-image-wrapper">
-                            <img src="Contenido/Portadores del ojo verde/Personajes libro/Humanos/Unai.png" alt="Unai">
-                        </div>
-                        <div class="char-content">
-                            <div class="char-name">Unai</div>
-                            <div class="char-role">El Guardián Marcado</div>
-                            <p class="char-desc">Un joven marcado con el enigmático Ojo Verde. Emprende un peligroso
-                                viaje hacia las cumbres para encontrar a los otros Portadores y recuperar Las Trufas
-                                Doradas.</p>
-                        </div>
-                    </div>
-                    <!-- Coprotagonista -->
-                    <div class="character-card fade-up delay-1">
-                        <div class="char-image-wrapper">
-                            <img src="Contenido/Portadores del ojo verde/Personajes libro/Humanos/Eneko.png"
-                                alt="Eneko">
-                        </div>
-                        <div class="char-content">
-                            <div class="char-name">Eneko</div>
-                            <div class="char-role">El Primo Leal</div>
-                            <p class="char-desc">Acompaña a Unai en su misión. Aunque no posee la marca y no puede ver
-                                ni oír los velos del mundo mágico, su vínculo y valentía son vitales para la aventura.
-                            </p>
-                        </div>
-                    </div>
-                    <!-- Entes -->
-                    <div class="character-card fade-up delay-2">
-                        <div class="char-image-wrapper">
-                            <img src="Contenido/Portadores del ojo verde/Personajes libro/Sylvanimas/Sylvanimamacho.webp"
-                                alt="Silvánimas">
-                        </div>
-                        <div class="char-content">
-                            <div class="char-name">Silvánimas</div>
-                            <div class="char-role">Espíritus del Bosque</div>
-                            <p class="char-desc">Entidades ancestrales de los que dependen los humanos para sobrevivir.
-                                Su hogar, Monte Redondo, muere lentamente, esperando ser restaurado por la magia
-                                antigua.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Poesía Section -->
-        <section id="poetry" class="poetry">
-            <!-- Usando la foto de naturaleza mística para el fondo -->
-            <div class="poetry-bg parallax-bg" style="background-image: url('Contenido/Fotos Ángel/IMG_3534.jpeg');">
-            </div>
-            <div class="container">
-                <div class="poetry-header fade-up">
-                    <h2 class="section-title">Fases del Fénix</h2>
-                </div>
-                <div class="poetry-masonry">
-                    <div class="poem-card fade-up">
-                        <span class="poem-meta">I. Cenizas</span>
-                        <p>"La oscuridad de la pérdida y el vacío. Mirar el dolor de frente tras la caída."</p>
-                    </div>
-                    <div class="poem-card fade-up delay-1">
-                        <span class="poem-meta">II. Combustión</span>
-                        <p>"El ardor de la lucha. Una crítica a un mundo que constantemente pone fronteras al amor."</p>
-                    </div>
-                    <div class="poem-card fade-up delay-2">
-                        <span class="poem-meta">III. Renacimiento</span>
-                        <p>"El descubrimiento de un amor que sana y abraza todas y cada una de las cicatrices."</p>
-                    </div>
-                    <div class="poem-card fade-up delay-3">
-                        <span class="poem-meta">IV. Vuelo</span>
-                        <p>"La celebración de un sentimiento que trasciende por completo la distancia y el tiempo."</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contacto Section -->
-        <section id="contact" class="contact">
-            <div class="container">
-                <div class="contact-grid">
-                    <div class="contact-text fade-up">
-                        <h2 class="huge-title">Hablemos.</h2>
-                        <a href="mailto:hola@aptorrescusa.com"
-                            class="magnetic-link hover-target">hola@aptorrescusa.com</a>
-                        <p class="contact-desc">Para consultas literarias, entrevistas, prensa o simplemente para
-                            compartir unas palabras.</p>
-                    </div>
-                    <div class="contact-form-wrapper fade-up delay-1">
-                        <form class="elegant-form">
-                            <div class="input-group">
-                                <input type="text" id="name" required placeholder=" ">
-                                <label for="name">Tu Nombre</label>
-                            </div>
-                            <div class="input-group">
-                                <input type="email" id="email" required placeholder=" ">
-                                <label for="email">Tu Correo</label>
-                            </div>
-                            <div class="input-group">
-                                <textarea id="message" rows="4" required placeholder=" "></textarea>
-                                <label for="message">Mensaje...</label>
-                            </div>
-                            <button type="submit" class="submit-btn hover-target">
-                                <span>Enviar</span>
-                                <div class="btn-bg"></div>
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
         </section>
     </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-top">
-                <div class="footer-logo">A.P. Torrescusa</div>
-                <div class="footer-social">
-                    <a href="#" class="hover-target">Instagram</a>
-                    <a href="#" class="hover-target">X</a>
-                    <a href="#" class="hover-target">Bookmundo</a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 A.P. Torrescusa. Todos los derechos reservados.</p>
-                <a href="#" class="back-to-top hover-target">Volver arriba ↑</a>
-            </div>
-        </div>
-    </footer>
 
     <script src="main.js"></script>
 </body>

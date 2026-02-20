@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.P. Torrescusa | Obras y Libros</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .inner-page main {
+            padding-top: 15vh;
+            min-height: 80vh;
+        }
+    </style>
+</head>
+
+<body class="loading inner-page">
+
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <div class="preloader">
+        <div class="preloader-text">Obras</div>
+    </div>
+
+    <!-- Navegación multipágina -->
+    <nav class="navbar scrolled">
+        <div class="logo hover-target"><a href="index.html">APT.</a></div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="hover-target">Inicio</a></li>
+            <li><a href="biografia.html" class="hover-target">Biografía</a></li>
+            <li><a href="obras.html" class="hover-target active-link" style="color: var(--c-text-main);">Obras</a></li>
+            <li><a href="personajes.html" class="hover-target">Personajes</a></li>
+            <li><a href="poesia.html" class="hover-target">Poesía</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button class="theme-toggle hover-target" aria-label="Cambiar tema">
+                <span class="icon-dark">🌙</span>
+                <span class="icon-light">☀️</span>
+            </button>
+            <div class="hamburger hover-target">
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="books" class="books">
+            <div class="container">
+                <div class="section-header fade-up">
+                    <h1 class="section-title">Obras Publicadas</h1>
+                    <p class="section-subtitle">Adquiere tus ejemplares</p>
+                </div>
+
+                <div class="books-showcase">
+                    <!-- El Amor del Fénix -->
+                    <div class="book-item fade-up">
+                        <div class="book-visual hover-target">
+                            <img src="Contenido/El amor del fénix/El_amor_del_fénix.jpg"
+                                alt="Portada El Amor del Fénix">
+                            <div class="book-overlay">
+                                <span>Poesía</span>
+                            </div>
+                        </div>
+                        <div class="book-details">
+                            <span class="book-year">Poemario</span>
+                            <h3 class="book-title">El amor del fénix</h3>
+                            <p class="book-desc">Un viaje íntimo de cenizas, combustión, renacimiento y vuelo. Un
+                                poemario sobre resiliencia que demuestra que siempre es posible volver a empezar.</p>
+                            <div class="purchase-links mt-20">
+                                <a href="https://publishes.bookmundo.com/books/22013370" target="_blank"
+                                    class="btn-purchase hover-target">Tapa Blanda</a>
+                                <a href="https://publishes.bookmundo.com/books/22013863" target="_blank"
+                                    class="btn-purchase hover-target">Tapa Dura</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Los Portadores del Ojo Verde -->
+                    <div class="book-item fade-up delay-1">
+                        <div class="book-visual hover-target">
+                            <img src="Contenido/portada_portadores.jpg" alt="Portada Los Portadores del Ojo Verde"
+                                id="portadores-cover-img">
+                            <div class="book-overlay">
+                                <span>Fantasía</span>
+                            </div>
+                        </div>
+                        <div class="book-details">
+                            <span class="book-year">Novela Fansatía</span>
+                            <h3 class="book-title">Los Portadores del Ojo Verde</h3>
+                            <p class="book-desc">Fantasía con realismo mágico en un bosque vivo. Unai, joven marcado con
+                                el enigma, emprende un viaje para salvar Monte Redondo recuperando Las Trufas Doradas.
+                            </p>
+                            <div class="purchase-links mt-20">
+                                <a href="https://publishes.bookmundo.com/books/22027500" target="_blank"
+                                    class="btn-purchase hover-target">Tapa Blanda</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">A.P. Torrescusa</div>
+                <div class="footer-social">
+                    <a href="https://instagram.com" target="_blank" class="hover-target">Instagram</a>
+                    <a href="https://twitter.com" target="_blank" class="hover-target">X</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 A.P. Torrescusa. Todos los derechos reservados.</p>
+                <a href="#" class="back-to-top hover-target">Volver arriba ↑</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

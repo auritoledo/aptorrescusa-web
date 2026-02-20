@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.P. Torrescusa | Biografía</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .inner-page main {
+            padding-top: 15vh;
+            min-height: 80vh;
+        }
+
+        .about-portrait img {
+            max-height: 600px;
+        }
+    </style>
+</head>
+
+<body class="loading inner-page">
+
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <div class="preloader">
+        <div class="preloader-text">Biografía</div>
+    </div>
+
+    <!-- Navegación multipágina -->
+    <nav class="navbar scrolled">
+        <div class="logo hover-target"><a href="index.html">APT.</a></div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="hover-target">Inicio</a></li>
+            <li><a href="biografia.html" class="hover-target active-link"
+                    style="color: var(--c-text-main);">Biografía</a></li>
+            <li><a href="obras.html" class="hover-target">Obras</a></li>
+            <li><a href="personajes.html" class="hover-target">Personajes</a></li>
+            <li><a href="poesia.html" class="hover-target">Poesía</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button class="theme-toggle hover-target" aria-label="Cambiar tema">
+                <span class="icon-dark">🌙</span>
+                <span class="icon-light">☀️</span>
+            </button>
+            <div class="hamburger hover-target">
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Biografía Section -->
+        <section id="about" class="about">
+            <div class="about-container">
+                <div class="about-left">
+                    <div class="sticky-text">
+                        <h1 class="section-title reveal-text fade-up">Tinta de<br>cicatrices</h1>
+                    </div>
+                </div>
+                <div class="about-right">
+                    <div class="about-portrait fade-up delay-1">
+                        <!-- Usar la foto realista del autor -->
+                        <img src="Contenido/Fotos Ángel/IMG_8874.jpeg" alt="Ángel Escribiendo"
+                            class="cinematic-filter inline-portrait">
+                    </div>
+                    <h3 class="bio-subtitle fade-up">Orígenes y el desafío de la dislexia</h3>
+                    <p class="fade-up">Ángel Pérez Torrescusa nació en Extremadura y se crio en el País Vasco.
+                        Actualmente escribe desde Castro Urdiales, donde el mar y las rocas acompañan sus reflexiones.
+                        Su vida ha estado marcada por duras experiencias y por el desafío de la dislexia, que lejos de
+                        detenerlo, se transformó en una fortaleza para forjar una relación única con las palabras.</p>
+
+                    <h3 class="bio-subtitle fade-up mt-20">Filosofía literaria</h3>
+                    <p class="fade-up">Para Torrescusa, escribir es un acto de "alquimia personal". Su filosofía
+                        creativa se basa en no glorificar el sufrimiento ni borrar sus marcas, sino en "escribir con
+                        tinta de cicatrices", utilizando el dolor y las batallas íntimas como materia prima. Sus textos
+                        ofrecen "brasas" para que el lector ilumine sus propias sombras.</p>
+
+                    <h3 class="bio-subtitle fade-up mt-20">Resiliencia y madurez</h3>
+                    <p class="fade-up">El autor se describe a sí mismo como un superviviente. Tras sufrir traiciones,
+                        adoptó una postura sanadora: <strong>"Memoria tengo; odio, nunca"</strong>. Esa sanación le
+                        enseñó a no mirar atrás, descubriendo que, tras rendirse a la orilla de sí mismo, su verdadera
+                        vida comenzó después de los cuarenta.</p>
+
+                    <blockquote class="fade-up mt-20">"Escribo porque hay heridas que necesitan convertirse en tinta."
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto Section en Biografía -->
+        <section id="contact" class="contact"
+            style="background: var(--c-bg-light); border-top: 1px solid var(--c-border);">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-text fade-up">
+                        <h2 class="huge-title">Hablemos.</h2>
+                        <a href="mailto:hola@aptorrescusa.com"
+                            class="magnetic-link hover-target">hola@aptorrescusa.com</a>
+                        <p class="contact-desc">Para consultas literarias, entrevistas, prensa o simplemente para
+                            compartir unas palabras.</p>
+                    </div>
+                    <div class="contact-form-wrapper fade-up delay-1">
+                        <form class="elegant-form">
+                            <div class="input-group">
+                                <input type="text" id="name" required placeholder=" ">
+                                <label for="name">Tu Nombre</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="email" id="email" required placeholder=" ">
+                                <label for="email">Tu Correo</label>
+                            </div>
+                            <div class="input-group">
+                                <textarea id="message" rows="4" required placeholder=" "></textarea>
+                                <label for="message">Mensaje...</label>
+                            </div>
+                            <button type="submit" class="submit-btn hover-target">
+                                <span>Enviar</span>
+                                <div class="btn-bg"></div>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">A.P. Torrescusa</div>
+                <div class="footer-social">
+                    <a href="https://instagram.com" target="_blank" class="hover-target">Instagram</a>
+                    <a href="https://twitter.com" target="_blank" class="hover-target">X</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 A.P. Torrescusa. Todos los derechos reservados.</p>
+                <a href="#" class="back-to-top hover-target">Volver arriba ↑</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

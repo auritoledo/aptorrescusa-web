@@ -16,15 +16,21 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('theme', newTheme);
     });
 
-    // --- Hero Phrases Rotation ---
-    const phrases = document.querySelectorAll('.phrase');
+    // --- Floating Phrases Rotation (Landing Page) ---
+    const phrases = document.querySelectorAll('.floating-phrase');
     if (phrases.length > 0) {
         let currentPhrase = 0;
-        setInterval(() => {
-            phrases[currentPhrase].classList.remove('active');
-            currentPhrase = (currentPhrase + 1) % phrases.length;
+
+        // Show first phrase after preloader
+        setTimeout(() => {
             phrases[currentPhrase].classList.add('active');
-        }, 4000);
+        }, 2500);
+
+        setInterval(() => {
+            if (phrases[currentPhrase]) phrases[currentPhrase].classList.remove('active');
+            currentPhrase = (currentPhrase + 1) % phrases.length;
+            if (phrases[currentPhrase]) phrases[currentPhrase].classList.add('active');
+        }, 5000);
     }
 
     // --- Preloader Logic ---
@@ -50,6 +56,14 @@ document.addEventListener('DOMContentLoaded', () => {
             // Instantly move the dot
             cursor.style.left = `${mouseX}px`;
             cursor.style.top = `${mouseY}px`;
+
+            // Mouse parallax for huge hero bg
+            const heroBg = document.querySelector('.parallax-img-bg');
+            if (heroBg) {
+                const xVal = (mouseX / window.innerWidth - 0.5) * 20;
+                const yVal = (mouseY / window.innerHeight - 0.5) * 20;
+                heroBg.style.transform = `translate(${xVal}px, ${yVal}px) scale(1.05)`;
+            }
         });
 
         // Smooth follow for the outer circle
