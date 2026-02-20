@@ -1173,6 +1173,213 @@ body:not(.loading) .scroll-indicator {
     color: var(--c-accent);
 }
 
+.books-showcase {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.book-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    max-width: 450px;
+    text-align: center;
+}
+
+.book-visual {
+    position: relative;
+    width: 260px;
+    height: 400px;
+    margin-bottom: 20px;
+    perspective: 1200px;
+    /* Crucial for 3D effect */
+}
+
+/* 3D Book Container */
+.book-3d {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform: rotateY(-25deg) rotateX(10deg);
+    transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.6s ease;
+    box-shadow: -15px 20px 35px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    border-radius: 2px 6px 6px 2px;
+}
+
+.book-3d:hover {
+    transform: rotateY(-5deg) rotateX(5deg) scale(1.05);
+    box-shadow: -5px 15px 25px rgba(0, 0, 0, 0.5);
+}
+
+.book-3d img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2px 6px 6px 2px;
+    transform: translateZ(25px);
+    /* Front cover thickness */
+    z-index: 2;
+}
+
+/* Book Spine */
+.book-3d::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    background: linear-gradient(to right, #111, #333, #111);
+    top: 0;
+    left: -50px;
+    transform: rotateY(-90deg);
+    transform-origin: right;
+    border-radius: 4px 0 0 4px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+/* Book Pages Bottom */
+.book-3d::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 48px;
+    background: #f4ecdf;
+    bottom: -48px;
+    left: 0;
+    transform: rotateX(-90deg);
+    transform-origin: top;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+    background-image: repeating-linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 0, rgba(0, 0, 0, 0.05) 1px, transparent 1px, transparent 3px);
+    border-radius: 0 0 5px 0;
+}
+
+/* Book Pages Right Side */
+.book-3d-pages-side {
+    position: absolute;
+    width: 48px;
+    height: 100%;
+    background: #f4ecdf;
+    top: 0;
+    right: -48px;
+    transform: rotateY(90deg);
+    transform-origin: left;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+    background-image: repeating-linear-gradient(to right, rgba(0, 0, 0, 0.05) 0, rgba(0, 0, 0, 0.05) 1px, transparent 1px, transparent 3px);
+    z-index: 1;
+}
+
+/* Dynamic Glass reflection over the front cover */
+.book-3d-glass {
+    position: absolute;
+    inset: 0;
+    transform: translateZ(26px);
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0) 100%);
+    pointer-events: none;
+    z-index: 3;
+    border-radius: 2px 6px 6px 2px;
+}
+
+.book-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity var(--t-fast);
+    z-index: 4;
+    border-radius: 2px 6px 6px 2px;
+}
+
+.book-3d:hover .book-overlay {
+    opacity: 1;
+}
+
+.book-overlay-content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 20px;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: transform var(--t-fast), opacity var(--t-fast);
+}
+
+.book-3d:hover .book-overlay-content {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.book-overlay-content .icon {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.book-overlay-content .text {
+    font-weight: bold;
+}
+
+.book-title {
+    font-family: var(--f-serif);
+    font-size: 1.8rem;
+    margin-top: 20px;
+    color: var(--c-text-main);
+}
+
+.book-author {
+    font-size: 0.9rem;
+    color: var(--c-text-muted);
+    margin-top: 5px;
+}
+
+/* === FOOTER === */
+.footer {
+    padding: 60px 0;
+    border-top: 1px solid var(--c-border);
+    background-color: var(--c-bg);
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.footer-logo {
+    font-family: var(--f-serif);
+    font-size: 2rem;
+    color: var(--c-text-main);
+}
+
+.footer-social {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-social a {
+    color: var(--c-text-muted);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    transition: color var(--t-fast);
+}
+
+.footer-social a:hover {
+    color: var(--c-accent);
+}
+
 .footer-bottom {
     display: flex;
     justify-content: space-between;
