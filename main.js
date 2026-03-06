@@ -267,8 +267,8 @@ document.addEventListener('DOMContentLoaded', () => {
             sessionStorage.setItem('bookPopupClosed', 'true');
         };
 
-        // Show after 6 seconds
-        setTimeout(showPopup, 6000);
+        // Show after 3 seconds
+        setTimeout(showPopup, 3000);
 
         // Or show when scrolling 50%
         let triggered = false;
