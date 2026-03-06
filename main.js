@@ -249,4 +249,49 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     initPrivacyBanner();
+
+    // --- Autographed Book Popup Logic ---
+    const initBookPopup = () => {
+        const popup = document.getElementById('book-popup');
+        if (!popup) return;
+
+        // Don't show if already closed in this session
+        if (sessionStorage.getItem('bookPopupClosed')) return;
+
+        const showPopup = () => {
+            popup.classList.add('active');
+        };
+
+        const closePopup = () => {
+            popup.classList.remove('active');
+            sessionStorage.setItem('bookPopupClosed', 'true');
+        };
+
+        // Show after 6 seconds
+        setTimeout(showPopup, 6000);
+
+        // Or show when scrolling 50%
+        let triggered = false;
+        window.addEventListener('scroll', () => {
+            if (triggered) return;
+            const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+            if (scrollPercent > 50) {
+                triggered = true;
+                showPopup();
+            }
+        });
+
+        const closeBtn = document.getElementById('close-popup');
+        if (closeBtn) {
+            closeBtn.addEventListener('click', closePopup);
+        }
+
+        // Close when clicking the action button too
+        const actionBtn = popup.querySelector('.btn-popup');
+        if (actionBtn) {
+            actionBtn.addEventListener('click', closePopup);
+        }
+    };
+
+    initBookPopup();
 });
