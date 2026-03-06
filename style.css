@@ -1078,10 +1078,13 @@ body:not(.loading) .scroll-indicator {
         grid-template-columns: 1fr;
     }
 
+    .hero-fs-bg {
+        inset: 0 !important;
+    }
+
     .hero-fs-bg video {
-        object-position: 20% 50% !important;
-        transform: scale(1.3) !important;
-        transform-origin: center center;
+        object-position: 5% 50% !important;
+        transform: none !important;
     }
 }
 
