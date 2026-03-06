@@ -212,4 +212,41 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     });
+
+    // --- Privacy Consent Banner ---
+    const initPrivacyBanner = () => {
+        if (localStorage.getItem('privacyAccepted')) return;
+
+        const banner = document.createElement('div');
+        banner.className = 'privacy-banner';
+        banner.innerHTML = `
+            <div class="privacy-text">
+                Utilizamos herramientas mínimas para gestionar tus mensajes de forma segura. 
+                Al continuar, aceptas nuestra <a href="politica-privacidad.html">Política de Privacidad</a>.
+            </div>
+            <div class="privacy-actions">
+                <button class="privacy-accept-btn hover-target">Aceptar</button>
+            </div>
+        `;
+
+        document.body.appendChild(banner);
+
+        // Animation delay for smooth entrance
+        setTimeout(() => banner.classList.add('active'), 1000);
+
+        const acceptBtn = banner.querySelector('.privacy-accept-btn');
+        acceptBtn.addEventListener('click', () => {
+            localStorage.setItem('privacyAccepted', 'true');
+            banner.classList.remove('active');
+            setTimeout(() => banner.remove(), 800);
+        });
+
+        // Add to hover targets for custom cursor
+        if (window.innerWidth > 1024) {
+            acceptBtn.addEventListener('mouseenter', () => document.body.classList.add('hovering'));
+            acceptBtn.addEventListener('mouseleave', () => document.body.classList.remove('hovering'));
+        }
+    };
+
+    initPrivacyBanner();
 });

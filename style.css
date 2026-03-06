@@ -1701,33 +1701,88 @@ body:not(.loading) .scroll-indicator {
     }
 }
 
-/* === WHATSAPP FLOAT === */
-.whatsapp-float {
+@media (max-width: 768px) {
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 28px;
+    }
+}
+
+/* === PRIVACY CONSENT BANNER === */
+.privacy-banner {
     position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 30px;
-    right: 30px;
-    background-color: #25d366;
-    color: #FFF;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 35px;
-    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
-    z-index: 100;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 600px;
+    background: rgba(31, 30, 27, 0.85);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid var(--c-border);
+    border-radius: 15px;
+    padding: 25px;
+    z-index: 1000;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: transform var(--t-fast), background-color var(--t-fast);
-    text-decoration: none;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    transition: bottom 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-[data-theme="light"] .whatsapp-float {
-    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+[data-theme="light"] .privacy-banner {
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
 }
 
-.whatsapp-float:hover {
-    background-color: #128C7E;
+.privacy-banner.active {
+    bottom: 30px;
+}
+
+.privacy-text {
+    font-size: 0.95rem;
+    color: var(--c-text-main);
+    line-height: 1.5;
+}
+
+.privacy-text a {
+    color: var(--c-accent);
+    text-decoration: underline;
+}
+
+.privacy-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.privacy-accept-btn {
+    background: var(--c-accent);
     color: #FFF;
-    transform: scale(1.1) translateY(-5px);
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-family: var(--f-sans);
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform var(--t-fast), background var(--t-fast);
+}
+
+.privacy-accept-btn:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+}
+
+@media (max-width: 768px) {
+    .privacy-banner {
+        width: calc(100% - 40px);
+        padding: 20px;
+        bottom: -150px;
+    }
+
+    .privacy-banner.active {
+        bottom: 20px;
+    }
 }
