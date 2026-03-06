@@ -253,17 +253,22 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Autographed Book Popup Logic ---
     const initBookPopup = () => {
         const popup = document.getElementById('book-popup');
-        if (!popup) return;
+        const overlay = document.getElementById('popup-overlay');
+        if (!popup || !overlay) return;
 
         // Don't show if already closed in this session
         if (sessionStorage.getItem('bookPopupClosed')) return;
 
         const showPopup = () => {
+            overlay.classList.add('active');
             popup.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevent scroll when modal is open
         };
 
         const closePopup = () => {
+            overlay.classList.remove('active');
             popup.classList.remove('active');
+            document.body.style.overflow = ''; // Restore scroll
             sessionStorage.setItem('bookPopupClosed', 'true');
         };
 
@@ -272,25 +277,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Or show when scrolling 50%
         let triggered = false;
-        window.addEventListener('scroll', () => {
+        const checkScroll = () => {
             if (triggered) return;
             const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
             if (scrollPercent > 50) {
                 triggered = true;
                 showPopup();
             }
-        });
+        };
+        window.addEventListener('scroll', checkScroll);
 
         const closeBtn = document.getElementById('close-popup');
         if (closeBtn) {
             closeBtn.addEventListener('click', closePopup);
         }
 
-        // Close when clicking the action button too
-        const actionBtn = popup.querySelector('.btn-popup');
-        if (actionBtn) {
-            actionBtn.addEventListener('click', closePopup);
-        }
+        // Close when clicking overlay
+        overlay.addEventListener('click', closePopup);
+
+        // Close when clicking any button in popup
+        const actionButtons = popup.querySelectorAll('.btn-popup');
+        actionButtons.forEach(btn => {
+            btn.addEventListener('click', closePopup);
+        });
     };
 
     initBookPopup();
