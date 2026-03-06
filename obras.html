@@ -4,7 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A.P. Torrescusa | Obras y Libros</title>
+    <title>A.P. Torrescusa | Obras y Libros - Libros Firmados</title>
+    <meta name="description"
+        content="Descubre las obras de A.P. Torrescusa: 'El amor del Fénix' y 'Los Portadores del Ojo Verde'. Compra online o solicita tu ejemplar autografiado.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nikokiros.com/obras.html">
+    <meta property="og:title" content="A.P. Torrescusa | Obras y Libros - Libros Firmados">
+    <meta property="og:description"
+        content="Explora el universo literario de A.P. Torrescusa. Poesía y fantasía épica. Solicita tu libro dedicado directamente aquí.">
+    <meta property="og:image" content="https://nikokiros.com/assets/images/obras_share.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://nikokiros.com/obras.html">
+    <meta property="twitter:title" content="A.P. Torrescusa | Obras y Libros - Libros Firmados">
+    <meta property="twitter:description"
+        content="Explora el universo literario de A.P. Torrescusa. Poesía y fantasía épica. Solicita tu libro dedicado directamente aquí.">
+    <meta property="twitter:image" content="https://nikokiros.com/assets/images/obras_share.png">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "El amor del fénix",
+          "description": "Poemario sobre resiliencia y renacimiento.",
+          "url": "https://nikokiros.com/obras.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Los Portadores del Ojo Verde",
+          "description": "Novela de alta fantasía y realismo mágico.",
+          "url": "https://nikokiros.com/obras.html"
+        }
+      ]
+    }
+    </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -121,27 +163,69 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Newsletter / Contact Section -->
-        <section class="newsletter-section fade-up">
-            <div class="container">
-                <div class="newsletter-content">
-                    <h2 class="section-title">Únete al Universo</h2>
-                    <p class="section-subtitle">Suscríbete al boletín oficial para recibir noticias sobre próximos
-                        lanzamientos, secretos de Monte Redondo y fragmentos exclusivos de mis obras.</p>
+            <!-- Persistent Autographed Section -->
+            <section id="autographs" class="autograph-section fade-up">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <h2 class="section-title">Ejemplares Dedicados</h2>
+                        <p class="section-subtitle">Consigue una edición única firmada por el autor para tu colección o
+                            como regalo especial.</p>
+                    </div>
 
-                    <form class="newsletter-form" action="https://formspree.io/f/maqpyyrb" method="POST">
-                        <input type="hidden" name="_subject" value="Nueva Suscripción al Universo">
-                        <div class="input-group">
-                            <input type="email" name="email" id="nl-email" placeholder="Tu correo electrónico" required>
+                    <div class="autograph-grid">
+                        <!-- Fénix Autografiado -->
+                        <div class="autograph-card">
+                            <img src="assets/images/fenix_front.jpg" alt="El amor del Fénix" class="autograph-img">
+                            <div class="autograph-info">
+                                <h3>El amor del Fénix</h3>
+                                <p>Solicita tu ejemplar de este viaje poético con una dedicatoria personalizada de
+                                    Ángel.</p>
+                                <a href="https://wa.me/34638238485?text=Hola!%20Me%20gustaría%20pedir%20un%20ejemplar%20firmado%20de%20'El%20amor%20del%20Fénix'."
+                                    class="btn-autograph hover-target">
+                                    <i class="fab fa-whatsapp"></i> Pedir Dedicado
+                                </a>
+                            </div>
                         </div>
-                        <button type="submit" class="btn-primary hover-target">
-                            <span>Suscribirse</span>
-                        </button>
-                    </form>
+
+                        <!-- Portadores Autografiado -->
+                        <div class="autograph-card">
+                            <img src="assets/images/portadores_front.jpg" alt="Los Portadores del Ojo Verde"
+                                class="autograph-img">
+                            <div class="autograph-info">
+                                <h3>Los Portadores</h3>
+                                <p>Adquiere la aventura de Monte Redondo firmada y sellada para los verdaderos
+                                    portadores.</p>
+                                <a href="https://wa.me/34638238485?text=Hola!%20Me%20gustaría%20pedir%20un%20ejemplar%20firmado%20de%20'Los%20Portadores%20del%20Ojo%20Verde'."
+                                    class="btn-autograph hover-target">
+                                    <i class="fab fa-whatsapp"></i> Pedir Dedicado
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+
+            <!-- Newsletter / Contact Section -->
+            <section class="newsletter-section fade-up">
+                <div class="container">
+                    <div class="newsletter-content">
+                        <h2 class="section-title">Únete al Universo</h2>
+                        <p class="section-subtitle">Suscríbete al boletín oficial para recibir noticias sobre próximos
+                            lanzamientos, secretos de Monte Redondo y fragmentos exclusivos de mis obras.</p>
+
+                        <form class="newsletter-form" action="https://formspree.io/f/maqpyyrb" method="POST">
+                            <input type="hidden" name="_subject" value="Nueva Suscripción al Universo">
+                            <div class="input-group">
+                                <input type="email" name="email" id="nl-email" placeholder="Tu correo electrónico"
+                                    required>
+                            </div>
+                            <button type="submit" class="btn-primary hover-target">
+                                <span>Suscribirse</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
     </main>
 
     <!-- Footer -->

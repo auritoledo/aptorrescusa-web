@@ -1953,6 +1953,114 @@ body:not(.loading) .scroll-indicator {
     box-shadow: 0 5px 15px rgba(181, 153, 102, 0.3);
 }
 
+/* === PERSISTENT AUTOGRAPHED SECTION === */
+.autograph-section {
+    padding: 100px 0;
+    background: rgba(181, 153, 102, 0.03);
+    /* Very subtle gold tint */
+    border-top: 1px solid rgba(181, 153, 102, 0.1);
+    border-bottom: 1px solid rgba(181, 153, 102, 0.1);
+}
+
+.autograph-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.autograph-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(181, 153, 102, 0.2);
+    border-radius: 24px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    transition: all var(--t-normal);
+}
+
+.autograph-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.06);
+    border-color: var(--c-accent);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+}
+
+.autograph-img {
+    width: 140px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.autograph-card:hover .autograph-img {
+    transform: scale(1.05) rotate(2deg);
+}
+
+.autograph-info {
+    flex-grow: 1;
+}
+
+.autograph-info h3 {
+    font-family: var(--f-serif);
+    font-size: 1.6rem;
+    color: var(--c-text-main);
+    margin-bottom: 10px;
+}
+
+.autograph-info p {
+    color: var(--c-text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.btn-autograph {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--c-accent);
+    color: #FFF;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all var(--t-fast);
+}
+
+.btn-autograph i {
+    font-size: 1.1rem;
+}
+
+.btn-autograph:hover {
+    background: var(--c-text-main);
+    color: var(--c-bg-dark);
+    transform: translateX(5px);
+}
+
+@media (max-width: 992px) {
+    .autograph-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .autograph-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .autograph-img {
+        width: 120px;
+    }
+}
+
 @media (max-width: 768px) {
     .book-popup {
         width: calc(100% - 40px);
