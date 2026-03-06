@@ -14,7 +14,7 @@
     <!-- FontAwesome for Social Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=12">
     <style>
         .inner-page main {
             padding-top: 15vh;
@@ -203,7 +203,31 @@
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 
-    <script src="main.js"></script>
+    <!-- Autographed Book Popup -->
+    <div class="popup-overlay" id="popup-overlay"></div>
+    <div id="book-popup" class="book-popup">
+        <div class="popup-close hover-target" id="close-popup"><i class="fas fa-times"></i></div>
+        <div class="popup-header">
+            <h4>Ejemplares Firmados</h4>
+            <p>¿Quieres tu libro dedicado? Elige cual quieres que te envíe autografiado:</p>
+        </div>
+        <div class="book-selection-grid">
+            <div class="book-option">
+                <img src="assets/images/fenix_front.jpg" alt="El amor del Fénix" class="book-thumb">
+                <span class="book-title">El amor del Fénix</span>
+                <a href="https://wa.me/34638238485?text=Hola!%20Me%20gustaría%20pedir%20un%20ejemplar%20firmado%20de%20'El%20amor%20del%20Fénix'."
+                    class="btn-popup hover-target">Pedir este</a>
+            </div>
+            <div class="book-option">
+                <img src="assets/images/portadores_front.jpg" alt="Los Portadores del Ojo Verde" class="book-thumb">
+                <span class="book-title">Los Portadores</span>
+                <a href="https://wa.me/34638238485?text=Hola!%20Me%20gustaría%20pedir%20un%20ejemplar%20firmado%20de%20'Los%20Portadores%20del%20Ojo%20Verde'."
+                    class="btn-popup hover-target">Pedir este</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js?v=12"></script>
 </body>
 
 </html>

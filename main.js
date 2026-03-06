@@ -256,8 +256,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const overlay = document.getElementById('popup-overlay');
         if (!popup || !overlay) return;
 
-        // Don't show if already closed in this session
-        if (sessionStorage.getItem('bookPopupClosed')) return;
+        // Check if shown this session
+        if (sessionStorage.getItem('bookPopupShown')) return;
 
         const showPopup = () => {
             overlay.classList.add('active');
@@ -269,7 +269,7 @@ document.addEventListener('DOMContentLoaded', () => {
             overlay.classList.remove('active');
             popup.classList.remove('active');
             document.body.style.overflow = ''; // Restore scroll
-            sessionStorage.setItem('bookPopupClosed', 'true');
+            sessionStorage.setItem('bookPopupShown', 'true');
         };
 
         // Show after 3 seconds
