@@ -18,13 +18,13 @@
     <!-- FontAwesome for Social Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=10">
 
     <!-- Favicon -->
     <link rel="icon" href="assets/images/logo.png" type="image/png">
 </head>
 
-<body class="loading landing-page">
+<body class="loading">
 
     <!-- Custom Cursor -->
     <div class="cursor"></div>
@@ -47,15 +47,15 @@
             <li><a href="poesia.html" class="hover-target">Poesía</a></li>
             <li><a href="contacto.html" class="hover-target">Contacto</a></li>
         </ul>
-        <div class="nav-actions">
+        <div class="theme-switch">
             <button class="theme-toggle hover-target" aria-label="Cambiar tema">
-                <span class="icon-dark">🌙</span>
-                <span class="icon-light">☀️</span>
+                <i class="fas fa-moon"></i>
             </button>
-            <div class="hamburger hover-target">
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
+        </div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
         </div>
     </nav>
 
@@ -66,12 +66,11 @@
             <div class="hero-fs-bg">
                 <!-- Video para Desktop -->
                 <video autoplay muted loop playsinline class="parallax-img-bg desktop-video">
-                    <source src="video_hero/HEroApTorrescusa.mp4" type="video/mp4">
+                    <source src="video_hero/HEroApTorrescusa.mp4?v=10" type="video/mp4">
                 </video>
                 <!-- Video para Móvil (Optimizado) -->
                 <video autoplay muted loop playsinline class="parallax-img-bg mobile-video">
-                    <source src="assets/images/video_hero_movil.mov" type="video/quicktime">
-                    <source src="assets/images/video_hero_movil.mp4" type="video/mp4">
+                    <source src="assets/images/hero_ready_mobile.mp4?v=10" type="video/mp4">
                     Tu navegador no soporta el formato de video.
                 </video>
             </div>
@@ -157,7 +156,7 @@
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 
-    <script src="main.js"></script>
+    <script src="main.js?v=10"></script>
 </body>
 
 </html>
