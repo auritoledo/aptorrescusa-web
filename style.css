@@ -359,6 +359,15 @@ body.hovering .cursor-follower {
     transition: filter var(--t-smooth), transform 0.1s linear;
 }
 
+/* Dual video switching */
+.mobile-video {
+    display: none;
+}
+
+.desktop-video {
+    display: block;
+}
+
 [data-theme="light"] .hero-fs-bg video {
     filter: brightness(0.9) contrast(1.05) grayscale(0%);
 }
@@ -1079,12 +1088,17 @@ body:not(.loading) .scroll-indicator {
     }
 
     .hero-fs-bg {
-        inset: 0 !important;
+        inset: 0;
+        /* No margin for mobile */
     }
 
-    .hero-fs-bg video {
-        object-position: 5% 50% !important;
-        transform: none !important;
+    .desktop-video {
+        display: none !important;
+    }
+
+    .mobile-video {
+        display: block !important;
+        object-position: center center;
     }
 }
 

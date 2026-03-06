@@ -62,10 +62,16 @@
     <!-- Main Content: Pure Fullscreen Hero -->
     <main>
         <section id="hero-fullscreen" class="hero-fullscreen">
-            <!-- Video de fondo principal -->
+            <!-- Video de fondo principal (Responsive) -->
             <div class="hero-fs-bg">
-                <video autoplay muted loop playsinline id="hero-vid-element" class="parallax-img-bg">
-                    <source src="video_hero/HEroApTorrescusa.mp4?v=2" type="video/mp4">
+                <!-- Video para Desktop -->
+                <video autoplay muted loop playsinline class="parallax-img-bg desktop-video">
+                    <source src="video_hero/HEroApTorrescusa.mp4" type="video/mp4">
+                </video>
+                <!-- Video para Móvil (Optimizado) -->
+                <video autoplay muted loop playsinline class="parallax-img-bg mobile-video">
+                    <source src="assets/images/video_hero_movil.mov" type="video/quicktime">
+                    <source src="assets/images/video_hero_movil.mp4" type="video/mp4">
                     Tu navegador no soporta el formato de video.
                 </video>
             </div>
