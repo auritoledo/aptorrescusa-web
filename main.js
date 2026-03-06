@@ -136,12 +136,21 @@ document.addEventListener('DOMContentLoaded', () => {
         scrollObserver.observe(el);
     });
 
-    // --- Parallax Effect ---
+    // --- Scrollytelling & Parallax Effects ---
     const parallaxImages = document.querySelectorAll('.parallax-img');
     const parallaxBgs = document.querySelectorAll('.parallax-bg');
+    const heroFsBg = document.querySelector('.hero-fs-bg img');
 
     window.addEventListener('scroll', () => {
         const scrolled = window.scrollY;
+
+        // Cinematic hero scrollytelling
+        if (heroFsBg) {
+            const scale = 1 + (scrolled * 0.0005);
+            const opacity = Math.max(0, 1 - (scrolled * 0.0015));
+            heroFsBg.style.transform = `translateY(${scrolled * 0.3}px) scale(${scale})`;
+            heroFsBg.style.opacity = opacity;
+        }
 
         parallaxImages.forEach(img => {
             const speed = 0.2;
@@ -168,6 +177,39 @@ document.addEventListener('DOMContentLoaded', () => {
                     behavior: 'smooth'
                 });
             }
+        });
+    });
+    // --- Load More Characters Logic ---
+    const loadMoreBtn = document.getElementById('load-more-chars');
+    if (loadMoreBtn) {
+        loadMoreBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const charCards = document.querySelectorAll('.extra-character');
+            charCards.forEach(card => {
+                card.style.display = ''; // Reset to default display
+
+                // Observe with IntersectionObserver so they animate properly
+                setTimeout(() => {
+                    scrollObserver.observe(card);
+                }, 10);
+            });
+            // Hide the button container once revealed
+            loadMoreBtn.parentElement.style.display = 'none';
+
+            // Re-trigger scroll processing slightly to ensure visible elements fade-in instantly 
+            window.dispatchEvent(new Event('scroll'));
+        });
+    }
+
+    // --- Back to Top Logic ---
+    const backToTopBtns = document.querySelectorAll('.back-to-top');
+    backToTopBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
         });
     });
 });

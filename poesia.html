@@ -9,8 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"
         rel="stylesheet">
+    <!-- FontAwesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <link rel="stylesheet" href="style.css">
     <style>
@@ -36,7 +38,8 @@
 
     <!-- Navegación multipágina -->
     <nav class="navbar scrolled">
-        <div class="logo hover-target"><a href="index.html">APT.</a></div>
+        <div class="logo hover-target"><a href="index.html"><img src="assets/images/logo.png" alt="A.P. Torrescusa"
+                    class="nav-logo-img"></a></div>
         <ul class="nav-links">
             <li><a href="index.html" class="hover-target">Inicio</a></li>
             <li><a href="biografia.html" class="hover-target">Biografía</a></li>
@@ -44,6 +47,7 @@
             <li><a href="personajes.html" class="hover-target">Personajes</a></li>
             <li><a href="poesia.html" class="hover-target active-link" style="color: var(--c-text-main);">Poesía</a>
             </li>
+            <li><a href="contacto.html" class="hover-target">Contacto</a></li>
         </ul>
         <div class="nav-actions">
             <button class="theme-toggle hover-target" aria-label="Cambiar tema">
@@ -60,13 +64,13 @@
     <main>
         <section id="poetry" class="poetry">
             <!-- Usando la foto de naturaleza mística para el fondo -->
-            <div class="poetry-bg parallax-bg" style="background-image: url('Contenido/Fotos Ángel/IMG_3534.jpeg');">
+            <div class="poetry-bg parallax-bg" style="background-image: url('assets/images/Poesia.png');">
             </div>
             <div class="container">
                 <div class="poetry-header fade-up">
                     <h1 class="section-title">Fases del Fénix</h1>
                 </div>
-                <div class="poetry-masonry">
+                <div class="phases-grid">
                     <div class="poem-card fade-up">
                         <span class="poem-meta">I. Cenizas</span>
                         <p>"La oscuridad de la pérdida y el vacío. Mirar el dolor de frente tras la caída."</p>
@@ -84,6 +88,76 @@
                         <p>"La celebración de un sentimiento que trasciende por completo la distancia y el tiempo."</p>
                     </div>
                 </div>
+
+                <div class="poetry-header fade-up" style="margin-top: 80px;">
+                    <h2 class="section-title" style="font-size: 2.5rem;">Fragmentos de "El amor del fénix"</h2>
+                </div>
+
+                <div class="phases-grid">
+                    <div class="poem-card fade-up">
+                        <span class="poem-meta">Sinfonía de Cuarentena</span>
+                        <p>"El mundo tose en fa sostenido,<br>sus pulmones son partituras<br>donde el virus escribe
+                            corcheas de pánico."</p>
+                    </div>
+                    <div class="poem-card fade-up delay-1">
+                        <span class="poem-meta">La Mitad Que Falta</span>
+                        <p>"Ya no voy solo:<br>mi rumbo es compañía,<br>mis manos siembran lo aprendido,<br>riego versos
+                            como flores."</p>
+                    </div>
+                    <div class="poem-card fade-up delay-2">
+                        <span class="poem-meta">Cenizas de la Cruceta</span>
+                        <p>"Y desde las llamas de este amor fenecido,<br>naceré sin redes, sin dioses ni dueños:<br>un
+                            fénix de huesos y sueños partidos,<br>con cicatrices por alas<br>y el fuego del tiempo como
+                            único espejo."</p>
+                    </div>
+                    <div class="poem-card fade-up delay-3">
+                        <span class="poem-meta">Fénix en Cicatrices</span>
+                        <p>"Ahora sé:<br>el dolor es solo leña mojada,<br>y la luz,<br>una daga que talla<br>fénix en
+                            las cicatrices."</p>
+                    </div>
+                    <div class="poem-card fade-up">
+                        <span class="poem-meta">Olas de Trinchera</span>
+                        <p>"Hoy declaro la guerra al adiós estéril:<br>que las aceras sean trincheras<br>donde el amor
+                            avance<br>a golpe de beso-bengala..."</p>
+                    </div>
+                    <div class="poem-card fade-up delay-1">
+                        <span class="poem-meta">Diccionario de Sombras y Destellos</span>
+                        <p>"La sangre no tiene bandera<br>ni el dolor jerarquías:<br>somos tinta del mismo
+                            poema<br>escrito con faltas de ortografía."</p>
+                    </div>
+                    <div class="poem-card fade-up delay-2">
+                        <span class="poem-meta">Cicatrices en la Piel</span>
+                        <p>"El tiempo —cartógrafo de náufragos—<br>traza mapas con cicatrices que la sal de las
+                            lágrimas<br>y besos enlatados en memorias selectivas<br>convirtieron en surcos fértiles."
+                        </p>
+                    </div>
+                    <div class="poem-card fade-up delay-3">
+                        <span class="poem-meta">Manifiesto del Cristal Roto</span>
+                        <p>"Este poema no es metáfora:<br>es el mapa de cada moratón,<br>la lista de todas las
+                            veces<br>que confundí cicatrices<br>con caricias."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter / Contact Section -->
+        <section class="newsletter-section fade-up">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2 class="section-title">Únete al Universo</h2>
+                    <p class="section-subtitle">Suscríbete al boletín oficial para recibir noticias sobre próximos
+                        lanzamientos, secretos de Monte Redondo y fragmentos exclusivos de mis obras.</p>
+
+                    <form class="newsletter-form" action="#" method="POST"
+                        onsubmit="event.preventDefault(); alert('¡Gracias por unirse! Esta funcionalidad pronto conectará con la base de datos.');">
+                        <div class="input-group">
+                            <input type="email" name="email" id="nl-email" placeholder="Tu correo electrónico" required>
+                        </div>
+                        <button type="submit" class="btn-primary hover-target">
+                            <span>Suscribirse</span>
+                        </button>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
@@ -94,8 +168,14 @@
             <div class="footer-top">
                 <div class="footer-logo">A.P. Torrescusa</div>
                 <div class="footer-social">
-                    <a href="https://instagram.com" target="_blank" class="hover-target">Instagram</a>
-                    <a href="https://twitter.com" target="_blank" class="hover-target">X</a>
+                    <a href="https://www.facebook.com/aptorrescusa" target="_blank" class="hover-target"
+                        aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i> Facebook
+                    </a>
+                    <a href="https://www.instagram.com/angel19643/" target="_blank" class="hover-target"
+                        aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i> Instagram
+                    </a>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -104,6 +184,12 @@
             </div>
         </div>
     </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/34638238485" class="whatsapp-float hover-target" target="_blank"
+        aria-label="Contactar por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
 
     <script src="main.js"></script>
 </body>

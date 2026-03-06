@@ -9,8 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"
         rel="stylesheet">
+    <!-- FontAwesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <link rel="stylesheet" href="style.css">
     <style>
@@ -32,7 +34,8 @@
 
     <!-- Navegación multipágina -->
     <nav class="navbar scrolled">
-        <div class="logo hover-target"><a href="index.html">APT.</a></div>
+        <div class="logo hover-target"><a href="index.html"><img src="assets/images/logo.png" alt="A.P. Torrescusa"
+                    class="nav-logo-img"></a></div>
         <ul class="nav-links">
             <li><a href="index.html" class="hover-target">Inicio</a></li>
             <li><a href="biografia.html" class="hover-target">Biografía</a></li>
@@ -40,6 +43,7 @@
             <li><a href="personajes.html" class="hover-target active-link"
                     style="color: var(--c-text-main);">Personajes</a></li>
             <li><a href="poesia.html" class="hover-target">Poesía</a></li>
+            <li><a href="contacto.html" class="hover-target">Contacto</a></li>
         </ul>
         <div class="nav-actions">
             <button class="theme-toggle hover-target" aria-label="Cambiar tema">
@@ -92,9 +96,9 @@
                     <!-- Entes -->
                     <div class="character-card fade-up delay-2">
                         <div class="char-image-wrapper">
-                            <!-- Adjusted path for Sylvanimas as per user request -->
-                            <img src="Contenido/Portadores del ojo verde/Personajes libro/Sylvanimas/Magicos/Nuevos Sylvanimas/Sylvanimamacho.webp"
-                                onerror="this.src='Contenido/Portadores del ojo verde/Personajes libro/Sylvanimas/Sylvanimamacho.webp'"
+                            <!-- Adjusted path for Sylvanimas as per user request (Thalor) -->
+                            <img src="Contenido/Portadores del ojo verde/Personajes libro/Sylvanimas/Magicos/Nuevos Sylvánimas/Thalor_def.png"
+                                onerror="this.src='Contenido/Portadores del ojo verde/Personajes libro/Sylvanimas/Magicos/Thalor.png'"
                                 alt="Silvánimas">
                         </div>
                         <div class="char-content">
@@ -105,6 +109,249 @@
                                 antigua.</p>
                         </div>
                     </div>
+                    <!-- Extra Characters (Hidden initially) -->
+                    <div class="character-card extra-character fade-up" style="display: none;">
+                        <div class="char-image-wrapper">
+                            <img src="Contenido/Portadores del ojo verde/Personajes libro/Sylvanimas/Magicos/Nuevos Sylvánimas/Aerion.png"
+                                alt="Aerion">
+                        </div>
+                        <div class="char-content">
+                            <div class="char-name">Aerion</div>
+                            <div class="char-role">Sylvánima de las Alturas</div>
+                            <p class="char-desc">Guardián de los picos nevados, cuyas plumas reflejan la luz de las
+                                estrellas. Su presencia anuncia cambios en los vientos mágicos.</p>
+                        </div>
+                    </div>
+                    <div class="character-card extra-character fade-up" style="display: none;">
+                        <div class="char-image-wrapper">
+                            <img src="Contenido/Portadores del ojo verde/Personajes libro/Sylvanimas/Magicos/Nuevos Sylvánimas/Andrés_Sylvánima.png"
+                                alt="Andrés">
+                        </div>
+                        <div class="char-content">
+                            <div class="char-name">Andrés</div>
+                            <div class="char-role">Sylvánima Protector</div>
+                            <p class="char-desc">Un espíritu sereno atado a los grandes robles ancestrales. Otorga
+                                resguardo a los Portadores que buscan descanso en el bosque profundo.</p>
+                        </div>
+                    </div>
+                    <div class="character-card extra-character fade-up" style="display: none;">
+                        <div class="char-image-wrapper">
+                            <img src="Contenido/Portadores del ojo verde/Personajes libro/Sylvanimas/Magicos/Nuevos Sylvánimas/Brandán.png"
+                                alt="Brandán">
+                        </div>
+                        <div class="char-content">
+                            <div class="char-name">Brandán</div>
+                            <div class="char-role">Sylvánima del Fuego Fatuo</div>
+                            <p class="char-desc">Aparece en las noches sin luna como una pequeña llama azul. Muchos lo
+                                siguen hacia tesoros ocultos, pero otros se pierden para siempre.</p>
+                        </div>
+                    </div>
+                    <div class="character-card extra-character fade-up" style="display: none;">
+                        <div class="char-image-wrapper">
+                            <img src="Contenido/Portadores del ojo verde/Personajes libro/Sylvanimas/Magicos/Nuevos Sylvánimas/Fyra.png"
+                                alt="Fyra">
+                        </div>
+                        <div class="char-content">
+                            <div class="char-name">Fyra</div>
+                            <div class="char-role">Sylvánima de la Brisa</div>
+                            <p class="char-desc">Juguetona y escurridiza, corre entre las briznas de hierba llevando
+                                secretos desde las cumbres de Monte Redondo hasta los valles.</p>
+                        </div>
+                    </div>
+                    <div class="character-card extra-character fade-up" style="display: none;">
+                        <div class="char-image-wrapper">
+                            <img src="Contenido/Portadores del ojo verde/Personajes libro/Sylvanimas/Magicos/Nuevos Sylvánimas/Fyrn.png"
+                                alt="Fyrn">
+                        </div>
+                        <div class="char-content">
+                            <div class="char-name">Fyrn</div>
+                            <div class="char-role">Sylvánima de la Roca</div>
+                            <p class="char-desc">Tan antiguo como la propia montaña. Se mueve con lentitud, pero posee
+                                el conocimiento de los canales subterráneos de magia.</p>
+                        </div>
+                    </div>
+                    <div class="character-card extra-character fade-up" style="display: none;">
+                        <div class="char-image-wrapper">
+                            <img src="Contenido/Portadores del ojo verde/Personajes libro/Sylvanimas/Magicos/Nuevos Sylvánimas/Gryss.png"
+                                alt="Gryss">
+                        </div>
+                        <div class="char-content">
+                            <div class="char-name">Gryss</div>
+                            <div class="char-role">Sylvánima de la Niebla</div>
+                            <p class="char-desc">Espíritu solitario que habita en las zonas húmedas del bosque, tejiendo
+                                ilusiones para desorientar a aquellos no dignos del Ojo Verde.</p>
+                        </div>
+                    </div>
+                    <div class="character-card extra-character fade-up" style="display: none;">
+                        <div class="char-image-wrapper">
+                            <img src="Contenido/Portadores del ojo verde/Personajes libro/Sylvanimas/Magicos/Nuevos Sylvánimas/Iñaki_Sylvánima.png"
+                                alt="Iñaki">
+                        </div>
+                        <div class="char-content">
+                            <div class="char-name">Iñaki</div>
+                            <div class="char-role">Sylvánima Mensajero</div>
+                            <p class="char-desc">El enlace entre los distintos clanes de espíritus. Se dice que sus
+                                escamas contienen los ecos de todas las voces antiguas del bosque.</p>
+                        </div>
+                    </div>
+                    <div class="character-card extra-character fade-up" style="display: none;">
+                        <div class="char-image-wrapper">
+                            <img src="Contenido/Portadores del ojo verde/Personajes libro/Sylvanimas/Magicos/Nuevos Sylvánimas/Kaelis.png"
+                                alt="Kaelis">
+                        </div>
+                        <div class="char-content">
+                            <div class="char-name">Kaelis</div>
+                            <div class="char-role">Sylvánima del Alba</div>
+                            <p class="char-desc">De aspecto iridiscente, despierta solo cuando los primeros rayos de luz
+                                tocan las hojas más altas, renovando la energía vital del bosque.</p>
+                        </div>
+                    </div>
+                    <div class="character-card extra-character fade-up" style="display: none;">
+                        <div class="char-image-wrapper">
+                            <img src="Contenido/Portadores del ojo verde/Personajes libro/Sylvanimas/Magicos/Nuevos Sylvánimas/Liora.png"
+                                alt="Liora">
+                        </div>
+                        <div class="char-content">
+                            <div class="char-name">Liora</div>
+                            <div class="char-role">Sylvánima Sanadora</div>
+                            <p class="char-desc">Sus lágrimas tienen la capacidad de sanar la corrupción de la magia
+                                oscura. Custodia los pocos manantiales puros que aún quedan.</p>
+                        </div>
+                    </div>
+                    <div class="character-card extra-character fade-up" style="display: none;">
+                        <div class="char-image-wrapper">
+                            <img src="Contenido/Portadores del ojo verde/Personajes libro/Sylvanimas/Magicos/Nuevos Sylvánimas/Lumin_def.png"
+                                alt="Lumin">
+                        </div>
+                        <div class="char-content">
+                            <div class="char-name">Lumin</div>
+                            <div class="char-role">Sylvánima del Destello</div>
+                            <p class="char-desc">Un ser hiperactivo hecho de luz pura. Guía a los Portadores marcados a
+                                través de los caminos más traicioneros del Velo mágico.</p>
+                        </div>
+                    </div>
+                    <div class="character-card extra-character fade-up" style="display: none;">
+                        <div class="char-image-wrapper">
+                            <img src="Contenido/Portadores del ojo verde/Personajes libro/Sylvanimas/Magicos/Nuevos Sylvánimas/Myris.png"
+                                alt="Myris">
+                        </div>
+                        <div class="char-content">
+                            <div class="char-name">Myris</div>
+                            <div class="char-role">Sylvánima de la Fronda</div>
+                            <p class="char-desc">Se camufla a la perfección entre el paisaje. Es la memoria viviente de
+                                los pactos olvidados entre humanos y seres mágicos.</p>
+                        </div>
+                    </div>
+                    <div class="character-card extra-character fade-up" style="display: none;">
+                        <div class="char-image-wrapper">
+                            <img src="Contenido/Portadores del ojo verde/Personajes libro/Sylvanimas/Magicos/Nuevos Sylvánimas/Nyr.png"
+                                alt="Nyr">
+                        </div>
+                        <div class="char-content">
+                            <div class="char-name">Nyr</div>
+                            <div class="char-role">Sylvánima de las Sombras</div>
+                            <p class="char-desc">Nacido de las raíces profundas. Mantiene el equilibrio absorbiendo los
+                                restos de hechicería fallida antes de que contaminen la tierra.</p>
+                        </div>
+                    </div>
+                    <div class="character-card extra-character fade-up" style="display: none;">
+                        <div class="char-image-wrapper">
+                            <img src="Contenido/Portadores del ojo verde/Personajes libro/Sylvanimas/Magicos/Nuevos Sylvánimas/Orvyn.png"
+                                alt="Orvyn">
+                        </div>
+                        <div class="char-content">
+                            <div class="char-name">Orvyn</div>
+                            <div class="char-role">Sylvánima Errante</div>
+                            <p class="char-desc">Un espíritu viajero que rara vez permanece en el mismo sitio. Sus
+                                historias son el único vínculo entre las tribus dispersas.</p>
+                        </div>
+                    </div>
+                    <div class="character-card extra-character fade-up" style="display: none;">
+                        <div class="char-image-wrapper">
+                            <img src="Contenido/Portadores del ojo verde/Personajes libro/Sylvanimas/Magicos/Nuevos Sylvánimas/Saelys.png"
+                                alt="Saelys">
+                        </div>
+                        <div class="char-content">
+                            <div class="char-name">Saelys</div>
+                            <div class="char-role">Sylvánima de la Llama Fía</div>
+                            <p class="char-desc">Irradia un calor que no quema, vital para la germinación de las Trufas
+                                Doradas durante los crudos inviernos de la sierra.</p>
+                        </div>
+                    </div>
+                    <div class="character-card extra-character fade-up" style="display: none;">
+                        <div class="char-image-wrapper">
+                            <img src="Contenido/Portadores del ojo verde/Personajes libro/Sylvanimas/Magicos/Nuevos Sylvánimas/Silvan.png"
+                                alt="Silvan">
+                        </div>
+                        <div class="char-content">
+                            <div class="char-name">Silvan</div>
+                            <div class="char-role">Sylvánima del Canto</div>
+                            <p class="char-desc">La voz de Monte Redondo. Cuando el bosque enferma, su melodía se torna
+                                triste; si callara, significaría el fin de la magia en la región.</p>
+                        </div>
+                    </div>
+                    <div class="character-card extra-character fade-up" style="display: none;">
+                        <div class="char-image-wrapper">
+                            <img src="Contenido/Portadores del ojo verde/Personajes libro/Sylvanimas/Magicos/Nuevos Sylvánimas/Tael.png"
+                                alt="Tael">
+                        </div>
+                        <div class="char-content">
+                            <div class="char-name">Tael</div>
+                            <div class="char-role">Sylvánima del Cristal</div>
+                            <p class="char-desc">Formada por geodas elementales, es la fuerza física de los espíritus
+                                capaz de mover rocas para ocultar los altares antiguos.</p>
+                        </div>
+                    </div>
+                    <div class="character-card extra-character fade-up" style="display: none;">
+                        <div class="char-image-wrapper">
+                            <img src="Contenido/Portadores del ojo verde/Personajes libro/Sylvanimas/Magicos/Nuevos Sylvánimas/Vorin.png"
+                                alt="Vorin">
+                        </div>
+                        <div class="char-content">
+                            <div class="char-name">Vorin</div>
+                            <div class="char-role">Sylvánima de la Ceniza</div>
+                            <p class="char-desc">Nace de la destrucción para restaurar. Representa el ciclo de quemar la
+                                maleza para que el bosque pueda renacer con más fuerza.</p>
+                        </div>
+                    </div>
+                    <div class="character-card extra-character fade-up" style="display: none;">
+                        <div class="char-image-wrapper">
+                            <img src="Contenido/Portadores del ojo verde/Personajes libro/Sylvanimas/Magicos/Nuevos Sylvánimas/Ylvra.png"
+                                alt="Ylvra">
+                        </div>
+                        <div class="char-content">
+                            <div class="char-name">Ylvra</div>
+                            <div class="char-role">Sylvánima de la Corriente</div>
+                            <p class="char-desc">Danza sobre las aguas del río que cruza el valle. Purifica el agua de
+                                las intenciones oscuras de aquellos que desean dañar el ecosistema.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add More Characters Button -->
+                <div class="more-characters-container fade-up delay-3" style="text-align: center; margin-top: 50px;">
+                    <a href="#" class="btn-primary hover-target" id="load-more-chars">Conocer a otros personajes</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter / Contact Section -->
+        <section class="newsletter-section fade-up">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2 class="section-title">Únete al Universo</h2>
+                    <p class="section-subtitle">Suscríbete al boletín oficial para recibir noticias sobre próximos
+                        lanzamientos, secretos de Monte Redondo y fragmentos exclusivos de mis obras.</p>
+
+                    <form class="newsletter-form" action="#" method="POST"
+                        onsubmit="event.preventDefault(); alert('¡Gracias por unirse! Esta funcionalidad pronto conectará con la base de datos.');">
+                        <div class="input-group">
+                            <input type="email" name="email" id="nl-email" placeholder="Tu correo electrónico" required>
+                        </div>
+                        <button type="submit" class="btn-primary hover-target">
+                            <span>Suscribirse</span>
+                        </button>
+                    </form>
                 </div>
             </div>
         </section>
@@ -116,8 +363,14 @@
             <div class="footer-top">
                 <div class="footer-logo">A.P. Torrescusa</div>
                 <div class="footer-social">
-                    <a href="https://instagram.com" target="_blank" class="hover-target">Instagram</a>
-                    <a href="https://twitter.com" target="_blank" class="hover-target">X</a>
+                    <a href="https://www.facebook.com/aptorrescusa" target="_blank" class="hover-target"
+                        aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i> Facebook
+                    </a>
+                    <a href="https://www.instagram.com/angel19643/" target="_blank" class="hover-target"
+                        aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i> Instagram
+                    </a>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -126,6 +379,12 @@
             </div>
         </div>
     </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/34638238485" class="whatsapp-float hover-target" target="_blank"
+        aria-label="Contactar por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
 
     <script src="main.js"></script>
 </body>

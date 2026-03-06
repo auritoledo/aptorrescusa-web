@@ -4,14 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A.P. Torrescusa | Obras y Libros</title>
+    <title>A.P. Torrescusa | Contacto</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"
         rel="stylesheet">
-
     <!-- FontAwesome for Social Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -30,7 +29,7 @@
     <div class="cursor-follower"></div>
 
     <div class="preloader">
-        <div class="preloader-text">Obras</div>
+        <div class="preloader-text">Contacto</div>
     </div>
 
     <!-- Navegación multipágina -->
@@ -40,10 +39,11 @@
         <ul class="nav-links">
             <li><a href="index.html" class="hover-target">Inicio</a></li>
             <li><a href="biografia.html" class="hover-target">Biografía</a></li>
-            <li><a href="obras.html" class="hover-target active-link" style="color: var(--c-text-main);">Obras</a></li>
+            <li><a href="obras.html" class="hover-target">Obras</a></li>
             <li><a href="personajes.html" class="hover-target">Personajes</a></li>
             <li><a href="poesia.html" class="hover-target">Poesía</a></li>
-            <li><a href="contacto.html" class="hover-target">Contacto</a></li>
+            <li><a href="contacto.html" class="hover-target active-link" style="color: var(--c-text-main);">Contacto</a>
+            </li>
         </ul>
         <div class="nav-actions">
             <button class="theme-toggle hover-target" aria-label="Cambiar tema">
@@ -58,79 +58,66 @@
     </nav>
 
     <main>
-        <section id="books" class="books">
+        <!-- Contact Section -->
+        <section class="contact">
             <div class="container">
-                <div class="section-header fade-up">
-                    <h1 class="section-title">Obras Publicadas</h1>
-                    <p class="section-subtitle">Adquiere tus ejemplares</p>
-                </div>
-
-                <div class="books-showcase">
-                    <!-- El Amor del Fénix -->
-                    <div class="book-item fade-up">
-                        <div class="book-visual hover-target">
-                            <img src="Contenido/fenix_front.jpg" alt="Portada El Amor del Fénix" loading="lazy"
-                                decoding="async">
-                            <div class="book-overlay">
-                                <div class="book-overlay-content">
-                                    <span class="icon">✨</span>
-                                    <span class="text">Poesía Pura</span>
-                                </div>
-                            </div>
+                <div class="contact-grid">
+                    <div class="contact-left fade-up">
+                        <h1 class="huge-title">Hablemos</h1>
+                        <div class="contact-image-wrapper">
+                            <img src="assets/images/concacto.png" alt="Contacto A.P. Torrescusa"
+                                class="contact-visual cinematic-filter">
                         </div>
-                        <div class="book-details">
-                            <span class="book-year">Poemario</span>
-                            <h3 class="book-title">El amor del fénix</h3>
-                            <p class="book-desc">Un viaje íntimo de cenizas, combustión, renacimiento y vuelo. Un
-                                poemario sobre resiliencia que demuestra que siempre es posible volver a empezar.</p>
-                            <div class="purchase-links mt-20">
-                                <a href="https://publishes.bookmundo.com/books/22013370" target="_blank"
-                                    class="btn-purchase hover-target">Tapa Blanda</a>
-                                <a href="https://publishes.bookmundo.com/books/22013863" target="_blank"
-                                    class="btn-purchase hover-target">Tapa Dura</a>
-                            </div>
-                        </div>
+                        <p class="contact-desc mt-20">Para prensa, presentaciones de libros, entrevistas o
+                            contrataciones, por favor utiliza este formulario y mi equipo te responderá lo antes
+                            posible.</p>
+                        <a href="mailto:info@aptorrescusa.com"
+                            class="magnetic-link hover-target mt-20">info@aptorrescusa.com</a>
                     </div>
 
-                    <!-- Los Portadores del Ojo Verde -->
-                    <div class="book-item fade-up delay-1">
-                        <div class="book-visual hover-target">
-                            <img src="Contenido/portadores_front.jpg" alt="Portada Los Portadores del Ojo Verde"
-                                loading="lazy" decoding="async">
-                            <div class="book-overlay">
-                                <div class="book-overlay-content">
-                                    <span class="icon">🌿</span>
-                                    <span class="text">Alta Fantasía</span>
-                                </div>
+                    <div class="contact-right fade-up delay-1">
+                        <!-- Integration with Formspree (example placeholder) for automation -->
+                        <form class="elegant-form" action="https://formspree.io/f/TU_ID_AQUI" method="POST"
+                            onsubmit="event.preventDefault(); alert('¡Gracias! El formulario está listo. Solo necesitas poner tu ID de Formspree en el action del formulario HTML para automatizar los correos.');">
+                            <div class="input-group">
+                                <input type="text" name="name" id="name" placeholder=" " required>
+                                <label for="name">Nombre / Medio</label>
                             </div>
-                        </div>
-                        <div class="book-details">
-                            <span class="book-year">Novela Fansatía</span>
-                            <h3 class="book-title">Los Portadores del Ojo Verde</h3>
-                            <p class="book-desc">Fantasía con realismo mágico en un bosque vivo. Unai, joven marcado con
-                                el enigma, emprende un viaje para salvar Monte Redondo recuperando Las Trufas Doradas.
-                            </p>
-                            <div class="purchase-links mt-20">
-                                <a href="https://publishes.bookmundo.com/books/22027500" target="_blank"
-                                    class="btn-purchase hover-target">Tapa Blanda</a>
+                            <div class="input-group">
+                                <input type="email" name="email" id="email" placeholder=" " required>
+                                <label for="email">Correo electrónico</label>
                             </div>
-                        </div>
+                            <div class="input-group">
+                                <input type="text" name="subject" id="subject" placeholder=" " required>
+                                <label for="subject">Asunto (Prensa, Contratación...)</label>
+                            </div>
+                            <div class="input-group">
+                                <textarea name="message" id="message" rows="4" placeholder=" " required></textarea>
+                                <label for="message">Tu mensaje</label>
+                            </div>
+                            <button type="submit" class="submit-btn hover-target">
+                                <span class="btn-bg"></span>
+                                <span>Enviar Mensaje</span>
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>
         </section>
+
         <!-- Newsletter / Contact Section -->
-        <section class="newsletter-section fade-up">
+        <section class="newsletter-section fade-up delay-2" style="margin-top: 50px;">
             <div class="container">
                 <div class="newsletter-content">
                     <h2 class="section-title">Únete al Universo</h2>
                     <p class="section-subtitle">Suscríbete al boletín oficial para recibir noticias sobre próximos
                         lanzamientos, secretos de Monte Redondo y fragmentos exclusivos de mis obras.</p>
 
-                    <form class="newsletter-form" action="#" method="POST"
-                        onsubmit="event.preventDefault(); alert('¡Gracias por unirse! Esta funcionalidad pronto conectará con la base de datos.');">
+                    <form class="newsletter-form" action="https://formspree.io/f/TU_ID_AQUI" method="POST"
+                        onsubmit="event.preventDefault(); alert('¡Gracias por unirse! Reemplaza TU_ID_AQUI por tu ID de Formspree.');">
                         <div class="input-group">
-                            <input type="email" name="email" id="nl-email" placeholder="Tu correo electrónico" required>
+                            <input type="email" name="email" id="nl-email-contact" placeholder="Tu correo electrónico"
+                                required>
                         </div>
                         <button type="submit" class="btn-primary hover-target">
                             <span>Suscribirse</span>

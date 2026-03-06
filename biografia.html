@@ -9,8 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"
         rel="stylesheet">
+    <!-- FontAwesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <link rel="stylesheet" href="style.css">
     <style>
@@ -36,7 +38,8 @@
 
     <!-- Navegación multipágina -->
     <nav class="navbar scrolled">
-        <div class="logo hover-target"><a href="index.html">APT.</a></div>
+        <div class="logo hover-target"><a href="index.html"><img src="assets/images/logo.png" alt="A.P. Torrescusa"
+                    class="nav-logo-img"></a></div>
         <ul class="nav-links">
             <li><a href="index.html" class="hover-target">Inicio</a></li>
             <li><a href="biografia.html" class="hover-target active-link"
@@ -44,6 +47,7 @@
             <li><a href="obras.html" class="hover-target">Obras</a></li>
             <li><a href="personajes.html" class="hover-target">Personajes</a></li>
             <li><a href="poesia.html" class="hover-target">Poesía</a></li>
+            <li><a href="contacto.html" class="hover-target">Contacto</a></li>
         </ul>
         <div class="nav-actions">
             <button class="theme-toggle hover-target" aria-label="Cambiar tema">
@@ -68,10 +72,18 @@
                 </div>
                 <div class="about-right">
                     <div class="about-portrait fade-up delay-1">
-                        <!-- Usar la foto realista del autor -->
-                        <img src="Contenido/Fotos Ángel/IMG_8874.jpeg" alt="Ángel Escribiendo"
-                            class="cinematic-filter inline-portrait">
+                        <!-- Usar la foto realista del autor (generada y mejorada) -->
+                        <img src="assets/images/biografia.png" alt="Retrato Profesional de A.P. Torrescusa"
+                            class="cinematic-filter inline-portrait" loading="lazy" decoding="async">
                     </div>
+
+                    <div class="tldr-box fade-up delay-1">
+                        <span class="tldr-label">TL;DR:</span>
+                        <p>Autor resiliente superando la dislexia. Escribe fantasía y poesía, utilizando sus
+                            "cicatrices" como tinta. Su obra principal comenzó tras cumplir cuarenta, focalizándose en
+                            el renacimiento personal y la aventura.</p>
+                    </div>
+
                     <h3 class="bio-subtitle fade-up">Orígenes y el desafío de la dislexia</h3>
                     <p class="fade-up">Ángel Pérez Torrescusa nació en Extremadura y se crio en el País Vasco.
                         Actualmente escribe desde Castro Urdiales, donde el mar y las rocas acompañan sus reflexiones.
@@ -109,7 +121,8 @@
                             compartir unas palabras.</p>
                     </div>
                     <div class="contact-form-wrapper fade-up delay-1">
-                        <form class="elegant-form">
+                        <form class="elegant-form" action="https://formspree.io/f/TU_ID_AQUI" method="POST"
+                            onsubmit="event.preventDefault(); alert('¡Formulario listo! Reemplaza TU_ID_AQUI en el código por tu ID de Formspree para recibir correos.');">
                             <div class="input-group">
                                 <input type="text" id="name" required placeholder=" ">
                                 <label for="name">Tu Nombre</label>
@@ -131,6 +144,26 @@
                 </div>
             </div>
         </section>
+        <!-- Newsletter / Contact Section -->
+        <section class="newsletter-section fade-up">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2 class="section-title">Únete al Universo</h2>
+                    <p class="section-subtitle">Suscríbete al boletín oficial para recibir noticias sobre próximos
+                        lanzamientos, secretos de Monte Redondo y fragmentos exclusivos de mis obras.</p>
+
+                    <form class="newsletter-form" action="#" method="POST"
+                        onsubmit="event.preventDefault(); alert('¡Gracias por unirse! Esta funcionalidad pronto conectará con la base de datos.');">
+                        <div class="input-group">
+                            <input type="email" name="email" id="nl-email" placeholder="Tu correo electrónico" required>
+                        </div>
+                        <button type="submit" class="btn-primary hover-target">
+                            <span>Suscribirse</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
@@ -139,8 +172,14 @@
             <div class="footer-top">
                 <div class="footer-logo">A.P. Torrescusa</div>
                 <div class="footer-social">
-                    <a href="https://instagram.com" target="_blank" class="hover-target">Instagram</a>
-                    <a href="https://twitter.com" target="_blank" class="hover-target">X</a>
+                    <a href="https://www.facebook.com/aptorrescusa" target="_blank" class="hover-target"
+                        aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i> Facebook
+                    </a>
+                    <a href="https://www.instagram.com/angel19643/" target="_blank" class="hover-target"
+                        aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i> Instagram
+                    </a>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -149,6 +188,12 @@
             </div>
         </div>
     </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/34638238485" class="whatsapp-float hover-target" target="_blank"
+        aria-label="Contactar por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
 
     <script src="main.js"></script>
 </body>

@@ -12,8 +12,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"
         rel="stylesheet">
+
+    <!-- FontAwesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -31,13 +34,15 @@
 
     <!-- Navegación multipágina -->
     <nav class="navbar">
-        <div class="logo hover-target"><a href="index.html">APT.</a></div>
+        <div class="logo hover-target"><a href="index.html"><img src="assets/images/logo.png" alt="A.P. Torrescusa"
+                    class="nav-logo-img"></a></div>
         <ul class="nav-links">
             <li><a href="index.html" class="hover-target active-link">Inicio</a></li>
             <li><a href="biografia.html" class="hover-target">Biografía</a></li>
             <li><a href="obras.html" class="hover-target">Obras</a></li>
             <li><a href="personajes.html" class="hover-target">Personajes</a></li>
             <li><a href="poesia.html" class="hover-target">Poesía</a></li>
+            <li><a href="contacto.html" class="hover-target">Contacto</a></li>
         </ul>
         <div class="nav-actions">
             <button class="theme-toggle hover-target" aria-label="Cambiar tema">
@@ -54,29 +59,30 @@
     <!-- Main Content: Pure Fullscreen Hero -->
     <main>
         <section id="hero-fullscreen" class="hero-fullscreen">
-            <!-- Imagen de fondo principal generada por IA -->
+            <!-- Video de fondo principal -->
             <div class="hero-fs-bg">
-                <img src="Contenido/hero_angel_magico_v4.png" alt="A.P. Torrescusa en Monte Redondo"
-                    id="hero-img-element" class="parallax-img-bg" style="object-position: center 20%;">
+                <video autoplay muted loop playsinline id="hero-vid-element" class="parallax-img-bg">
+                    <source src="video_hero/HEroApTorrescusa.mp4" type="video/mp4">
+                    Tu navegador no soporta el formato de video.
+                </video>
             </div>
 
             <div class="hero-fs-overlay"></div>
 
             <div class="hero-fs-content">
-                <div class="title-container reveal-text">
-                    <h1 class="hero-fs-title">A.P. Torrescusa</h1>
-                    <p class="hero-fs-subtitle delay-1 fade-up">Autor, Escritor y Poeta.</p>
-                </div>
-
-                <!-- Animaciones posicionales fijas -->
+                <!-- Animaciones posicionales fijas con estilo manuscrito -->
                 <div class="floating-phrases">
                     <!-- Las frases rotarán mediante main.js o CSS animation -->
-                    <div class="floating-phrase pos-1 phrase-anim fade">"Escribo porque hay heridas que necesitan
+                    <div class="floating-phrase pos-1 phrase-anim fade scribble-text">"Escribo porque hay heridas que
+                        necesitan
                         convertirse en tinta."</div>
-                    <div class="floating-phrase pos-2 phrase-anim fade">"Hay marcas en la piel que son llaves a un mundo
+                    <div class="floating-phrase pos-2 phrase-anim fade scribble-text">"Hay marcas en la piel que son
+                        llaves a un mundo
                         oculto."</div>
-                    <div class="floating-phrase pos-3 phrase-anim fade">"La vida empezó después de los cuarenta."</div>
-                    <div class="floating-phrase pos-4 phrase-anim fade">"El fuego no destruye, a veces da alas para
+                    <div class="floating-phrase pos-3 phrase-anim fade scribble-text">"La vida empezó después de los
+                        cuarenta."</div>
+                    <div class="floating-phrase pos-4 phrase-anim fade scribble-text">"El fuego no destruye, a veces da
+                        alas para
                         volar."</div>
                 </div>
 
@@ -86,7 +92,58 @@
             </div>
 
         </section>
+
+        <!-- Newsletter / Contact Section -->
+        <section class="newsletter-section fade-up">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2 class="section-title">Únete al Universo</h2>
+                    <p class="section-subtitle">Suscríbete al boletín oficial para recibir noticias sobre próximos
+                        lanzamientos, secretos de Monte Redondo y fragmentos exclusivos de mis obras.</p>
+
+                    <form class="newsletter-form" action="#" method="POST"
+                        onsubmit="event.preventDefault(); alert('¡Gracias por unirse! Esta funcionalidad pronto conectará con la base de datos.');">
+                        <div class="input-group">
+                            <input type="email" name="email" id="nl-email" placeholder="Tu correo electrónico" required>
+                        </div>
+                        <button type="submit" class="btn-primary hover-target">
+                            <span>Suscribirse</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
     </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">A.P. Torrescusa</div>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/aptorrescusa" target="_blank" class="hover-target"
+                        aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i> Facebook
+                    </a>
+                    <a href="https://www.instagram.com/angel19643/" target="_blank" class="hover-target"
+                        aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i> Instagram
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 A.P. Torrescusa. Todos los derechos reservados.</p>
+                <a href="#" class="back-to-top hover-target">Volver arriba ↑</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/34638238485" class="whatsapp-float hover-target" target="_blank"
+        aria-label="Contactar por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
 
     <script src="main.js"></script>
 </body>
