@@ -1808,101 +1808,101 @@ body:not(.loading) .scroll-indicator {
     .privacy-banner.active {
         bottom: 20px;
     }
+}
 
-    /* === AUTOGRAPHED BOOK POPUP === */
+/* === AUTOGRAPHED BOOK POPUP === */
+.book-popup {
+    position: fixed;
+    bottom: -400px;
+    right: 30px;
+    width: 380px;
+    background: rgba(15, 15, 18, 0.85);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 25px;
+    z-index: 2000;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    transition: bottom 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.book-popup.active {
+    bottom: 30px;
+}
+
+.book-popup .popup-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.2rem;
+    color: var(--c-text-muted);
+    cursor: pointer;
+    transition: var(--t-fast);
+}
+
+.book-popup .popup-close:hover {
+    color: var(--c-text-main);
+}
+
+.book-popup .book-info {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.book-popup .book-thumb {
+    width: 80px;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.book-popup h4 {
+    font-family: var(--f-serif);
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+    color: var(--c-text-main);
+}
+
+.book-popup p {
+    font-family: var(--f-sans);
+    font-size: 0.9rem;
+    color: var(--c-text-muted);
+    line-height: 1.4;
+}
+
+.book-popup .btn-popup {
+    background: var(--c-accent);
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    padding: 12px;
+    border-radius: 5px;
+    font-family: var(--f-sans);
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: transform var(--t-fast), filter var(--t-fast);
+    margin-top: 5px;
+}
+
+.book-popup .btn-popup:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+}
+
+@media (max-width: 768px) {
     .book-popup {
-        position: fixed;
-        bottom: -400px;
-        right: 30px;
-        width: 380px;
-        background: rgba(15, 15, 18, 0.85);
-        backdrop-filter: blur(15px);
-        -webkit-backdrop-filter: blur(15px);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: 15px;
-        padding: 25px;
-        z-index: 2000;
-        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
-        transition: bottom 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
+        right: 20px;
+        left: 20px;
+        width: auto;
+        padding: 20px;
+        bottom: -500px;
     }
 
     .book-popup.active {
-        bottom: 30px;
+        bottom: 80px;
     }
-
-    .book-popup .popup-close {
-        position: absolute;
-        top: 15px;
-        right: 15px;
-        font-size: 1.2rem;
-        color: var(--c-text-muted);
-        cursor: pointer;
-        transition: var(--t-fast);
-    }
-
-    .book-popup .popup-close:hover {
-        color: var(--c-text-main);
-    }
-
-    .book-popup .book-info {
-        display: flex;
-        gap: 15px;
-        align-items: center;
-    }
-
-    .book-popup .book-thumb {
-        width: 80px;
-        border-radius: 4px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    }
-
-    .book-popup h4 {
-        font-family: var(--f-serif);
-        font-size: 1.4rem;
-        margin-bottom: 5px;
-        color: var(--c-text-main);
-    }
-
-    .book-popup p {
-        font-family: var(--f-sans);
-        font-size: 0.9rem;
-        color: var(--c-text-muted);
-        line-height: 1.4;
-    }
-
-    .book-popup .btn-popup {
-        background: var(--c-accent);
-        color: #FFF;
-        text-decoration: none;
-        text-align: center;
-        padding: 12px;
-        border-radius: 5px;
-        font-family: var(--f-sans);
-        font-weight: 600;
-        font-size: 0.95rem;
-        transition: transform var(--t-fast), filter var(--t-fast);
-        margin-top: 5px;
-    }
-
-    .book-popup .btn-popup:hover {
-        transform: translateY(-2px);
-        filter: brightness(1.1);
-    }
-
-    @media (max-width: 768px) {
-        .book-popup {
-            right: 20px;
-            left: 20px;
-            width: auto;
-            padding: 20px;
-            bottom: -500px;
-        }
-
-        .book-popup.active {
-            bottom: 80px;
-            /* Leave space above mobile tab bar if any */
-        }
-    }
+}
