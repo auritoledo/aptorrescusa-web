@@ -1079,7 +1079,7 @@ body:not(.loading) .scroll-indicator {
     }
 
     .hero-fs-bg video {
-        object-position: 0% 50% !important;
+        object-position: 100% 50% !important;
     }
 }
 
