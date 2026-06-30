@@ -1,0 +1,45 @@
+# ============================================================
+# A.P. Torrescusa - configuracion Apache (.htaccess)
+# ============================================================
+
+RewriteEngine On
+
+# 1) Redirige aptorrescusa.es (con o sin www) -> aptorrescusa.com
+RewriteCond %{HTTP_HOST} (^|\.)aptorrescusa\.es$ [NC]
+RewriteRule ^(.*)$ https://aptorrescusa.com/$1 [L,R=301]
+
+# 2) Quita www en aptorrescusa.com
+RewriteCond %{HTTP_HOST} ^www\.aptorrescusa\.com$ [NC]
+RewriteRule ^(.*)$ https://aptorrescusa.com/$1 [L,R=301]
+
+# 3) Fuerza HTTPS
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} ^(www\.)?aptorrescusa\.com$ [NC]
+RewriteRule ^(.*)$ https://aptorrescusa.com/$1 [L,R=301]
+
+# ---- Compresion GZIP ----
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript application/json image/svg+xml
+</IfModule>
+
+# ---- Cache de estaticos ----
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType video/mp4 "access plus 1 year"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType text/html "access plus 1 hour"
+</IfModule>
+
+# ---- Cabeceras de seguridad basicas ----
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# ---- Pagina de error 404 -> inicio ----
+ErrorDocument 404 /index.html
