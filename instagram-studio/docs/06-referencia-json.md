@@ -5,9 +5,11 @@ Cada carrusel vive en `carousels/AAAA-MM-DD-nombre/` con dos archivos:
 - `carousel.json` → las diapositivas (lo que se anima).
 - `caption.md` → el texto de la publicación, hashtags, texto alternativo y música.
 
-Las imágenes pueden ser de la web (`"assets/images/personajes/Unai.jpg"`) o
-propias del carrusel: copia el archivo a su carpeta y escribe solo el nombre
-(`"fenix-brasas.jpg"`).
+Las imágenes pueden ser:
+
+- **Material oficial** (preferente): `"instagram-studio/brand/oficial/fenix-portada.jpg"` (ver `brand/oficial/LEEME.md`).
+- **Del repositorio**: `"assets/images/personajes/Unai.jpg"` (confirmar que sigue vigente en la web oficial).
+- **Propias del carrusel**: copia el archivo a su carpeta y escribe solo el nombre (`"fondo.jpg"`).
 
 ## Formato de texto
 
@@ -22,7 +24,7 @@ propias del carrusel: copia el archivo a su carpeta y escribe solo el nombre
 | Campo | Valores | Por defecto | Qué hace |
 |---|---|---|---|
 | `titulo` | texto | — | Nombre interno (no se muestra). |
-| `tema` | `fenix` · `bosque` · `editorial` | `editorial` | Paleta, brillo y partículas (brasas, esporas, polvo). |
+| `tema` | `fenix-acuarela` · `bosque-acuarela` · `papel` (claros, como las cubiertas) · `fenix` · `bosque` · `editorial` (oscuros) | `editorial` | Paleta, manchas de acuarela o brillo, y partículas (pan de oro, hojas, brasas, esporas, polvo). |
 | `hilo` | `true` / `false` | `true` | Línea dorada que cruza todas las diapositivas y "une" el deslizamiento. |
 | `panorama` | ruta o `{ "imagen": ruta, "opacidad": 0.45 }` | — | Una imagen panorámica repartida entre todas las diapositivas (efecto de lienzo continuo). Usa una imagen muy ancha (p. ej. 1080·N × 1350). |
 | `particulas` | número o `false` | según tema | Cantidad de partículas. |
@@ -40,6 +42,7 @@ Cualquier diapositiva puede sobrescribir `tema`, `hilo`, `particulas`, `duracion
   "subtitulo": "Promesa concreta.", "imagen": "assets/images/biografia.png", "enfoque": "50% 25%", "deslizar": "Desliza" }
 ```
 Imagen opcional (sin imagen = fondo atmosférico del tema). `enfoque` = qué parte de la imagen queda centrada (`"50% 20%"` = arriba).
+Con `"libro": "instagram-studio/brand/oficial/portadores-portada.jpg"` la portada muestra el libro en 3D como protagonista y el título debajo.
 
 ### `verso` — poesía línea a línea
 ```json
@@ -58,7 +61,7 @@ Cada verso aparece con desenfoque → nitidez. `marca` dibuja un número o letra
 ### `libro` — producto
 ```json
 { "tipo": "libro", "kicker": "Poemario · 173 páginas", "titulo": "El amor del Fénix", "texto": "Frase gancho.",
-  "portada": "assets/images/fenix_front.jpg", "datos": ["Tapa blanda · 14 €"], "precio": "Firmado por el autor" }
+  "portada": "instagram-studio/brand/oficial/fenix-portada.jpg", "datos": ["Formato · precio"], "precio": "aptorrescusa.com" }
 ```
 La portada entra en 3D, flota y recibe un destello de luz. `precio` se muestra como píldora destacada.
 
@@ -81,7 +84,7 @@ La portada entra en 3D, flota y recibe un destello de luz. `precio` se muestra c
 ### `cta` — cierre con acción
 ```json
 { "tipo": "cta", "kicker": "Tu turno", "titulo": "¿En qué fase estás *tú*?", "texto": "Instrucción clara.",
-  "libros": ["assets/images/fenix_front.jpg"], "boton": "Pide tu ejemplar firmado", "url": "Enlace en la bio", "logo": true }
+  "libros": ["instagram-studio/brand/oficial/fenix-portada.jpg"], "boton": "El libro, en aptorrescusa.com", "url": "Enlace en la bio", "logo": true }
 ```
 
 ## Límites que vigila `npm run validar`

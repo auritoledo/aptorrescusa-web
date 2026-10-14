@@ -89,12 +89,15 @@ async function renderSlide(i) {
   page.on("pageerror", (e) => console.error(`  [diapositiva ${i + 1}] ${e.message}`));
   await page.goto(`http://127.0.0.1:${port}/instagram-studio/engine/studio.html?render=1&c=${encodeURIComponent(slug)}&slide=${i}`);
   await page.waitForFunction(() => window.__ready || window.__error, null, { timeout: 30000 });
+  await page.waitForTimeout(300); // primer pintado completo de todas las capas
   const err = await page.evaluate(() => window.__error);
   if (err) throw new Error(`Diapositiva ${i + 1}: ${err}`);
   const { dur, tipo } = await page.evaluate(() => window.__info);
   const base = path.join(outDir, `${String(i + 1).padStart(2, "0")}-${tipo}`);
 
-  const seekTo = (ms) => page.evaluate((t) => new Promise((r) => { window.__seek(t); requestAnimationFrame(() => r()); }), ms);
+  // Tras mover el reloj esperamos dos fotogramas: así Chromium ya ha pintado el nuevo estado
+  // (con uno solo, la captura podía salir con capas sin actualizar).
+  const seekTo = (ms) => page.evaluate((t) => new Promise((r) => { window.__seek(t); requestAnimationFrame(() => requestAnimationFrame(() => r())); }), ms);
 
   // Fotograma fijo: el instante en que todo ha entrado (para publicar como imagen estática)
   await seekTo(Math.max(0, dur - 400));

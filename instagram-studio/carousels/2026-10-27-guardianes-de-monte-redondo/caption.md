@@ -1,31 +1,32 @@
-# Los guardianes de Monte Redondo
+# Los Portadores del Ojo Verde · El bosque está muriendo
 
 ## Caption
 
-Hay bosques que respiran. Y hay bosques que te devuelven la mirada. 🌿👁️
+Para salvar el bosque, tendrá que convertirse en él. 🌿👁️
 
-En "Los Portadores del Ojo Verde", Unai inicia un viaje para salvar Monte Redondo y recuperar Las Trufas Doradas. Pero no viaja solo.
+El bosque de Monte Redondo está muriendo, y el tiempo se acaba. Unai, un joven marcado con el enigmático ojo verde, emprende un peligroso viaje hacia las cumbres junto a su primo Eneko.
 
-Desliza y conoce a cinco de sus guardianes: Unai, Eneko, Ylvra, Thalor y Lumin.
+Pero ¿qué sucede cuando la búsqueda de la vida te lleva a enfrentarte a los fantasmas del pasado?
 
-¿Cuál de ellos te gustaría tener a tu lado en el bosque? Cuéntamelo en comentarios. 👇
+Desliza y entra en el bosque. Y dime: ¿pagarías tú ese precio? 👇
 
-📖 Ejemplares firmados → enlace en la bio (aptorrescusa.com)
+📖 Enlace en la bio → aptorrescusa.com
 
 #fantasía #librosdefantasía #realismomágico #escritoresespañoles #aptorrescusa
 
 ## Primer comentario
 
-Pista: en la web hay doce Sylvánimas más esperando en la galería del universo. 🌱
+"El verdadero coste de la vida no es la distancia recorrida, sino la memoria sacrificada." 🌱
 
 ## Texto alternativo (accesibilidad)
 
-- Diapositiva 1: Retrato de Unai en el bosque con el título "Monte Redondo te está mirando".
-- Diapositiva 2: Texto: "No es un paisaje. Es una memoria viva."
-- Diapositivas 3 a 6: Fichas ilustradas de Unai, Eneko, Ylvra y Thalor dentro de un marco en arco dorado, con su papel en la historia.
-- Diapositiva 7: Ilustración a sangre de Lumin, el músico de luz.
-- Diapositiva 8: Portada flotante de "Los Portadores del Ojo Verde" con precio y etiqueta "Firmado por el autor".
-- Diapositiva 9: Pregunta "¿Qué Sylvánima te acompañaría?".
+- Diapositiva 1: La cubierta de "Los Portadores del Ojo Verde" flotando sobre papel crema con manchas de acuarela azul y verde: un chico pelirrojo frente a un ser del bosque hecho de musgo. Título: "Para salvar el bosque, tendrá que convertirse en él."
+- Diapositiva 2: Texto: "El bosque está muriendo".
+- Diapositivas 3 y 4: Fichas ilustradas de Unai, el portador, y de Eneko, su primo, dentro de un arco.
+- Diapositiva 5: La misión: viajar hacia las cumbres, encontrar a los portadores y reunir las trufas doradas.
+- Diapositiva 6: Cita del libro: "El verdadero coste de la vida no es la distancia recorrida, sino la memoria sacrificada."
+- Diapositiva 7: La cubierta del libro y la pregunta "¿Qué terrible precio pagará Unai?".
+- Diapositiva 8: Pregunta final "¿Pagarías tú ese precio?".
 
 ## Música sugerida (se añade en la app al publicar)
 
@@ -33,9 +34,6 @@ Pista: en la web hay doce Sylvánimas más esperando en la galería del universo
 
 ## Notas de publicación
 
-- ⚠️ PENDIENTE DE VERIFICAR contra la web oficial (aptorrescusa.com): todos los textos, versos,
-  precios, formatos, tiendas y descripciones de este carrusel salen de los HTML del repositorio,
-  que no son la versión oficial. No publicar hasta comprobarlos.
-
+- Verificado con material oficial (cubierta y contraportada enviadas): lema, sinopsis, descripción de Unai y Eneko, misión, cita y pregunta final, web aptorrescusa.com.
+- ⚠️ PENDIENTE DE VERIFICAR en la web oficial: las ilustraciones de Unai y Eneko (diapositivas 3 y 4) salen de `assets/images/personajes/` del repositorio; confirmar que son las vigentes.
 - Día/hora prevista: martes 27/10, 19:30
-- Colaboradores: etiquetar a quien ilustró los personajes si procede.

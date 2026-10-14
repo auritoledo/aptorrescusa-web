@@ -46,7 +46,8 @@ export function validate(slug) {
   if (slides.length > 10) warns.push("Más de 10 diapositivas: la tasa de finalización suele caer. Valora dividirlo en dos publicaciones.");
   if (slides[0] && slides[0].tipo !== "portada") warns.push("La primera diapositiva no es una portada: el gancho visual es lo que decide el deslizamiento.");
   if (slides.length && slides.at(-1).tipo !== "cta") warns.push("La última diapositiva no es un CTA: cierra siempre con una acción (guardar, comentar, firmados…).");
-  if (c.tema && !["fenix", "bosque", "editorial"].includes(c.tema)) errors.push(`Tema desconocido "${c.tema}" (usa fenix, bosque o editorial).`);
+  const TEMAS = ["fenix", "bosque", "editorial", "fenix-acuarela", "bosque-acuarela", "papel"];
+  for (const t of [c.tema, ...slides.map((s) => s.tema)]) if (t && !TEMAS.includes(t)) errors.push(`Tema desconocido "${t}" (usa ${TEMAS.join(", ")}).`);
 
   const images = [];
   slides.forEach((s, i) => {
@@ -59,7 +60,7 @@ export function validate(slug) {
     if (s.tipo === "verso" && s.lineas?.length > 8) warns.push(`${at}: ${s.lineas.length} versos; más de 8 pierde fuerza. Divide en dos diapositivas.`);
     if (s.tipo === "lista" && s.items?.length > 4) warns.push(`${at}: ${s.items.length} elementos; máximo recomendado 4.`);
     if (s.duracion && (s.duracion < 3 || s.duracion > 60)) errors.push(`${at}: duración ${s.duracion}s fuera del rango de Instagram (3–60 s).`);
-    for (const k of ["imagen", "portada"]) if (s[k]) images.push([at, s[k]]);
+    for (const k of ["imagen", "portada", "libro"]) if (s[k]) images.push([at, s[k]]);
     for (const b of s.libros ?? []) images.push([at, b]);
   });
   if (c.panorama) images.push(["Panorama", typeof c.panorama === "string" ? c.panorama : c.panorama.imagen]);

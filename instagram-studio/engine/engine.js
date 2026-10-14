@@ -83,14 +83,14 @@ function rng(seed) {
 }
 
 function particles(tema, seed, cantidad) {
-  const defecto = { fenix: 34, bosque: 22, editorial: 14 }[tema] ?? 14;
+  const defecto = { fenix: 34, bosque: 22, editorial: 14, "fenix-acuarela": 26, "bosque-acuarela": 18, papel: 10 }[tema] ?? 14;
   const n = cantidad === false ? 0 : typeof cantidad === "number" ? cantidad : defecto;
   if (!n) return "";
   const r = rng(seed * 7919 + 13);
   let html = "";
   for (let k = 0; k < n; k++) {
     const pd = 7 + r() * 8;
-    const size = tema === "fenix" ? 3 + r() * 7 : tema === "bosque" ? 4 + r() * 7 : 2 + r() * 3;
+    const size = tema === "fenix" ? 3 + r() * 7 : tema === "bosque" ? 4 + r() * 7 : tema.endsWith("acuarela") ? 5 + r() * 9 : tema === "papel" ? 3 + r() * 4 : 2 + r() * 3;
     html += `<i class="p" style="--x:${(r() * 100).toFixed(2)}%;--s:${size.toFixed(1)}px;--pd:${pd.toFixed(2)}s;--pdl:${(-r() * pd).toFixed(2)}s;--dx:${((r() - 0.5) * 240).toFixed(0)}px"></i>`;
   }
   return `<div class="layer particles">${html}</div>`;
@@ -107,8 +107,10 @@ const BUILDERS = {
     const title = words(s.titulo, 650, 95);
     const subD = title.end - 500;
     return {
+      clase: s.libro ? "con-libro" : "",
       bg: s.imagen ? `<div class="layer bg-img">${img(s.imagen, ctx.slug)}</div><div class="layer shade"></div>` : "",
       html: `
+        ${s.libro ? `<div class="stage3d"><div class="book">${img(s.libro, ctx.slug)}</div></div>` : ""}
         <div class="content">
           ${kicker(s.kicker, 300)}
           <h1 class="title" style="--fs:${s.tamano ?? fs}px">${title.html}</h1>

@@ -1,19 +1,27 @@
 {
-  "titulo": "El amor del Fénix · Fases del renacimiento",
-  "tema": "fenix",
+  "titulo": "El amor del Fénix · Lo que el tiempo no se lleva",
+  "tema": "fenix-acuarela",
   "hilo": true,
   "slides": [
     {
       "tipo": "portada",
       "kicker": "El amor del Fénix",
-      "titulo": "Cómo se *renace*\ndespués de arder",
-      "subtitulo": "Las cuatro fases de un poemario que convierte la herida en vuelo."
+      "titulo": "Atrévete a *arder*.\nAtrévete a renacer.",
+      "subtitulo": "Versos para quien ha aprendido a levantarse.",
+      "imagen": "instagram-studio/brand/oficial/fenix-ave.jpg",
+      "enfoque": "50% 0%"
     },
     {
       "tipo": "verso",
-      "etiqueta": "Cenizas de la Cruceta",
+      "etiqueta": "Lo que el tiempo no se lleva",
       "marca": "I",
-      "lineas": ["Naceré sin redes,", "sin dioses ni dueños:", "un fénix de *huesos*", "y sueños partidos."],
+      "lineas": ["Traigo conmigo", "todas las sombras que he vencido,", "cada cicatriz con su hora exacta,", "su minuto de llanto,", "su eternidad de *silencio*."]
+    },
+    {
+      "tipo": "verso",
+      "etiqueta": "Lo que el tiempo no se lleva",
+      "marca": "II",
+      "lineas": ["El futuro no es más que", "un espejismo en movimiento:", "lo miro de frente,", "acepto su niebla,", "y sigo *caminando*."],
       "firma": "A.P. Torrescusa"
     },
     {
@@ -28,32 +36,19 @@
       ]
     },
     {
-      "tipo": "verso",
-      "etiqueta": "Fénix en Cicatrices",
-      "marca": "III",
-      "lineas": ["El dolor es solo", "leña mojada,", "y la luz una daga", "que talla *fénix*", "en las cicatrices."],
-      "firma": "A.P. Torrescusa"
-    },
-    {
-      "tipo": "cita",
-      "texto": "Escribo porque hay heridas que necesitan convertirse en *tinta*.",
-      "autor": "A.P. Torrescusa"
-    },
-    {
       "tipo": "libro",
-      "kicker": "Poemario · 173 páginas",
+      "kicker": "Poemario",
       "titulo": "El amor del Fénix",
       "texto": "Atrévete a arder. Atrévete a renacer.",
-      "portada": "assets/images/fenix_front.jpg",
-      "datos": ["Tapa blanda · 14 €", "Tapa dura · 23 €"],
-      "precio": "Firmado por el autor"
+      "portada": "instagram-studio/brand/oficial/fenix-portada.jpg",
+      "precio": "aptorrescusa.com"
     },
     {
       "tipo": "cta",
       "kicker": "Tu turno",
-      "titulo": "¿En qué fase\nestás *tú*?",
-      "texto": "Cuéntamelo en comentarios y guarda este carrusel para el día que lo necesites.",
-      "boton": "Pide tu ejemplar firmado"
+      "titulo": "¿Qué sombra\nhas *vencido* tú?",
+      "texto": "Cuéntamelo en comentarios y guarda estos versos para el día que los necesites.",
+      "boton": "El libro, en aptorrescusa.com"
     }
   ]
 }

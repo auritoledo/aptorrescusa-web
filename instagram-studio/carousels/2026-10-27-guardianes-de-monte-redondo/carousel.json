@@ -1,78 +1,75 @@
 {
-  "titulo": "Los guardianes de Monte Redondo",
-  "tema": "bosque",
+  "titulo": "Los Portadores del Ojo Verde · El bosque está muriendo",
+  "tema": "bosque-acuarela",
   "hilo": true,
   "slides": [
     {
       "tipo": "portada",
       "kicker": "Los Portadores del Ojo Verde",
-      "titulo": "Monte Redondo\nte está *mirando*",
-      "subtitulo": "Conoce a quienes guardan el bosque vivo.",
-      "imagen": "assets/images/personajes/Unai.jpg",
-      "enfoque": "50% 30%"
+      "titulo": "Para salvar el bosque,\ntendrá que *convertirse en él*.",
+      "libro": "instagram-studio/brand/oficial/portadores-portada.jpg",
+      "tamano": 70
     },
     {
       "tipo": "texto",
-      "kicker": "El universo",
-      "titulo": "No es un paisaje.\nEs una *memoria viva*.",
-      "texto": "Fantasía ecológica, linaje familiar y magia antigua: un bosque que conserva lo que el mundo humano olvidó escuchar."
+      "kicker": "Monte Redondo",
+      "titulo": "El bosque está *muriendo*",
+      "texto": "Y el tiempo se acaba. Para los Sylvánimas, los espíritus del bosque, solo hay una esperanza: las trufas doradas, un antiguo tesoro vegetal capaz de devolver la vida a la tierra."
     },
     {
       "tipo": "personaje",
       "numero": "01",
-      "rol": "El Guardián Marcado",
+      "rol": "El portador",
       "nombre": "Unai",
-      "texto": "Joven marcado por el Ojo Verde. Su viaje abre la puerta al destino de Monte Redondo.",
+      "texto": "Un joven marcado con el enigmático ojo verde.",
       "imagen": "assets/images/personajes/Unai.jpg"
     },
     {
       "tipo": "personaje",
       "numero": "02",
-      "rol": "El Primo Leal",
+      "rol": "Su primo",
       "nombre": "Eneko",
-      "texto": "Valentía humana, incluso cuando el mundo mágico no se deja ver.",
+      "texto": "Sin la marca, tendrá que cruzar los velos de un mundo que no puede ver ni oír.",
       "imagen": "assets/images/personajes/Eneko_2.jpg"
     },
     {
-      "tipo": "personaje",
-      "numero": "03",
-      "rol": "Guardiana verde",
-      "nombre": "Ylvra",
-      "texto": "Presencia luminosa de cuidado, semillas y curación.",
-      "imagen": "assets/images/personajes/Ylvra.jpg"
+      "tipo": "lista",
+      "kicker": "La misión",
+      "titulo": "Antes de que la *cicatriz* sea permanente",
+      "items": [
+        {
+          "titulo": "Viajar hacia las cumbres",
+          "texto": "Unai, Eneko y un guía espiritual."
+        },
+        {
+          "titulo": "Encontrar a los portadores",
+          "texto": "Los otros poblados de portadores."
+        },
+        {
+          "titulo": "Reunir las trufas doradas",
+          "texto": "Antes de que la cicatriz de la tala se vuelva permanente."
+        }
+      ]
     },
     {
-      "tipo": "personaje",
-      "numero": "04",
-      "rol": "Sabio del bosque",
-      "nombre": "Thalor",
-      "texto": "Anciano Sylvánima, custodio de consejo y memoria antigua.",
-      "imagen": "assets/images/personajes/Thalor_def.jpg"
-    },
-    {
-      "tipo": "personaje",
-      "estilo": "completo",
-      "rol": "Músico de luz",
-      "nombre": "Lumin",
-      "texto": "Destellos, instrumentos y la transmisión de la belleza.",
-      "imagen": "assets/images/personajes/Lumin_def.jpg",
-      "enfoque": "50% 30%"
+      "tipo": "cita",
+      "texto": "El verdadero coste de la vida no es la distancia recorrida, sino la memoria *sacrificada*.",
+      "autor": "Los Portadores del Ojo Verde"
     },
     {
       "tipo": "libro",
-      "kicker": "Novela de fantasía · 225 páginas",
+      "kicker": "Novela de fantasía",
       "titulo": "Los Portadores del Ojo Verde",
-      "texto": "Unai inicia un viaje para salvar Monte Redondo y recuperar Las Trufas Doradas.",
-      "portada": "assets/images/portadores_front.jpg",
-      "datos": ["Tapa blanda · 15 €", "Amazon · Casa del Libro"],
-      "precio": "Firmado por el autor"
+      "texto": "¿Qué terrible precio pagará Unai por devolver el latido al corazón del bosque?",
+      "portada": "instagram-studio/brand/oficial/portadores-portada.jpg",
+      "precio": "aptorrescusa.com"
     },
     {
       "tipo": "cta",
       "kicker": "Tu turno",
-      "titulo": "¿Qué Sylvánima\nte *acompañaría*?",
-      "texto": "Elige en comentarios y guarda el carrusel para no perderte a los demás guardianes.",
-      "boton": "Entra en Monte Redondo"
+      "titulo": "¿Pagarías *tú*\nese precio?",
+      "texto": "Cuéntamelo en comentarios y guarda el carrusel para volver a Monte Redondo.",
+      "boton": "Descúbrelo en aptorrescusa.com"
     }
   ]
 }

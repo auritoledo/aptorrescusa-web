@@ -1,5 +1,5 @@
 // Crea un carrusel nuevo a partir de la plantilla.
-// Uso: node scripts/nuevo.mjs <nombre> [--tema fenix|bosque|editorial]
+// Uso: node scripts/nuevo.mjs <nombre> [--tema fenix-acuarela|bosque-acuarela|papel|fenix|bosque|editorial]
 //   → carousels/AAAA-MM-DD-<nombre>/ con carousel.json y caption.md listos para editar.
 import fs from "node:fs";
 import path from "node:path";
@@ -8,15 +8,15 @@ import { CAROUSELS_DIR } from "./server.mjs";
 const args = process.argv.slice(2);
 const name = args.find((a) => !a.startsWith("--"));
 const ti = args.indexOf("--tema");
-const tema = ti >= 0 ? args[ti + 1] : "editorial";
+const tema = ti >= 0 ? args[ti + 1] : "papel";
 
 if (!name) {
-  console.error("Uso: npm run nuevo -- <nombre> [--tema fenix|bosque|editorial]");
+  console.error("Uso: npm run nuevo -- <nombre> [--tema fenix-acuarela|bosque-acuarela|papel|fenix|bosque|editorial]");
   process.exit(1);
 }
 const clean = name
   .normalize("NFD")
-  .replace(/[̀-ͯ]/g, "")
+  .replace(/[\u0300-\u036f]/g, "")
   .toLowerCase()
   .replace(/[^a-z0-9]+/g, "-")
   .replace(/^-|-$/g, "");

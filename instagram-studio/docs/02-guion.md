@@ -45,6 +45,6 @@ Evita las portadas genéricas ("Nuevo post", "Mi libro"). La portada vende la si
 - **Primera línea = gancho** (es lo único visible antes de "más").
 - 2–4 párrafos cortos, con espacio entre ellos.
 - Pregunta para comentarios.
-- CTA: "📖 Ejemplares firmados → enlace en la bio".
+- CTA: "📖 Enlace en la bio → aptorrescusa.com".
 - **Máximo 5 hashtags** (límite actual de Instagram): 2 de nicho amplio (#poesía, #fantasía), 2 de nicho específico (#elamordelfenix, #escritoresespañoles) y siempre #aptorrescusa.
 - Texto alternativo por diapositiva (accesibilidad + SEO interno de Instagram).

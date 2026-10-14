@@ -15,6 +15,23 @@ fondos de verso o panorámicas se pueden generar imágenes con IA. La clave es l
 
 ## Bloque de estilo (pegar al final de cada prompt)
 
+La estética oficial es la de las cubiertas (acuarela sobre papel crema). Usa estos bloques por defecto:
+
+**Fénix acuarela**
+```
+delicate watercolor illustration on warm cream paper (#F6EDD9), rainbow pastel feathers (rose, sky blue,
+gold, lilac), gold leaf flecks, soft ink wash, lots of empty paper for typography, 4:5 vertical, no text
+```
+
+**Bosque acuarela**
+```
+watercolor and ink illustration on cream paper (#F6EDD9), denim blue washes on one side and moss green,
+bark and fern textures on the other, dripping paint edges, Basque forest mood, empty paper in the center,
+4:5 vertical, no text
+```
+
+Bloques alternativos para los temas oscuros:
+
 **Fénix**
 ```
 dark editorial fine-art illustration, glowing embers and ash particles rising, deep charcoal background #140d0a,

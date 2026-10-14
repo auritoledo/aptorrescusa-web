@@ -33,7 +33,7 @@ La skill [`carrusel-instagram`](../.claude/skills/carrusel-instagram/SKILL.md) s
 
 | Carpeta | Contenido |
 |---|---|
-| `brand/` | Paleta, temas (`fenix`, `bosque`, `editorial`) y tipografías en local. |
+| `brand/` | Paleta, temas y tipografías en local. `brand/oficial/` guarda las cubiertas oficiales y sus textos. |
 | `engine/` | El motor: 8 tipos de diapositiva animada y el estudio de vista previa. |
 | `carousels/` | Un carrusel por carpeta (`carousel.json` + `caption.md`). `_plantilla/` es la base. |
 | `scripts/` | `nuevo`, `validar`, `render` y el servidor local. |
@@ -66,14 +66,14 @@ La skill [`carrusel-instagram`](../.claude/skills/carrusel-instagram/SKILL.md) s
 Todas comparten: partículas del tema, grano de película, viñeta, contador y el **hilo dorado**
 que continúa de una diapositiva a la siguiente.
 
-## Carruseles de ejemplo (pendientes de verificar)
+## Carruseles de ejemplo
 
-Se montaron con los textos de los HTML del repositorio, que **no** son la web oficial.
-Antes de publicarlos hay que contrastar cada dato con aptorrescusa.com (ver "Notas" en su `caption.md`).
+Hechos con las cubiertas oficiales y los textos de sus contraportadas. Lo que todavía sale
+de los HTML del repositorio está señalado en "Notas" de cada `caption.md`.
 
-- `2026-10-20-fenix-fases-del-renacimiento` — poesía, tema fénix, 7 diapositivas.
-- `2026-10-27-guardianes-de-monte-redondo` — personajes, tema bosque, 9 diapositivas.
-- `2026-11-03-tinta-de-cicatrices` — el autor, tema editorial, 5 diapositivas.
+- `2026-10-20-fenix-fases-del-renacimiento` — «Lo que el tiempo no se lleva», tema `fenix-acuarela`, 6 diapositivas.
+- `2026-10-27-guardianes-de-monte-redondo` — «El bosque está muriendo», tema `bosque-acuarela`, 8 diapositivas.
+- `2026-11-03-tinta-de-cicatrices` — el autor, tema `papel`, 5 diapositivas.
 
 > Esta carpeta es una herramienta interna: su `.htaccess` impide que se sirva públicamente
 > si se sube al hosting junto a la web.

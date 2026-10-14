@@ -10,8 +10,10 @@ Sistema en `instagram-studio/`. Antes de empezar, lee `instagram-studio/docs/06-
 
 ## Flujo (no saltarse pasos)
 
-1. **Brief.** Aclara (o deduce del pedido) pilar y objetivo: Fuego (poesía, tema `fenix`),
-   Bosque (universo, tema `bosque`), Tinta (autor, tema `editorial`) o Firmados (venta).
+1. **Brief.** Aclara (o deduce del pedido) pilar y objetivo: Fuego (poesía, tema `fenix-acuarela`),
+   Bosque (universo, tema `bosque-acuarela`), Tinta (autor, tema `papel`) o Libros (venta).
+   Los temas de acuarela reproducen las cubiertas oficiales y son los de por defecto; los oscuros
+   (`fenix`, `bosque`, `editorial`) solo si se piden.
    Si falta información esencial y no se puede deducir, pregunta una sola vez.
 
 2. **Fuentes de verdad.** La única fuente oficial es la web publicada **https://aptorrescusa.com**.
@@ -22,8 +24,10 @@ Sistema en `instagram-studio/`. Antes de empezar, lee `instagram-studio/docs/06-
      quedan pendientes de verificar. No publiques nada sin verificar.
    - **Nunca inventes versos ni citas de Ángel**: usa solo los publicados en la web oficial o deja
      un marcador `[VERSO DE ÁNGEL]` y avisa.
-   - Las imágenes de `assets/images/` se pueden usar como material gráfico, pero confirma que
-     siguen siendo las vigentes en la web (portadas, retratos de personajes).
+   - **Material oficial ya disponible**: `instagram-studio/brand/oficial/` (cubiertas vigentes de
+     los dos libros y los textos de sus contraportadas en `LEEME.md`). Úsalo antes que nada.
+   - Las imágenes de `assets/images/` (sobre todo las portadas antiguas) pueden estar desfasadas:
+     usa siempre las cubiertas de `brand/oficial/` y confirma los retratos de personajes.
 
 3. **Guion.** Propón la estructura en una lista (6–9 diapositivas):
    portada (gancho ≤ 7 palabras) → 2.ª diapositiva igual de fuerte (Instagram la muestra primero a veces)
@@ -61,6 +65,7 @@ Sistema en `instagram-studio/`. Antes de empezar, lee `instagram-studio/docs/06-
 
 ## Identidad (resumen)
 
-Fondo tinta `#151513`, texto papel `#eae6d8`, acento oro `#d4a373`, musgo `#566d4a`.
-Playfair Display (títulos, cursiva = voz poética), Inter (texto), Great Vibes (solo firma).
+Como las cubiertas: papel `#F6EDD9`, tinta `#42382C`, vino `#8F2D4A` (Fénix), musgo `#4F6B2E` y
+vaquero `#3F5F7C` (Portadores), acuarela. Playfair Display (títulos, cursiva = voz poética),
+Inter (texto), Great Vibes (solo firma).
 Lienzo 1080 × 1350, margen 96 px. Tono: íntimo, literario, segunda persona, sin emojis en las diapositivas.

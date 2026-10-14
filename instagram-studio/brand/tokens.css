@@ -38,6 +38,18 @@
   --glow: rgba(212, 163, 115, .28);
   --tint: rgba(86, 109, 74, .30);
   --particle: rgba(241, 215, 176, .85);
+
+  /* Valores que cambian entre temas oscuros y temas de papel */
+  --on-accent: #1a120c;
+  --shade-top: rgba(0, 0, 0, .55);
+  --vignette: rgba(0, 0, 0, .55);
+  --shadow-strong: rgba(0, 0, 0, .6);
+  --grain-op: .09;
+  --grain-blend: overlay;
+  --glow-blend: screen;
+  --glow-bg: radial-gradient(38% 30% at 50% 50%, var(--glow), transparent 70%);
+  --dim-filter: blur(6px) brightness(.38) saturate(.85);
+  --logo-filter: invert(1) brightness(.95);
 }
 
 /* Tema FÉNIX · El amor del Fénix: brasas, oro y rojo profundo */
@@ -60,6 +72,72 @@
   --glow: rgba(120, 190, 110, .26);
   --tint: rgba(56, 96, 52, .45);
   --particle: rgba(196, 236, 160, .85);
+}
+
+/* Los temas oscuros calculan su brillo con su propio --glow */
+[data-tema="fenix"], [data-tema="bosque"], [data-tema="editorial"] {
+  --glow-bg: radial-gradient(38% 30% at 50% 50%, var(--glow), transparent 70%);
+}
+
+/* ==========================================================================
+   Temas ACUARELA · basados en las cubiertas oficiales de los libros:
+   papel crema, tinta marrón y manchas de acuarela.
+   ========================================================================== */
+[data-tema="fenix-acuarela"],
+[data-tema="bosque-acuarela"],
+[data-tema="papel"] {
+  --bg: #f6edd9;            /* papel de las cubiertas */
+  --bg-2: #efe3c9;
+  --ink: #42382c;           /* tinta de los textos de contraportada */
+  --ink-bright: #2e261d;
+  --muted: #8a7b66;
+  --line: rgba(66, 56, 44, .2);
+  --on-accent: #fbf5e9;
+  --shade-top: rgba(246, 237, 217, .7);
+  --vignette: rgba(120, 96, 64, .22);
+  --shadow-strong: rgba(66, 48, 28, .32);
+  --grain-op: .16;
+  --grain-blend: multiply;
+  --glow-blend: multiply;
+  --dim-filter: blur(5px) brightness(1.15) saturate(.7) opacity(.28);
+  --logo-filter: none;
+  --tint: rgba(214, 192, 160, .35);
+}
+
+/* FÉNIX ACUARELA · título en vino, fénix arcoíris y pan de oro */
+[data-tema="fenix-acuarela"] {
+  --accent: #8f2d4a;
+  --accent-2: #8f2d4a;
+  --glow: rgba(214, 120, 150, .22);
+  --particle: rgba(201, 160, 70, .9);
+  --glow-bg:
+    radial-gradient(28% 22% at 24% 30%, rgba(236, 150, 170, .30), transparent 70%),
+    radial-gradient(26% 20% at 76% 38%, rgba(150, 190, 225, .30), transparent 70%),
+    radial-gradient(30% 22% at 50% 70%, rgba(245, 205, 120, .32), transparent 70%),
+    radial-gradient(22% 18% at 66% 18%, rgba(185, 160, 215, .24), transparent 70%);
+}
+
+/* BOSQUE ACUARELA · azul vaquero de Unai frente al musgo del Sylvánima */
+[data-tema="bosque-acuarela"] {
+  --accent: #4f6b2e;
+  --accent-2: #3f5f7c;
+  --glow: rgba(110, 140, 80, .22);
+  --particle: rgba(92, 138, 60, .85);
+  --glow-bg:
+    radial-gradient(30% 34% at 8% 40%, rgba(90, 125, 165, .34), transparent 70%),
+    radial-gradient(30% 34% at 92% 46%, rgba(120, 140, 70, .38), transparent 70%),
+    radial-gradient(24% 20% at 70% 86%, rgba(190, 150, 100, .26), transparent 70%);
+}
+
+/* PAPEL · autor, firmados, noticias: el papel de las cubiertas con tinta sepia */
+[data-tema="papel"] {
+  --accent: #8a6a3e;
+  --accent-2: #8f2d4a;
+  --glow: rgba(190, 160, 120, .2);
+  --particle: rgba(150, 120, 80, .5);
+  --glow-bg:
+    radial-gradient(30% 24% at 20% 24%, rgba(200, 170, 130, .26), transparent 70%),
+    radial-gradient(28% 22% at 80% 74%, rgba(180, 150, 160, .22), transparent 70%);
 }
 
 /* Tema EDITORIAL · Autor, firmados, noticias: tinta y papel */

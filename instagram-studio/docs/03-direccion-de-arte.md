@@ -2,8 +2,21 @@
 
 ## Identidad
 
-> Paleta y tipografías tomadas de la hoja de estilos de este repositorio (`premium-v2.css`).
-> Si la web oficial publicada usa otros colores o fuentes, actualiza `brand/tokens.css` y esta tabla.
+La referencia visual oficial son **las cubiertas de los libros** (`brand/oficial/`): papel crema,
+tinta marrón, acuarela y un título manuscrito. Por eso los temas por defecto son los de acuarela.
+Los temas oscuros se conservan como alternativa (por ejemplo, para historias o contenido nocturno).
+
+### Temas de papel (recomendados)
+
+| Tema | Base | Acento | Atmósfera |
+|---|---|---|---|
+| **`fenix-acuarela`** | papel `#F6EDD9`, tinta `#42382C` | vino `#8F2D4A` | Manchas arcoíris (rosa, azul, oro, lila) y pan de oro que flota. |
+| **`bosque-acuarela`** | papel, tinta | musgo `#4F6B2E` y vaquero `#3F5F7C` | Acuarela azul a un lado y musgo al otro, como la cubierta, y hojas que caen. |
+| **`papel`** | papel, tinta | sepia `#8A6A3E`, cursivas en vino | Neutro, para el autor, noticias y firmas. |
+
+### Temas oscuros (alternativos)
+
+Paleta tomada de la hoja de estilos de este repositorio (`premium-v2.css`), que no es la web oficial:
 
 | Elemento | Valor | Uso |
 |---|---|---|
@@ -18,11 +31,9 @@
 Los tokens viven en [`brand/tokens.css`](../brand/tokens.css) y las fuentes están en local
 (`brand/fonts/`) para que el render sea idéntico sin conexión.
 
-### Los tres temas
-
-- **`fenix`** — carbón, brasas naranjas que suben, brillo rojizo. Para poesía, pérdida, renacimiento.
-- **`bosque`** — verde profundo, esporas/hojas que flotan, luz dorada. Para Monte Redondo.
-- **`editorial`** — tinta y papel, polvo en suspensión. Para el autor, noticias, firmados.
+- **`fenix`** — carbón, brasas naranjas que suben, brillo rojizo.
+- **`bosque`** — verde profundo, esporas que flotan, luz dorada.
+- **`editorial`** — tinta oscura, polvo en suspensión.
 
 ## Composición (lienzo 1080 × 1350, 4:5)
 

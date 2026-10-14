@@ -8,7 +8,7 @@ Desarrollo en 2–4 párrafos cortos. Habla a una persona, no a una multitud.
 
 Pregunta final para provocar comentarios.
 
-📖 Libros firmados → enlace en la bio (aptorrescusa.com)
+📖 Enlace en la bio → aptorrescusa.com
 
 #poesía #fantasía #escritoresespañoles #libros #aptorrescusa
 

@@ -1,42 +1,39 @@
-# El amor del Fénix · Fases del renacimiento
+# El amor del Fénix · Lo que el tiempo no se lleva
 
 ## Caption
 
-Nadie renace sin haber ardido antes. 🔥
+Atrévete a arder. Atrévete a renacer. 🔥
 
-"El amor del Fénix" está escrito en cuatro fases: cenizas, combustión, renacimiento y vuelo. Es el mapa de alguien que aprendió a levantarse con cicatrices… y a no esconderlas.
+Estos versos viven en la contraportada de "El amor del Fénix". Son de "Lo que el tiempo no se lleva", y hablan de cargar con las sombras vencidas sin dejar que te detengan.
 
-Desliza para leer dos versos del poemario y descubrir en qué fase está cada poema.
+Desliza para leerlos enteros.
 
-Y ahora te pregunto a ti: ¿en qué fase estás hoy? Te leo en comentarios. 👇
+Y ahora te pregunto a ti: ¿qué sombra has vencido tú? Te leo en comentarios. 👇
 
-📖 Ejemplares firmados → enlace en la bio (aptorrescusa.com)
+📖 El libro → enlace en la bio (aptorrescusa.com)
 
 #poesía #elamordelfenix #poesíaenespañol #escritoresespañoles #aptorrescusa
 
 ## Primer comentario
 
-"El dolor es solo leña mojada, y la luz una daga que talla fénix en las cicatrices." ¿Cuál de los dos versos te quedas?
+"El futuro no es más que un espejismo en movimiento: lo miro de frente, acepto su niebla, y sigo caminando." 🕊️
 
 ## Texto alternativo (accesibilidad)
 
-- Diapositiva 1: Fondo oscuro con brasas que ascienden. Título: "Cómo se renace después de arder".
-- Diapositiva 2: Verso de "Cenizas de la Cruceta": "Naceré sin redes, sin dioses ni dueños: un fénix de huesos y sueños partidos."
-- Diapositiva 3: Lista de las cuatro fases del poemario: Cenizas, Combustión, Renacimiento y Vuelo.
-- Diapositiva 4: Verso de "Fénix en Cicatrices".
-- Diapositiva 5: Cita del autor: "Escribo porque hay heridas que necesitan convertirse en tinta."
-- Diapositiva 6: Portada del libro "El amor del Fénix" flotando, con precios y la etiqueta "Firmado por el autor".
-- Diapositiva 7: Pregunta final "¿En qué fase estás tú?" y botón "Pide tu ejemplar firmado".
+- Diapositiva 1: Fénix de acuarela en tonos arcoíris sobre papel crema. Título: "Atrévete a arder. Atrévete a renacer."
+- Diapositiva 2: Primera estrofa de "Lo que el tiempo no se lleva": "Traigo conmigo todas las sombras que he vencido, cada cicatriz con su hora exacta, su minuto de llanto, su eternidad de silencio."
+- Diapositiva 3: Segunda estrofa: "El futuro no es más que un espejismo en movimiento: lo miro de frente, acepto su niebla, y sigo caminando."
+- Diapositiva 4: Las cuatro fases del poemario: Cenizas, Combustión, Renacimiento y Vuelo.
+- Diapositiva 5: La cubierta de "El amor del Fénix" flotando sobre papel.
+- Diapositiva 6: Pregunta final "¿Qué sombra has vencido tú?".
 
 ## Música sugerida (se añade en la app al publicar)
 
-- Piano lento o cuerdas cinemáticas, sin voz (buscar en la biblioteca de Instagram: "cinematic piano", "emotional strings").
+- Piano lento o cuerdas suaves, sin voz (buscar: "soft piano", "emotional strings").
 
 ## Notas de publicación
 
-- ⚠️ PENDIENTE DE VERIFICAR contra la web oficial (aptorrescusa.com): todos los textos, versos,
-  precios, formatos, tiendas y descripciones de este carrusel salen de los HTML del repositorio,
-  que no son la versión oficial. No publicar hasta comprobarlos.
-
+- Verificado con material oficial (cubierta y contraportada enviadas): portada, verso "Lo que el tiempo no se lleva", lema "Atrévete a arder. Atrévete a renacer.", web aptorrescusa.com.
+- ⚠️ PENDIENTE DE VERIFICAR en la web oficial: diapositiva 4 (las cuatro fases y sus descripciones salen de los HTML del repositorio).
+- Los versos se han partido en líneas más cortas para leerse en el móvil; confirmar con Ángel que le parece bien.
 - Día/hora prevista: martes 20/10, 19:30
-- Ubicación: Castro Urdiales

@@ -6,7 +6,7 @@ El Instagram de Ángel (@angel19643) tiene tres trabajos, en este orden:
 
 1. **Crear lectores**: que alguien que no le conoce sienta algo en 3 segundos.
 2. **Construir universo**: que Monte Redondo y el Fénix se reconozcan a simple vista.
-3. **Vender ejemplares firmados**: llevar tráfico a aptorrescusa.com.
+3. **Vender libros**: llevar tráfico a aptorrescusa.com (y a los firmados, si la web oficial los ofrece).
 
 Un carrusel animado sirve para los tres: se lee como un libro (página a página), se
 guarda (el algoritmo premia los guardados) y cada deslizamiento cuenta como interés.
@@ -15,13 +15,13 @@ guarda (el algoritmo premia los guardados) y cada deslizamiento cuenta como inte
 
 | Pilar | Tema visual | Qué contar | Ejemplo |
 |---|---|---|---|
-| **Fuego** (poesía) | `fenix` | Versos del poemario, las cuatro fases, emociones universales (pérdida, renacer, amor sin fronteras). | `2026-10-20-fenix-fases-del-renacimiento` |
-| **Bosque** (fantasía) | `bosque` | Personajes, Sylvánimas, lugares, objetos mágicos, curiosidades del mundo, mapas. | `2026-10-27-guardianes-de-monte-redondo` |
-| **Tinta** (autor) | `editorial` | Proceso de escritura, dislexia, familia, Castro Urdiales, presentaciones, firmas. | `2026-11-03-tinta-de-cicatrices` |
+| **Fuego** (poesía) | `fenix-acuarela` | Versos del poemario, las cuatro fases, emociones universales (pérdida, renacer, amor sin fronteras). | `2026-10-20-fenix-fases-del-renacimiento` |
+| **Bosque** (fantasía) | `bosque-acuarela` | Personajes, Sylvánimas, lugares, objetos mágicos, curiosidades del mundo, mapas. | `2026-10-27-guardianes-de-monte-redondo` |
+| **Tinta** (autor) | `papel` | Proceso de escritura, dislexia, familia, Castro Urdiales, presentaciones, firmas. | `2026-11-03-tinta-de-cicatrices` |
 | **Firmados** (venta) | cualquiera | Dedicatorias reales, envíos, lectores con el libro, reseñas. | — |
 
 Regla 3-1: por cada tres carruseles que regalan (emoción, universo, autor), uno que vende.
-Aun así, **todos** cierran con un CTA suave hacia los firmados.
+Aun así, **todos** cierran con un CTA suave hacia la web.
 
 ## Ritmo recomendado
 

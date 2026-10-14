@@ -1,11 +1,11 @@
 {
   "titulo": "Tinta de cicatrices · El autor",
-  "tema": "editorial",
+  "tema": "papel",
   "hilo": true,
   "slides": [
     {
       "tipo": "portada",
-      "kicker": "El autor",
+      "kicker": "Ángel Pérez Torrescusa",
       "titulo": "Tinta de\n*cicatrices*",
       "subtitulo": "Quién escribe detrás del Fénix y de Monte Redondo.",
       "imagen": "assets/images/biografia.png",
@@ -36,10 +36,10 @@
     },
     {
       "tipo": "cta",
-      "kicker": "Libros firmados",
-      "titulo": "Con dedicatoria\n*para ti*",
-      "libros": ["assets/images/fenix_front.jpg", "assets/images/portadores_front.jpg"],
-      "boton": "Pídelo en aptorrescusa.com",
+      "kicker": "Sus libros",
+      "titulo": "Elige tu\n*puerta de entrada*",
+      "libros": ["instagram-studio/brand/oficial/fenix-portada.jpg", "instagram-studio/brand/oficial/portadores-portada.jpg"],
+      "boton": "aptorrescusa.com",
       "url": "Enlace en la bio"
     }
   ]
