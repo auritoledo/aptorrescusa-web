@@ -109,7 +109,7 @@ async function renderSlide(i) {
       ffmpeg,
       ["-y", "-loglevel", "error", "-f", "image2pipe", "-framerate", String(fps), "-i", "-",
         "-c:v", "libx264", "-pix_fmt", "yuv420p", "-profile:v", "high", "-preset", BORRADOR ? "veryfast" : "slow",
-        "-crf", BORRADOR ? "26" : "16", "-r", String(fps), "-movflags", "+faststart", `${base}.mp4`],
+        "-crf", BORRADOR ? "26" : "19", "-r", String(fps), "-movflags", "+faststart", `${base}.mp4`],
       async (stdin) => {
         for (let f = 0; f < frames; f++) {
           await seekTo((f * 1000) / fps);
