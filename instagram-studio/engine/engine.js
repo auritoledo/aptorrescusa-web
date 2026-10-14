@@ -10,7 +10,7 @@ export const MARCA_POR_DEFECTO = {
   nombre: "A.P. Torrescusa",
   usuario: "@angel19643",
   web: "aptorrescusa.com",
-  logo: "assets/images/logo.png",
+  logo: null, // ruta a un logo oficial de la web; sin logo se usa la firma tipográfica de las cubiertas
 };
 
 const DURACION_BASE = 6000; // ms por diapositiva si el contenido no pide más
@@ -291,7 +291,7 @@ const BUILDERS = {
     return {
       html: `
         <div class="content">
-          ${s.logo === false ? "" : `<img class="logo fade" style="--d:150ms" src="${esc(resolveAsset(ctx.marca.logo, ctx.slug))}" alt="">`}
+          ${s.logo === false ? "" : ctx.marca.logo ? `<img class="logo fade" style="--d:150ms" src="${esc(resolveAsset(ctx.marca.logo, ctx.slug))}" alt="">` : `<div class="wordmark fade" style="--d:150ms">${esc(ctx.marca.nombre)}</div>`}
           ${kicker(s.kicker, 500, true)}
           <h2 class="title" style="--fs:${s.tamano ?? fs}px">${title.html}</h2>
           ${s.texto ? `<p class="body fade-up" style="--d:${textoD}ms;max-width:840px">${inline(s.texto)}</p>` : ""}

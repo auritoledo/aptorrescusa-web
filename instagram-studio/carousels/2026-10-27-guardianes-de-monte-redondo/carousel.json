@@ -17,20 +17,18 @@
       "texto": "Y el tiempo se acaba. Para los Sylvánimas, los espíritus del bosque, solo hay una esperanza: las trufas doradas, un antiguo tesoro vegetal capaz de devolver la vida a la tierra."
     },
     {
-      "tipo": "personaje",
-      "numero": "01",
-      "rol": "El portador",
-      "nombre": "Unai",
-      "texto": "Un joven marcado con el enigmático ojo verde.",
-      "imagen": "assets/images/personajes/Unai.jpg"
+      "tipo": "texto",
+      "kicker": "El portador",
+      "titulo": "*Unai*, marcado\npor el ojo verde",
+      "texto": "Un joven marcado con el enigmático ojo verde emprende un peligroso viaje hacia las cumbres.",
+      "imagen": "instagram-studio/brand/oficial/portadores-rostros.jpg",
+      "enfoque": "50% 35%"
     },
     {
-      "tipo": "personaje",
-      "numero": "02",
-      "rol": "Su primo",
-      "nombre": "Eneko",
-      "texto": "Sin la marca, tendrá que cruzar los velos de un mundo que no puede ver ni oír.",
-      "imagen": "assets/images/personajes/Eneko_2.jpg"
+      "tipo": "texto",
+      "kicker": "Su primo",
+      "titulo": "*Eneko*,\nsin la marca",
+      "texto": "¿Cómo puede ayudar a Unai a cruzar los velos de un mundo que no puede ver ni oír?"
     },
     {
       "tipo": "lista",

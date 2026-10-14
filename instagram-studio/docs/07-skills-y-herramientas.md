@@ -13,14 +13,15 @@ JSON → validar → revisar PNG → render → caption. Es la pieza central del
 | Skill | Uso en este flujo |
 |---|---|
 | `emil-design-eng` | Criterio de animación (curvas, duraciones, nada de rebotes). Ya aplicado en `engine/slides.css`. |
-| `social-media-covers-auri` | Es de la marca de Auri, pero su estructura de prompts por "sistema visual" sirve de modelo para las imágenes de [04-imagenes-con-ia.md](04-imagenes-con-ia.md). |
-| `video-prompt-builder` | Prompts para clips IA (Higgsfield / Hailuo) si se quiere un fondo de vídeo real. |
 | `marketing:content-creation`, `small-business:social-content-engine` | Lluvia de ideas y calendarios de contenido. |
 | `design:design-critique` | Segunda opinión sobre una hoja de contactos antes de publicar. |
 | `design:ux-copy` | Afinar CTAs y microtextos. |
 
-Conectores útiles: **Higgsfield** y **Comfy Cloud** (imágenes/vídeo IA), **Canva** y **Adobe Express**
-(si alguna vez se quiere retocar a mano un PNG), **Google Drive** (pasar los MP4 al móvil).
+Conectores útiles: **Google Drive** (pasar los MP4 al móvil).
+
+> Se descartan las herramientas de imagen con IA (Higgsfield, Comfy Cloud, Hailuo y las skills
+> `social-media-covers-auri` y `video-prompt-builder`): por decisión de marca, solo se usa el arte
+> oficial de aptorrescusa.com.
 
 ## Alternativa evaluada: Remotion
 

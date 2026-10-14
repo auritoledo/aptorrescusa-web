@@ -55,10 +55,11 @@ Inspirados en las reglas de diseño de interfaces de Emil Kowalski (skill `emil-
 
 ## Imágenes
 
-- Retratos de personajes: usa los `.jpg` de `assets/images/personajes/` (más ligeros).
-- Imágenes nuevas: mínimo 1080 px de ancho, preferible 1600+ (el Ken Burns amplía un 14 %).
-- Para fotos de Ángel, mejor en blanco y negro o luz cálida: encajan con la paleta.
-- Ver [04-imagenes-con-ia.md](04-imagenes-con-ia.md) para generar fondos coherentes.
+- **Solo arte de la web oficial**, guardado en `brand/oficial/` (ver [04-arte-oficial.md](04-arte-oficial.md)).
+  Nada de `assets/images/` del repositorio, ni imágenes generadas con IA.
+- Pide los originales en la mayor resolución posible (ideal 1600 px o más de ancho): el Ken Burns amplía un 14 %.
+- Retratos del autor: los oficiales en blanco y negro (`autor-retrato-1.jpg`, `autor-retrato-2.jpg`).
+- Sin arte oficial para una idea, la diapositiva se hace solo con tipografía.
 
 ## Checklist visual antes de renderizar
 

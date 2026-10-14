@@ -45,7 +45,7 @@ La skill [`carrusel-instagram`](../.claude/skills/carrusel-instagram/SKILL.md) s
 1. [Estrategia de contenido](docs/01-estrategia.md) — pilares, calendario, métricas.
 2. [Guion del carrusel](docs/02-guion.md) — estructura, fórmulas de portada, caption.
 3. [Dirección de arte y animación](docs/03-direccion-de-arte.md) — identidad, composición, movimiento.
-4. [Imágenes con IA](docs/04-imagenes-con-ia.md) — prompts coherentes con el universo.
+4. [Arte oficial](docs/04-arte-oficial.md) — solo arte de aptorrescusa.com: cómo añadirlo y recortarlo.
 5. [Render y publicación](docs/05-render-y-publicacion.md) — comandos, subida a Instagram, checklist.
 6. [Referencia de `carousel.json`](docs/06-referencia-json.md) — todos los campos y tipos.
 7. [Skills y herramientas](docs/07-skills-y-herramientas.md) — investigación y alternativas.

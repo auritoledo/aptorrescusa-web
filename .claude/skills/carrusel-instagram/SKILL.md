@@ -26,8 +26,9 @@ Sistema en `instagram-studio/`. Antes de empezar, lee `instagram-studio/docs/06-
      un marcador `[VERSO DE ÁNGEL]` y avisa.
    - **Material oficial ya disponible**: `instagram-studio/brand/oficial/` (cubiertas vigentes de
      los dos libros y los textos de sus contraportadas en `LEEME.md`). Úsalo antes que nada.
-   - Las imágenes de `assets/images/` (sobre todo las portadas antiguas) pueden estar desfasadas:
-     usa siempre las cubiertas de `brand/oficial/` y confirma los retratos de personajes.
+   - **Arte: solo el de la web oficial.** Nada de `assets/images/` del repositorio ni imágenes
+     generadas con IA. El validador da error si una imagen no está en `brand/oficial/` o no viene
+     de `https://aptorrescusa.com/`.
 
 3. **Guion.** Propón la estructura en una lista (6–9 diapositivas):
    portada (gancho ≤ 7 palabras) → 2.ª diapositiva igual de fuerte (Instagram la muestra primero a veces)
@@ -58,8 +59,9 @@ Sistema en `instagram-studio/`. Antes de empezar, lee `instagram-studio/docs/06-
 - Nuevo tipo de diapositiva: añádelo en `engine/engine.js` (`BUILDERS`) + estilos en
   `engine/slides.css`, respeta las curvas `--ease-*` y el patrón `--d` de retardos, documenta en
   `docs/06-referencia-json.md` y en `scripts/validate.mjs` (`TIPOS`, `REQUERIDOS`).
-- Imágenes nuevas: sigue `docs/04-imagenes-con-ia.md` (bloques de estilo por tema). Nunca generes
-  la cara de Ángel con IA.
+- Imágenes nuevas: solo arte oficial de aptorrescusa.com (ver `docs/04-arte-oficial.md`). Nunca
+  generes imágenes con IA ni uses `assets/images/` del repositorio; si no hay arte oficial para una
+  idea, haz la diapositiva solo con tipografía y pide la imagen en "Notas" del `caption.md`.
 - Todas las animaciones deben ser CSS (keyframes/transitions): el renderizador las congela con
   `document.getAnimations()` y avanza el reloj. Nada de `setTimeout` ni `requestAnimationFrame` propios.
 

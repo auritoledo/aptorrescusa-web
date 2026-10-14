@@ -7,9 +7,11 @@ Cada carrusel vive en `carousels/AAAA-MM-DD-nombre/` con dos archivos:
 
 Las imágenes pueden ser:
 
-- **Material oficial** (preferente): `"instagram-studio/brand/oficial/fenix-portada.jpg"` (ver `brand/oficial/LEEME.md`).
-- **Del repositorio**: `"assets/images/personajes/Unai.jpg"` (confirmar que sigue vigente en la web oficial).
-- **Propias del carrusel**: copia el archivo a su carpeta y escribe solo el nombre (`"fondo.jpg"`).
+- **Arte oficial guardado**: `"instagram-studio/brand/oficial/fenix-portada.jpg"` (ver `brand/oficial/LEEME.md`).
+- **Enlace directo a la web**: `"https://aptorrescusa.com/…"` (el render necesitará conexión).
+
+Ninguna otra imagen es válida: el validador rechaza `assets/images/` del repositorio, archivos
+sueltos en la carpeta del carrusel o imágenes generadas. Ver [04-arte-oficial.md](04-arte-oficial.md).
 
 ## Formato de texto
 
@@ -30,7 +32,7 @@ Las imágenes pueden ser:
 | `particulas` | número o `false` | según tema | Cantidad de partículas. |
 | `duracion` | segundos | 6 | Duración mínima por diapositiva (el motor alarga si el texto lo necesita). |
 | `fps` | 24 · 30 | 30 | Fotogramas por segundo del vídeo. |
-| `marca` | `{ "usuario": "@…", "web": "…" }` | @angel19643 · aptorrescusa.com | Datos de firma. |
+| `marca` | `{ "usuario": "@…", "web": "…", "logo": ruta }` | @angel19643 · aptorrescusa.com · sin logo | Datos de firma. Sin `logo`, el cierre muestra el nombre en versalitas espaciadas, como en las cubiertas. |
 
 Cualquier diapositiva puede sobrescribir `tema`, `hilo`, `particulas`, `duracion` (3–60 s) y `enfoque`.
 
@@ -39,7 +41,7 @@ Cualquier diapositiva puede sobrescribir `tema`, `hilo`, `particulas`, `duracion
 ### `portada` — el gancho
 ```json
 { "tipo": "portada", "kicker": "El amor del Fénix", "titulo": "Cómo se *renace*\ndespués de arder",
-  "subtitulo": "Promesa concreta.", "imagen": "assets/images/biografia.png", "enfoque": "50% 25%", "deslizar": "Desliza" }
+  "subtitulo": "Promesa concreta.", "imagen": "instagram-studio/brand/oficial/autor-retrato-1.jpg", "enfoque": "62% 18%", "deslizar": "Desliza" }
 ```
 Imagen opcional (sin imagen = fondo atmosférico del tema). `enfoque` = qué parte de la imagen queda centrada (`"50% 20%"` = arriba).
 Con `"libro": "instagram-studio/brand/oficial/portadores-portada.jpg"` la portada muestra el libro en 3D como protagonista y el título debajo.
@@ -54,7 +56,7 @@ Cada verso aparece con desenfoque → nitidez. `marca` dibuja un número o letra
 ### `personaje` — ficha del universo
 ```json
 { "tipo": "personaje", "numero": "01", "rol": "El Guardián Marcado", "nombre": "Unai",
-  "texto": "Una o dos frases.", "imagen": "assets/images/personajes/Unai.jpg", "estilo": "arco | completo" }
+  "texto": "Una o dos frases.", "imagen": "instagram-studio/brand/oficial/personaje-unai.jpg", "estilo": "arco | completo" }
 ```
 `arco` (por defecto): retrato en un arco dorado que se dibuja solo. `completo`: ilustración a sangre, texto abajo.
 

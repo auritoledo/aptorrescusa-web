@@ -21,6 +21,10 @@ const LIMITES = { titulo: 60, subtitulo: 110, texto: 260, nombre: 22, rol: 32, k
 
 const plain = (s) => String(s ?? "").replace(/\*/g, "");
 
+// Regla de marca: solo se usa arte oficial de aptorrescusa.com, guardado en brand/oficial/
+// o enlazado directamente desde la web.
+const ARTE_OFICIAL = (src) => /^https:\/\/(www\.)?aptorrescusa\.com\//.test(src) || src.replace(/^\//, "").startsWith("instagram-studio/brand/oficial/");
+
 function resolveAsset(src, slug) {
   if (/^(https?:|data:)/.test(src)) return null;
   const rel = src.replace(/^\//, "");
@@ -64,7 +68,12 @@ export function validate(slug) {
     for (const b of s.libros ?? []) images.push([at, b]);
   });
   if (c.panorama) images.push(["Panorama", typeof c.panorama === "string" ? c.panorama : c.panorama.imagen]);
+  if (c.marca?.logo) images.push(["Logo", c.marca.logo]);
   for (const [at, src] of images) {
+    if (!ARTE_OFICIAL(src)) {
+      errors.push(`${at}: "${src}" no es arte oficial. Usa solo arte de aptorrescusa.com (guárdalo en brand/oficial/ o enlaza https://aptorrescusa.com/...).`);
+      continue;
+    }
     const p = resolveAsset(src, slug);
     if (p && !fs.existsSync(p)) errors.push(`${at}: no existe la imagen "${src}".`);
   }

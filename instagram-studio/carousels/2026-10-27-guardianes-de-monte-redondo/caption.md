@@ -22,7 +22,8 @@ Desliza y entra en el bosque. Y dime: ¿pagarías tú ese precio? 👇
 
 - Diapositiva 1: La cubierta de "Los Portadores del Ojo Verde" flotando sobre papel crema con manchas de acuarela azul y verde: un chico pelirrojo frente a un ser del bosque hecho de musgo. Título: "Para salvar el bosque, tendrá que convertirse en él."
 - Diapositiva 2: Texto: "El bosque está muriendo".
-- Diapositivas 3 y 4: Fichas ilustradas de Unai, el portador, y de Eneko, su primo, dentro de un arco.
+- Diapositiva 3: Los dos rostros de la cubierta, el chico pelirrojo con una hoja en el cuello y el ser del bosque, sobre el texto "Unai, marcado por el ojo verde".
+- Diapositiva 4: Texto "Eneko, sin la marca" y la pregunta de cómo ayudará a su primo.
 - Diapositiva 5: La misión: viajar hacia las cumbres, encontrar a los portadores y reunir las trufas doradas.
 - Diapositiva 6: Cita del libro: "El verdadero coste de la vida no es la distancia recorrida, sino la memoria sacrificada."
 - Diapositiva 7: La cubierta del libro y la pregunta "¿Qué terrible precio pagará Unai?".
@@ -34,6 +35,5 @@ Desliza y entra en el bosque. Y dime: ¿pagarías tú ese precio? 👇
 
 ## Notas de publicación
 
-- Verificado con material oficial (cubierta y contraportada enviadas): lema, sinopsis, descripción de Unai y Eneko, misión, cita y pregunta final, web aptorrescusa.com.
-- ⚠️ PENDIENTE DE VERIFICAR en la web oficial: las ilustraciones de Unai y Eneko (diapositivas 3 y 4) salen de `assets/images/personajes/` del repositorio; confirmar que son las vigentes.
+- Arte: solo la cubierta oficial. Verificado con material oficial (cubierta y contraportada enviadas): lema, sinopsis, descripción de Unai y Eneko, misión, cita y pregunta final, web aptorrescusa.com.
 - Día/hora prevista: martes 27/10, 19:30
