@@ -1,0 +1,59 @@
+{
+  "titulo": "El amor del Fénix · Fases del renacimiento",
+  "tema": "fenix",
+  "hilo": true,
+  "slides": [
+    {
+      "tipo": "portada",
+      "kicker": "El amor del Fénix",
+      "titulo": "Cómo se *renace*\ndespués de arder",
+      "subtitulo": "Las cuatro fases de un poemario que convierte la herida en vuelo."
+    },
+    {
+      "tipo": "verso",
+      "etiqueta": "Cenizas de la Cruceta",
+      "marca": "I",
+      "lineas": ["Naceré sin redes,", "sin dioses ni dueños:", "un fénix de *huesos*", "y sueños partidos."],
+      "firma": "A.P. Torrescusa"
+    },
+    {
+      "tipo": "lista",
+      "kicker": "El mapa del poemario",
+      "titulo": "Cuatro fases,\nun mismo *fuego*",
+      "items": [
+        { "titulo": "Cenizas", "texto": "Mirar el dolor de frente tras la caída." },
+        { "titulo": "Combustión", "texto": "El ardor de la lucha contra las fronteras al amor." },
+        { "titulo": "Renacimiento", "texto": "Un amor que abraza cada cicatriz." },
+        { "titulo": "Vuelo", "texto": "Un sentimiento que trasciende distancia y tiempo." }
+      ]
+    },
+    {
+      "tipo": "verso",
+      "etiqueta": "Fénix en Cicatrices",
+      "marca": "III",
+      "lineas": ["El dolor es solo", "leña mojada,", "y la luz una daga", "que talla *fénix*", "en las cicatrices."],
+      "firma": "A.P. Torrescusa"
+    },
+    {
+      "tipo": "cita",
+      "texto": "Escribo porque hay heridas que necesitan convertirse en *tinta*.",
+      "autor": "A.P. Torrescusa"
+    },
+    {
+      "tipo": "libro",
+      "kicker": "Poemario · 173 páginas",
+      "titulo": "El amor del Fénix",
+      "texto": "Atrévete a arder. Atrévete a renacer.",
+      "portada": "assets/images/fenix_front.jpg",
+      "datos": ["Tapa blanda · 14 €", "Tapa dura · 23 €"],
+      "precio": "Firmado por el autor"
+    },
+    {
+      "tipo": "cta",
+      "kicker": "Tu turno",
+      "titulo": "¿En qué fase\nestás *tú*?",
+      "texto": "Cuéntamelo en comentarios y guarda este carrusel para el día que lo necesites.",
+      "boton": "Pide tu ejemplar firmado"
+    }
+  ]
+}

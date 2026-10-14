@@ -1,0 +1,8 @@
+# Herramienta interna: no se publica en aptorrescusa.com aunque se suba al servidor.
+<IfModule mod_authz_core.c>
+  Require all denied
+</IfModule>
+<IfModule !mod_authz_core.c>
+  Order allow,deny
+  Deny from all
+</IfModule>

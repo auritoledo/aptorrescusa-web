@@ -1,0 +1,78 @@
+{
+  "titulo": "Los guardianes de Monte Redondo",
+  "tema": "bosque",
+  "hilo": true,
+  "slides": [
+    {
+      "tipo": "portada",
+      "kicker": "Los Portadores del Ojo Verde",
+      "titulo": "Monte Redondo\nte está *mirando*",
+      "subtitulo": "Conoce a quienes guardan el bosque vivo.",
+      "imagen": "assets/images/personajes/Unai.jpg",
+      "enfoque": "50% 30%"
+    },
+    {
+      "tipo": "texto",
+      "kicker": "El universo",
+      "titulo": "No es un paisaje.\nEs una *memoria viva*.",
+      "texto": "Fantasía ecológica, linaje familiar y magia antigua: un bosque que conserva lo que el mundo humano olvidó escuchar."
+    },
+    {
+      "tipo": "personaje",
+      "numero": "01",
+      "rol": "El Guardián Marcado",
+      "nombre": "Unai",
+      "texto": "Joven marcado por el Ojo Verde. Su viaje abre la puerta al destino de Monte Redondo.",
+      "imagen": "assets/images/personajes/Unai.jpg"
+    },
+    {
+      "tipo": "personaje",
+      "numero": "02",
+      "rol": "El Primo Leal",
+      "nombre": "Eneko",
+      "texto": "Valentía humana, incluso cuando el mundo mágico no se deja ver.",
+      "imagen": "assets/images/personajes/Eneko_2.jpg"
+    },
+    {
+      "tipo": "personaje",
+      "numero": "03",
+      "rol": "Guardiana verde",
+      "nombre": "Ylvra",
+      "texto": "Presencia luminosa de cuidado, semillas y curación.",
+      "imagen": "assets/images/personajes/Ylvra.jpg"
+    },
+    {
+      "tipo": "personaje",
+      "numero": "04",
+      "rol": "Sabio del bosque",
+      "nombre": "Thalor",
+      "texto": "Anciano Sylvánima, custodio de consejo y memoria antigua.",
+      "imagen": "assets/images/personajes/Thalor_def.jpg"
+    },
+    {
+      "tipo": "personaje",
+      "estilo": "completo",
+      "rol": "Músico de luz",
+      "nombre": "Lumin",
+      "texto": "Destellos, instrumentos y la transmisión de la belleza.",
+      "imagen": "assets/images/personajes/Lumin_def.jpg",
+      "enfoque": "50% 30%"
+    },
+    {
+      "tipo": "libro",
+      "kicker": "Novela de fantasía · 225 páginas",
+      "titulo": "Los Portadores del Ojo Verde",
+      "texto": "Unai inicia un viaje para salvar Monte Redondo y recuperar Las Trufas Doradas.",
+      "portada": "assets/images/portadores_front.jpg",
+      "datos": ["Tapa blanda · 15 €", "Amazon · Casa del Libro"],
+      "precio": "Firmado por el autor"
+    },
+    {
+      "tipo": "cta",
+      "kicker": "Tu turno",
+      "titulo": "¿Qué Sylvánima\nte *acompañaría*?",
+      "texto": "Elige en comentarios y guarda el carrusel para no perderte a los demás guardianes.",
+      "boton": "Entra en Monte Redondo"
+    }
+  ]
+}

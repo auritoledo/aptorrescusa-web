@@ -1,0 +1,46 @@
+{
+  "titulo": "Tinta de cicatrices · El autor",
+  "tema": "editorial",
+  "hilo": true,
+  "slides": [
+    {
+      "tipo": "portada",
+      "kicker": "El autor",
+      "titulo": "Tinta de\n*cicatrices*",
+      "subtitulo": "Quién escribe detrás del Fénix y de Monte Redondo.",
+      "imagen": "assets/images/biografia.png",
+      "enfoque": "50% 22%"
+    },
+    {
+      "tipo": "cita",
+      "texto": "Escribo porque hay heridas que necesitan convertirse en *tinta*.",
+      "autor": "A.P. Torrescusa"
+    },
+    {
+      "tipo": "lista",
+      "kicker": "Tres raíces",
+      "titulo": "De dónde nace\nla *escritura*",
+      "items": [
+        { "titulo": "Dos tierras", "texto": "Nacido en Extremadura, criado en el País Vasco. Hoy escribe desde Castro Urdiales." },
+        { "titulo": "La dislexia", "texto": "No detuvo su vínculo con las palabras: lo volvió más físico, más atento, más propio." },
+        { "titulo": "La familia", "texto": "Sus historias nacieron imaginando mundos junto a sus hijos." }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "kicker": "Dos territorios",
+      "titulo": "Heridas que brillan,\nbosques que *respiran*",
+      "texto": "En sus libros el sufrimiento no se glorifica ni se borra: se transforma en una materia que acompaña al lector.",
+      "imagen": "assets/images/Poesia.png",
+      "enfoque": "50% 30%"
+    },
+    {
+      "tipo": "cta",
+      "kicker": "Libros firmados",
+      "titulo": "Con dedicatoria\n*para ti*",
+      "libros": ["assets/images/fenix_front.jpg", "assets/images/portadores_front.jpg"],
+      "boton": "Pídelo en aptorrescusa.com",
+      "url": "Enlace en la bio"
+    }
+  ]
+}

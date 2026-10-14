@@ -1,0 +1,22 @@
+{
+  "name": "aptorrescusa-instagram-studio",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Sistema de carruseles animados para el Instagram de A.P. Torrescusa",
+  "type": "module",
+  "scripts": {
+    "estudio": "node scripts/server.mjs",
+    "nuevo": "node scripts/nuevo.mjs",
+    "validar": "node scripts/validate.mjs",
+    "borrador": "node scripts/render.mjs --borrador",
+    "render": "node scripts/render.mjs",
+    "fijas": "node scripts/render.mjs --fijas"
+  },
+  "devDependencies": {
+    "ffmpeg-static": "^5.2.0",
+    "playwright": "^1.56.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
