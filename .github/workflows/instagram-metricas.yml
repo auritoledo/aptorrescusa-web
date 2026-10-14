@@ -1,0 +1,39 @@
+name: "Instagram · métricas"
+
+# Una vez al día guarda las métricas (24 h, 72 h y 7 días) de cada carrusel publicado
+# en instagram-studio/carousels/<slug>/metricas.json. El agente analista las lee.
+
+on:
+  schedule:
+    - cron: "13 7 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: instagram-metricas
+  cancel-in-progress: false
+
+jobs:
+  metricas:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: instagram-studio
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Recoger métricas
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_LOGIN: ${{ vars.IG_LOGIN }}
+          IG_API_VERSION: ${{ vars.IG_API_VERSION }}
+        run: |
+          git config user.name "instagram-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          node scripts/metricas.mjs --commit

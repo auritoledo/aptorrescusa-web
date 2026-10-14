@@ -32,7 +32,13 @@
 
 `output/` no se sube a git (pesa mucho); se regenera cuando haga falta.
 
-## Publicar en Instagram (desde el móvil)
+## Publicar automáticamente
+
+Lo normal es que se publique solo a su hora tras la aprobación: ver
+[08-automatizacion.md](08-automatizacion.md). Publica a mano (pasos siguientes) solo si el carrusel
+necesita música o tiene más de 10 diapositivas, que la API de Instagram no permite.
+
+## Publicar en Instagram a mano (desde el móvil)
 
 1. Pasa los MP4 al móvil (AirDrop, Google Drive, WhatsApp "como documento" para no perder calidad).
 2. Instagram → **+** → Publicación → icono de selección múltiple → elige los vídeos **en orden**.

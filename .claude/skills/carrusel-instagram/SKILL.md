@@ -55,6 +55,13 @@ Sistema en `instagram-studio/`. Antes de empezar, lee `instagram-studio/docs/06-
    y los pasos de publicación de `docs/05-render-y-publicacion.md`. `output/` no se commitea;
    sí `carousels/<slug>/`.
 
+## Programar la publicación
+
+Cuando el carrusel esté terminado y revisado: `npm run proponer -- <slug> "AAAA-MM-DD HH:MM"` (hora de
+España) y explica a la persona cómo aprobarlo (ver `instagram-studio/docs/08-automatizacion.md`).
+**Nunca ejecutes `npm run aprobar` ni `npm run publicar`**: aprobar es siempre cosa de una persona.
+Para preparar varias publicaciones de golpe, usa la skill `semana-instagram`.
+
 ## Si se pide algo que el motor no hace
 
 - Nuevo tipo de diapositiva: añádelo en `engine/engine.js` (`BUILDERS`) + estilos en

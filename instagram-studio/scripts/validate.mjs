@@ -47,7 +47,7 @@ export function validate(slug) {
   const slides = c.slides ?? [];
   if (slides.length < 2) errors.push("Instagram necesita al menos 2 diapositivas en un carrusel.");
   if (slides.length > 20) errors.push(`Hay ${slides.length} diapositivas; el máximo de Instagram es 20.`);
-  if (slides.length > 10) warns.push("Más de 10 diapositivas: la tasa de finalización suele caer. Valora dividirlo en dos publicaciones.");
+  if (slides.length > 10) warns.push("Más de 10 diapositivas: la publicación automática (API de Instagram) admite como máximo 10. Divídelo o publícalo a mano.");
   if (slides[0] && slides[0].tipo !== "portada") warns.push("La primera diapositiva no es una portada: el gancho visual es lo que decide el deslizamiento.");
   if (slides.length && slides.at(-1).tipo !== "cta") warns.push("La última diapositiva no es un CTA: cierra siempre con una acción (guardar, comentar, visitar la web…).");
   const TEMAS = ["fenix-acuarela", "bosque-acuarela", "papel"];

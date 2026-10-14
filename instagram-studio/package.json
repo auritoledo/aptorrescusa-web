@@ -2,7 +2,7 @@
   "name": "aptorrescusa-instagram-studio",
   "private": true,
   "version": "1.0.0",
-  "description": "Sistema de carruseles animados para el Instagram de A.P. Torrescusa",
+  "description": "Sistema de carruseles animados y publicación programada para el Instagram de A.P. Torrescusa (@aptorrescusa)",
   "type": "module",
   "scripts": {
     "estudio": "node scripts/server.mjs",
@@ -10,7 +10,15 @@
     "validar": "node scripts/validate.mjs",
     "borrador": "node scripts/render.mjs --borrador",
     "render": "node scripts/render.mjs",
-    "fijas": "node scripts/render.mjs --fijas"
+    "fijas": "node scripts/render.mjs --fijas",
+    "calendario": "node scripts/programacion.mjs calendario",
+    "proponer": "node scripts/programacion.mjs proponer",
+    "aprobar": "node scripts/programacion.mjs aprobar",
+    "cancelar": "node scripts/programacion.mjs cancelar",
+    "publicar": "node scripts/publicar.mjs",
+    "publicar:simular": "node scripts/publicar.mjs --simular",
+    "metricas": "node scripts/metricas.mjs",
+    "instagram:comprobar": "node scripts/comprobar-instagram.mjs"
   },
   "devDependencies": {
     "ffmpeg-static": "^5.2.0",
@@ -18,5 +26,8 @@
   },
   "engines": {
     "node": ">=20"
+  },
+  "dependencies": {
+    "basic-ftp": "^5.0.5"
   }
 }

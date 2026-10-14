@@ -1,0 +1,61 @@
+name: "Instagram · aprobar o cancelar"
+
+# La aprobación humana: solo quien tiene acceso de escritura al repositorio puede ejecutarlo.
+# Desde github.com o la app de GitHub: Actions → «Instagram · aprobar o cancelar» → Run workflow.
+# Al aprobar, el carrusel queda PROGRAMADO y se publica solo a la hora propuesta.
+
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: "Carrusel (nombre de la carpeta, p. ej. 2026-10-20-fenix-fases-del-renacimiento)"
+        required: true
+      accion:
+        description: "Qué hacer"
+        type: choice
+        options: [aprobar, cancelar]
+        default: aprobar
+      fecha:
+        description: "Opcional: nueva fecha y hora de España (AAAA-MM-DD HH:MM). Vacío = la propuesta."
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: instagram-publicar   # nunca a la vez que el publicador
+  cancel-in-progress: false
+
+jobs:
+  aprobar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    defaults:
+      run:
+        working-directory: instagram-studio
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Aplicar
+        env:
+          SLUG: ${{ inputs.slug }}
+          ACCION: ${{ inputs.accion }}
+          FECHA: ${{ inputs.fecha }}
+          QUIEN: ${{ github.actor }}
+        run: |
+          set -e
+          if [ -n "$FECHA" ]; then node scripts/programacion.mjs proponer "$SLUG" "$FECHA"; fi
+          if [ "$ACCION" = "aprobar" ]; then
+            node scripts/programacion.mjs aprobar "$SLUG" --por "$QUIEN (GitHub)"
+          else
+            node scripts/programacion.mjs cancelar "$SLUG"
+          fi
+          node scripts/programacion.mjs calendario
+          git config user.name "instagram-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "carousels/$SLUG/publicacion.json"
+          git commit -m "instagram: $ACCION $SLUG por $QUIEN [skip ci]"
+          git push

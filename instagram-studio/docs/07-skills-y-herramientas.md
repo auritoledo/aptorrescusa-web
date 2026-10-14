@@ -8,6 +8,12 @@ Qué se investigó para montar un flujo profesional y cómo encaja cada pieza.
 sola cuando se le pide "hazme un carrusel sobre…". Sigue el flujo completo: brief → guion →
 JSON → validar → revisar PNG → render → caption. Es la pieza central del sistema.
 
+## Agentes del proyecto
+
+En `.claude/agents/`: `estratega-instagram`, `creador-carruseles`, `revisor-marca`,
+`programador-publicaciones` y `analista-metricas`. Los coordina la skill `semana-instagram`.
+Ver [08-automatizacion.md](08-automatizacion.md).
+
 ## Skills disponibles en la cuenta y para qué usarlas
 
 | Skill | Uso en este flujo |

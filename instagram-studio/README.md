@@ -12,8 +12,12 @@ Escribes el contenido en un archivo de texto (`carousel.json`), lo ves animado e
 navegador y con un comando obtienes los vídeos MP4 listos para subir.
 
 ```
-Idea → Guion → carousel.json → Estudio (vista previa) → Render MP4 → Publicar
+Idea → Guion → carousel.json → Estudio (vista previa) → Render MP4 → Aprobación → Publicación automática
 ```
+
+Un **equipo de agentes** (Claude Code) prepara los carruseles y **GitHub Actions los publica solos**
+a la hora programada, siempre después de que una persona los apruebe. Ver
+[Publicación programada y agentes](docs/08-automatizacion.md).
 
 ## Empezar en 3 minutos
 
@@ -27,8 +31,10 @@ npm run render -- 2026-10-20-fenix-fases-del-renacimiento
 
 Los vídeos aparecen en `output/2026-10-20-fenix-fases-del-renacimiento/`.
 
-**Con Claude Code** basta con pedir: *"Hazme un carrusel con versos de la fase Vuelo"*.
-La skill [`carrusel-instagram`](../.claude/skills/carrusel-instagram/SKILL.md) se encarga del flujo entero.
+**Con Claude Code** basta con pedir: *"Hazme un carrusel con versos de la fase Vuelo"*
+(skill [`carrusel-instagram`](../.claude/skills/carrusel-instagram/SKILL.md)) o
+*"Prepara las publicaciones del próximo mes"* (skill [`semana-instagram`](../.claude/skills/semana-instagram/SKILL.md),
+que coordina a los agentes de `.claude/agents/`).
 
 ## Qué hay en cada carpeta
 
@@ -37,9 +43,20 @@ La skill [`carrusel-instagram`](../.claude/skills/carrusel-instagram/SKILL.md) s
 | `brand/` | Paleta, temas y tipografías en local. `brand/oficial/` guarda las cubiertas oficiales y sus textos. |
 | `engine/` | El motor: 8 tipos de diapositiva animada y el estudio de vista previa. |
 | `carousels/` | Un carrusel por carpeta (`carousel.json` + `caption.md`). `_plantilla/` es la base. |
-| `scripts/` | `nuevo`, `validar`, `render` y el servidor local. |
+| `scripts/` | `nuevo`, `validar`, `render`, servidor local, calendario (`proponer`/`aprobar`), `publicar` y `metricas`. |
+| `informes/` | Informes mensuales del agente analista. |
 | `docs/` | Guías del flujo de trabajo (leer en orden). |
 | `output/` | Vídeos e imágenes generados (no se guardan en git). |
+
+## Calendario y publicación
+
+```bash
+npm run calendario                                   # qué hay previsto y en qué estado
+npm run proponer -- <slug> "2026-10-20 19:30"        # fecha propuesta (hora de España)
+npm run aprobar  -- <slug> --por "Ángel"             # aprobado: se publicará solo
+npm run cancelar -- <slug>                           # frenar una publicación
+npm run publicar:simular                             # ver qué publicaría ahora, sin tocar Instagram
+```
 
 ## Guías
 
@@ -50,6 +67,7 @@ La skill [`carrusel-instagram`](../.claude/skills/carrusel-instagram/SKILL.md) s
 5. [Render y publicación](docs/05-render-y-publicacion.md) — comandos, subida a Instagram, checklist.
 6. [Referencia de `carousel.json`](docs/06-referencia-json.md) — todos los campos y tipos.
 7. [Skills y herramientas](docs/07-skills-y-herramientas.md) — investigación y alternativas.
+8. [Publicación programada y agentes](docs/08-automatizacion.md) — calendario, aprobación, publicación automática, métricas.
 
 ## Tipos de diapositiva
 
