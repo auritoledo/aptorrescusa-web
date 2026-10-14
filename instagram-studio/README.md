@@ -1,7 +1,7 @@
 # Instagram Studio · A.P. Torrescusa
 
 Sistema completo para crear **carruseles animados** para el Instagram de Ángel
-([@angel19643](https://www.instagram.com/angel19643/)).
+([@aptorrescusa](https://www.instagram.com/aptorrescusa/)).
 
 > **Fuente oficial: la web publicada [aptorrescusa.com](https://aptorrescusa.com).**
 > Los HTML de este repositorio no son la versión oficial: textos, precios, ISBN, tiendas y

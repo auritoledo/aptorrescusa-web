@@ -32,7 +32,7 @@ sueltos en la carpeta del carrusel o imágenes generadas. Ver [04-arte-oficial.m
 | `particulas` | número o `false` | según tema | Cantidad de partículas. |
 | `duracion` | segundos | 6 | Duración mínima por diapositiva (el motor alarga si el texto lo necesita). |
 | `fps` | 24 · 30 | 30 | Fotogramas por segundo del vídeo. |
-| `marca` | `{ "usuario": "@…", "web": "…", "logo": ruta }` | @angel19643 · aptorrescusa.com · sin logo | Datos de firma. Sin `logo`, el cierre muestra el nombre en versalitas espaciadas, como en las cubiertas. |
+| `marca` | `{ "usuario": "@…", "web": "…", "logo": ruta }` | @aptorrescusa · aptorrescusa.com · sin logo | Datos de firma. Sin `logo`, el cierre muestra el nombre en versalitas espaciadas, como en las cubiertas. |
 
 Cualquier diapositiva puede sobrescribir `tema`, `hilo`, `particulas`, `duracion` (3–60 s) y `enfoque`.
 

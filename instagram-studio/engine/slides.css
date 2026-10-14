@@ -281,22 +281,21 @@
 /* Portada con libro 3D protagonista */
 .t-portada.con-libro .content { bottom: 175px; gap: 26px; }
 .t-portada.con-libro .stage3d { top: 120px; height: 640px; }
-.t-portada.con-libro .book { width: 400px; height: 600px; }
+.t-portada.con-libro .book { height: 600px; }
 [data-tema$="acuarela"] .t-portada .sub, [data-tema="papel"] .t-portada .sub { color: var(--ink); }
 
 /* LIBRO */
 .t-libro .stage3d, .t-portada .stage3d { position: absolute; z-index: 2; left: 0; right: 0; top: 150px; height: 700px; perspective: 1800px; display: grid; place-items: center; }
 .t-libro .book, .t-portada .book {
   position: relative;
-  width: 440px;
-  height: 640px;
+  height: 640px;            /* el ancho sale de la proporción real de la cubierta: nunca se recorta */
   transform-style: preserve-3d;
   animation: book-in 2s var(--ease-out) .2s both, float 6s var(--ease-in-out) 2.2s infinite alternate;
 }
 .t-libro .book img, .t-portada .book img {
-  width: 100%;
+  display: block;
+  width: auto;
   height: 100%;
-  object-fit: cover;
   border-radius: 4px 10px 10px 4px;
   box-shadow: -2px 0 0 rgba(255,255,255,.18) inset, 30px 50px 90px var(--shadow-strong), 0 0 120px var(--glow);
 }
@@ -358,7 +357,7 @@
 .t-cta .logo { width: 210px; filter: var(--logo-filter); }
 .t-cta .wordmark { font: 500 30px/1 var(--serif); letter-spacing: .42em; margin-right: -.42em; text-transform: uppercase; color: var(--ink); }
 .t-cta .books { display: flex; gap: 26px; margin: 8px 0; }
-.t-cta .books img { width: 190px; height: 280px; object-fit: cover; border-radius: 4px 8px 8px 4px; box-shadow: 0 30px 70px var(--shadow-strong); }
+.t-cta .books img { display: block; width: auto; height: 280px; border-radius: 4px 8px 8px 4px; box-shadow: 0 30px 70px var(--shadow-strong); }
 .t-cta .pill.accent { font-size: 30px; padding: 24px 44px; animation: fade-up 1.2s var(--ease-out) var(--d) both, breathe 3.2s var(--ease-in-out) 3s infinite; }
 .t-cta .url { font: 500 28px/1 var(--sans); letter-spacing: .18em; text-transform: uppercase; color: var(--muted); }
 

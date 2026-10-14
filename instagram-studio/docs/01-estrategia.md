@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-El Instagram de Ángel (@angel19643) tiene tres trabajos, en este orden:
+El Instagram de Ángel (@aptorrescusa) tiene tres trabajos, en este orden:
 
 1. **Crear lectores**: que alguien que no le conoce sienta algo en 3 segundos.
 2. **Construir universo**: que Monte Redondo y el Fénix se reconozcan a simple vista.

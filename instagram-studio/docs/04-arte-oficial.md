@@ -32,7 +32,7 @@ entonces el render necesita conexión. Es mejor guardar una copia.
 | Archivo | Recorte de | Para |
 |---|---|---|
 | `fenix-portada.jpg` | Portada plana de la cubierta completa | `libro`, `cta` |
-| `fenix-ave.jpg` | El fénix de la portada, con margen de papel arriba y abajo | Fondo de `portada` |
+| `fenix-ave.jpg` | El fénix de la portada, con fundido inferior al papel (sin la frase de la cubierta) | Fondo de `portada` |
 | `portadores-portada.jpg` | Portada plana de la cubierta completa | `libro`, `portada` con `"libro"` |
 | `portadores-rostros.jpg` | Franja superior de la portada (los dos rostros) | Banda de imagen en `texto` |
 

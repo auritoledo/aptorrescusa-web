@@ -3,12 +3,14 @@
 Archivos enviados como versión oficial y vigente (octubre 2026). Tienen prioridad sobre
 cualquier imagen de `assets/images/` del repositorio.
 
+Instagram oficial de Ángel: **@aptorrescusa**.
+
 | Archivo | Qué es | Uso |
 |---|---|---|
 | `fenix-mockup.png` | Maqueta 3D de *El amor del Fénix* | Referencia, historias |
 | `fenix-cubierta-completa.jpg` | Cubierta completa (contraportada, lomo, portada) | Fuente de los recortes |
 | `fenix-portada.jpg` | Portada plana (recorte) | Diapositivas `libro`, `cta` |
-| `fenix-ave.jpg` | El fénix de acuarela con margen de papel (recorte) | Fondo de portadas del Fénix |
+| `fenix-ave.jpg` | El fénix de acuarela (recorte, con fundido inferior al papel para que no haya corte) | Fondo de portadas del Fénix |
 | `autor-contraportada.jpg` | Foto del autor de la contraportada (recorte, baja resolución) | Solo de referencia: usar los retratos |
 | `autor-retrato-1.jpg` | Retrato oficial B/N, sentado, mano en la barbilla (896×1120) | Portadas y fichas del autor |
 | `autor-retrato-2.jpg` | Retrato oficial B/N, variante sonriendo (896×1120) | Bandas de imagen, CTA, historias |

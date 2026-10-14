@@ -8,7 +8,7 @@ export const TIPOS = ["portada", "verso", "personaje", "libro", "texto", "lista"
 
 export const MARCA_POR_DEFECTO = {
   nombre: "A.P. Torrescusa",
-  usuario: "@angel19643",
+  usuario: "@aptorrescusa",
   web: "aptorrescusa.com",
   logo: null, // ruta a un logo oficial de la web; sin logo se usa la firma tipográfica de las cubiertas
 };
