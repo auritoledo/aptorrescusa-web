@@ -6,7 +6,7 @@ El Instagram de Ángel (@aptorrescusa) tiene tres trabajos, en este orden:
 
 1. **Crear lectores**: que alguien que no le conoce sienta algo en 3 segundos.
 2. **Construir universo**: que Monte Redondo y el Fénix se reconozcan a simple vista.
-3. **Vender libros**: llevar tráfico a aptorrescusa.com (y a los firmados, si la web oficial los ofrece).
+3. **Vender libros**: llevar tráfico a aptorrescusa.com.
 
 Un carrusel animado sirve para los tres: se lee como un libro (página a página), se
 guarda (el algoritmo premia los guardados) y cada deslizamiento cuenta como interés.
@@ -15,10 +15,10 @@ guarda (el algoritmo premia los guardados) y cada deslizamiento cuenta como inte
 
 | Pilar | Tema visual | Qué contar | Ejemplo |
 |---|---|---|---|
-| **Fuego** (poesía) | `fenix-acuarela` | Versos del poemario, las cuatro fases, emociones universales (pérdida, renacer, amor sin fronteras). | `2026-10-20-fenix-fases-del-renacimiento` |
-| **Bosque** (fantasía) | `bosque-acuarela` | Personajes, Sylvánimas, lugares, objetos mágicos, curiosidades del mundo, mapas. | `2026-10-27-guardianes-de-monte-redondo` |
-| **Tinta** (autor) | `papel` | Proceso de escritura, dislexia, familia, Castro Urdiales, presentaciones, firmas. | `2026-11-03-tinta-de-cicatrices` |
-| **Firmados** (venta) | cualquiera | Dedicatorias reales, envíos, lectores con el libro, reseñas. | — |
+| **Fuego** (poesía) | `fenix-acuarela` | Versos del poemario y sus cuatro fases (Cenizas, Combustión, Renacimiento, Vuelo). | `2026-10-20-fenix-fases-del-renacimiento` |
+| **Bosque** (fantasía) | `bosque-acuarela` | Monte Redondo, Unai, Eneko, los Sylvánimas y las trufas doradas, tal como los cuenta la web y la contraportada. | `2026-10-27-guardianes-de-monte-redondo` |
+| **Tinta** (autor) | `papel` | Ángel y su escritura: prólogo, epílogo, Castro Urdiales, presentaciones. | `2026-11-03-tinta-de-cicatrices` |
+| **Libros** (venta) | cualquiera | Las cubiertas, dónde conseguirlos (lo que diga la web oficial), lectores con el libro, reseñas. | — |
 
 Regla 3-1: por cada tres carruseles que regalan (emoción, universo, autor), uno que vende.
 Aun así, **todos** cierran con un CTA suave hacia la web.
@@ -36,18 +36,20 @@ Aun así, **todos** cierran con un CTA suave hacia la web.
 | 1 | Fuego | Fases del renacimiento (ya preparado) |
 | 2 | Bosque | Los guardianes de Monte Redondo (ya preparado) |
 | 3 | Tinta | Tinta de cicatrices — quién es Ángel (ya preparado) |
-| 4 | Firmados | "Así preparo un libro firmado": foto del proceso + dedicatoria + CTA |
-| 5 | Bosque | Los Sylvánimas que aún no conoces: Orvyn, Vorin, Saelys, Kaelis |
-| 6 | Fuego | "Versos para el día que todo arde" — 4 versos + pregunta |
-| 7 | Tinta | Escribir con dislexia: lo que nadie te cuenta |
-| 8 | Bosque | ¿Qué son Las Trufas Doradas? (misterio, sin destripar) |
+| 4 | Libros | Los dos libros, uno al lado del otro: ¿fuego o bosque? (con las cubiertas oficiales) |
+| 5 | Bosque | Los personajes de Monte Redondo (cuando haya ilustraciones oficiales de la web) |
+| 6 | Fuego | "Versos para el día que todo arde": un verso de cada fase del manuscrito + pregunta |
+| 7 | Tinta | "Antes de que vueles estas páginas": el prólogo del Fénix en cinco frases |
+| 8 | Bosque | ¿Qué son las trufas doradas? (misterio, sin destripar) |
+
+Antes de producir cada idea, comprueba en aptorrescusa.com que la información sigue vigente.
 
 ## Métricas que importan (revisar cada mes en Estadísticas)
 
 1. **Guardados** — el mejor indicador de valor.
 2. **Compartidos** — alcance nuevo.
 3. **Alcance de no seguidores** — si la portada funciona.
-4. **Clics en el enlace de la bio** y pedidos de firmados.
+4. **Clics en el enlace de la bio** y visitas a aptorrescusa.com.
 
 Anota en `caption.md` de cada carrusel los resultados a los 7 días (sección "Resultados")
 para saber qué temas y portadas repetir.

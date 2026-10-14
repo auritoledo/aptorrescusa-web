@@ -7,11 +7,11 @@ Cada carrusel vive en `carousels/AAAA-MM-DD-nombre/` con dos archivos:
 
 Las imágenes pueden ser:
 
-- **Arte oficial guardado**: `"instagram-studio/brand/oficial/fenix-portada.jpg"` (ver `brand/oficial/LEEME.md`).
+- **Arte oficial guardado**: `"brand/oficial/fenix-portada.jpg"` (ver `brand/oficial/LEEME.md`).
 - **Enlace directo a la web**: `"https://aptorrescusa.com/…"` (el render necesitará conexión).
 
-Ninguna otra imagen es válida: el validador rechaza `assets/images/` del repositorio, archivos
-sueltos en la carpeta del carrusel o imágenes generadas. Ver [04-arte-oficial.md](04-arte-oficial.md).
+Ninguna otra imagen es válida: el validador rechaza cualquier ruta fuera de `brand/oficial/`,
+archivos sueltos en la carpeta del carrusel o imágenes generadas. Ver [04-arte-oficial.md](04-arte-oficial.md).
 
 ## Formato de texto
 
@@ -26,7 +26,7 @@ sueltos en la carpeta del carrusel o imágenes generadas. Ver [04-arte-oficial.m
 | Campo | Valores | Por defecto | Qué hace |
 |---|---|---|---|
 | `titulo` | texto | — | Nombre interno (no se muestra). |
-| `tema` | `fenix-acuarela` · `bosque-acuarela` · `papel` (claros, como las cubiertas) · `fenix` · `bosque` · `editorial` (oscuros) | `editorial` | Paleta, manchas de acuarela o brillo, y partículas (pan de oro, hojas, brasas, esporas, polvo). |
+| `tema` | `fenix-acuarela` · `bosque-acuarela` · `papel` | `papel` | Paleta, manchas de acuarela y partículas (pan de oro, hojas, motas de papel). |
 | `hilo` | `true` / `false` | `true` | Línea dorada que cruza todas las diapositivas y "une" el deslizamiento. |
 | `panorama` | ruta o `{ "imagen": ruta, "opacidad": 0.45 }` | — | Una imagen panorámica repartida entre todas las diapositivas (efecto de lienzo continuo). Usa una imagen muy ancha (p. ej. 1080·N × 1350). |
 | `particulas` | número o `false` | según tema | Cantidad de partículas. |
@@ -41,10 +41,10 @@ Cualquier diapositiva puede sobrescribir `tema`, `hilo`, `particulas`, `duracion
 ### `portada` — el gancho
 ```json
 { "tipo": "portada", "kicker": "El amor del Fénix", "titulo": "Cómo se *renace*\ndespués de arder",
-  "subtitulo": "Promesa concreta.", "imagen": "instagram-studio/brand/oficial/autor-retrato-1.jpg", "enfoque": "62% 18%", "deslizar": "Desliza" }
+  "subtitulo": "Promesa concreta.", "imagen": "brand/oficial/autor-retrato-1.jpg", "enfoque": "62% 18%", "deslizar": "Desliza" }
 ```
 Imagen opcional (sin imagen = fondo atmosférico del tema). `enfoque` = qué parte de la imagen queda centrada (`"50% 20%"` = arriba).
-Con `"libro": "instagram-studio/brand/oficial/portadores-portada.jpg"` la portada muestra el libro en 3D como protagonista y el título debajo.
+Con `"libro": "brand/oficial/portadores-portada.jpg"` la portada muestra el libro en 3D como protagonista y el título debajo.
 
 ### `verso` — poesía línea a línea
 ```json
@@ -56,14 +56,14 @@ Cada verso aparece con desenfoque → nitidez. `marca` dibuja un número o letra
 ### `personaje` — ficha del universo
 ```json
 { "tipo": "personaje", "numero": "01", "rol": "El Guardián Marcado", "nombre": "Unai",
-  "texto": "Una o dos frases.", "imagen": "instagram-studio/brand/oficial/personaje-unai.jpg", "estilo": "arco | completo" }
+  "texto": "Una o dos frases.", "imagen": "brand/oficial/personaje-unai.jpg", "estilo": "arco | completo" }
 ```
 `arco` (por defecto): retrato en un arco dorado que se dibuja solo. `completo`: ilustración a sangre, texto abajo.
 
 ### `libro` — producto
 ```json
 { "tipo": "libro", "kicker": "Poemario · 173 páginas", "titulo": "El amor del Fénix", "texto": "Frase gancho.",
-  "portada": "instagram-studio/brand/oficial/fenix-portada.jpg", "datos": ["Formato · precio"], "precio": "aptorrescusa.com" }
+  "portada": "brand/oficial/fenix-portada.jpg", "datos": ["Formato · precio"], "precio": "aptorrescusa.com" }
 ```
 La portada entra en 3D, flota y recibe un destello de luz. `precio` se muestra como píldora destacada.
 
@@ -86,7 +86,7 @@ La portada entra en 3D, flota y recibe un destello de luz. `precio` se muestra c
 ### `cta` — cierre con acción
 ```json
 { "tipo": "cta", "kicker": "Tu turno", "titulo": "¿En qué fase estás *tú*?", "texto": "Instrucción clara.",
-  "libros": ["instagram-studio/brand/oficial/fenix-portada.jpg"], "boton": "El libro, en aptorrescusa.com", "url": "Enlace en la bio", "logo": true }
+  "libros": ["brand/oficial/fenix-portada.jpg"], "boton": "El libro, en aptorrescusa.com", "url": "Enlace en la bio", "logo": true }
 ```
 
 ## Límites que vigila `npm run validar`

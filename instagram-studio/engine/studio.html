@@ -125,7 +125,7 @@
           frame.append(el);
           vp.append(frame);
           const s = c.slides[idx];
-          $("info").textContent = `${String(idx + 1).padStart(2, "0")} / ${c.slides.length} · ${s.tipo} · ${(dur / 1000).toFixed(1)} s · tema ${s.tema ?? c.tema ?? "editorial"}`;
+          $("info").textContent = `${String(idx + 1).padStart(2, "0")} / ${c.slides.length} · ${s.tipo} · ${(dur / 1000).toFixed(1)} s · tema ${s.tema ?? c.tema ?? "papel"}`;
           c.slides.forEach((_, i) => {
             const b = document.createElement("button");
             b.className = "dot" + (i === idx ? " on" : "");

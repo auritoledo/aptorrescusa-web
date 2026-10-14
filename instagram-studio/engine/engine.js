@@ -28,13 +28,13 @@ export function inline(s) {
     .replace(/\n/g, "<br>");
 }
 
-/** Resuelve rutas de imagen: "assets/..." sale de la web, el resto de la carpeta del carrusel. */
+/** Resuelve rutas de imagen: "brand/oficial/..." (arte oficial guardado) o enlaces https de la web oficial. */
 export function resolveAsset(src, slug) {
   if (!src) return "";
   if (/^(https?:|data:)/.test(src)) return src;
   if (src.startsWith("/")) return src;
-  if (src.startsWith("assets/") || src.startsWith("instagram-studio/")) return "/" + src;
-  return `/instagram-studio/carousels/${slug}/${src.replace(/^\.\//, "")}`;
+  if (src.startsWith("brand/")) return "/" + src;
+  return `/carousels/${slug}/${src.replace(/^\.\//, "")}`;
 }
 
 /** Divide un texto en palabras enmascaradas con retardo escalonado. */
@@ -83,14 +83,14 @@ function rng(seed) {
 }
 
 function particles(tema, seed, cantidad) {
-  const defecto = { fenix: 34, bosque: 22, editorial: 14, "fenix-acuarela": 26, "bosque-acuarela": 18, papel: 10 }[tema] ?? 14;
+  const defecto = { "fenix-acuarela": 26, "bosque-acuarela": 18, papel: 10 }[tema] ?? 10;
   const n = cantidad === false ? 0 : typeof cantidad === "number" ? cantidad : defecto;
   if (!n) return "";
   const r = rng(seed * 7919 + 13);
   let html = "";
   for (let k = 0; k < n; k++) {
     const pd = 7 + r() * 8;
-    const size = tema === "fenix" ? 3 + r() * 7 : tema === "bosque" ? 4 + r() * 7 : tema.endsWith("acuarela") ? 5 + r() * 9 : tema === "papel" ? 3 + r() * 4 : 2 + r() * 3;
+    const size = tema.endsWith("acuarela") ? 5 + r() * 9 : 3 + r() * 4;
     html += `<i class="p" style="--x:${(r() * 100).toFixed(2)}%;--s:${size.toFixed(1)}px;--pd:${pd.toFixed(2)}s;--pdl:${(-r() * pd).toFixed(2)}s;--dx:${((r() - 0.5) * 240).toFixed(0)}px"></i>`;
   }
   return `<div class="layer particles">${html}</div>`;
@@ -313,7 +313,7 @@ const BUILDERS = {
 export function buildSlide(c, i) {
   const s = c.slides[i];
   const n = c.slides.length;
-  const tema = s.tema ?? c.tema ?? "editorial";
+  const tema = s.tema ?? c.tema ?? "papel";
   const marca = { ...MARCA_POR_DEFECTO, ...(c.marca ?? {}) };
   const ctx = { slug: c.slug, marca, i, n };
   const builder = BUILDERS[s.tipo];
@@ -351,7 +351,7 @@ export function buildSlide(c, i) {
 }
 
 export async function loadCarousel(slug) {
-  const res = await fetch(`/instagram-studio/carousels/${encodeURIComponent(slug)}/carousel.json`, { cache: "no-store" });
+  const res = await fetch(`/carousels/${encodeURIComponent(slug)}/carousel.json`, { cache: "no-store" });
   if (!res.ok) throw new Error(`No encuentro carousels/${slug}/carousel.json (${res.status})`);
   const c = await res.json();
   c.slug = slug;

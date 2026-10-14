@@ -1,6 +1,6 @@
 ---
 name: carrusel-instagram
-description: Crea carruseles animados para el Instagram de A.P. Torrescusa (Ángel, @aptorrescusa) con el sistema de instagram-studio/. Úsala siempre que se pida un carrusel, post, publicación de Instagram, contenido para redes, diapositivas animadas, o una pieza sobre El amor del Fénix, Los Portadores del Ojo Verde, Monte Redondo, los Sylvánimas, los libros firmados o el autor. También para renderizar, revisar o modificar un carrusel existente.
+description: Crea carruseles animados para el Instagram de A.P. Torrescusa (Ángel, @aptorrescusa) con el sistema de instagram-studio/. Úsala siempre que se pida un carrusel, post, publicación de Instagram, contenido para redes, diapositivas animadas, o una pieza sobre El amor del Fénix, Los Portadores del Ojo Verde, Monte Redondo, los Sylvánimas o el autor. También para renderizar, revisar o modificar un carrusel existente.
 ---
 
 # Carrusel animado para Instagram · A.P. Torrescusa
@@ -12,25 +12,24 @@ Sistema en `instagram-studio/`. Antes de empezar, lee `instagram-studio/docs/06-
 
 1. **Brief.** Aclara (o deduce del pedido) pilar y objetivo: Fuego (poesía, tema `fenix-acuarela`),
    Bosque (universo, tema `bosque-acuarela`), Tinta (autor, tema `papel`) o Libros (venta).
-   Los temas de acuarela reproducen las cubiertas oficiales y son los de por defecto; los oscuros
-   (`fenix`, `bosque`, `editorial`) solo si se piden.
+   Los tres temas reproducen las cubiertas oficiales (papel, tinta y acuarela).
    Si falta información esencial y no se puede deducir, pregunta una sola vez.
 
-2. **Fuentes de verdad.** La única fuente oficial es la web publicada **https://aptorrescusa.com**.
-   Los HTML de este repositorio NO son la versión oficial y pueden estar desactualizados: no saques
-   de ellos precios, ISBN, páginas, tiendas, textos ni descripciones de personajes.
-   - Consulta la web en vivo (WebFetch) antes de escribir cualquier dato. Si no se puede acceder,
-     pide a la persona el texto o capturas de la web y marca en `caption.md` → "Notas" qué datos
-     quedan pendientes de verificar. No publiques nada sin verificar.
-   - **Nunca inventes versos ni citas de Ángel.** Fuentes válidas: la web oficial, las cubiertas
-     (`brand/oficial/LEEME.md`) y el manuscrito de *El amor del Fénix*. El manuscrito no está en el
-     repositorio: las citas ya verificadas están en `LEEME.md`, y para otras hay que pedir el `.docx`.
-     Respeta los saltos de línea del manuscrito. Si no hay fuente, deja `[VERSO DE ÁNGEL]` y avisa.
-   - **Material oficial ya disponible**: `instagram-studio/brand/oficial/` (cubiertas vigentes de
-     los dos libros y los textos de sus contraportadas en `LEEME.md`). Úsalo antes que nada.
-   - **Arte: solo el de la web oficial.** Nada de `assets/images/` del repositorio ni imágenes
-     generadas con IA. El validador da error si una imagen no está en `brand/oficial/` o no viene
-     de `https://aptorrescusa.com/`.
+2. **Fuentes de verdad.** Solo dos: la web oficial **https://aptorrescusa.com** y el material
+   oficial de `instagram-studio/brand/oficial/` (cubiertas, retratos, `LEEME.md` con los textos de
+   contraportada y las citas verificadas del manuscrito).
+   - **Ignora el resto de este repositorio** (los HTML, `assets/`, CSS…): no es la web oficial.
+     No saques de ahí textos, datos, colores ni imágenes.
+   - Consulta la web en vivo (WebFetch) antes de escribir cualquier dato nuevo. Si no se puede
+     acceder, pide a la persona el texto o capturas de la web y marca en `caption.md` → "Notas" qué
+     queda pendiente de verificar. No publiques nada sin verificar.
+   - **Nunca inventes versos ni citas de Ángel.** Para versos de *El amor del Fénix*, usa las citas de
+     `LEEME.md` o pide el manuscrito (`.docx`, no se guarda en el repositorio) y respeta sus saltos
+     de línea. Si no hay fuente, deja `[VERSO DE ÁNGEL]` y avisa.
+   - **Arte: solo el de la web oficial**, guardado en `brand/oficial/`. Nada de imágenes generadas
+     con IA. El validador da error si una imagen no está en `brand/oficial/` o no viene de
+     `https://aptorrescusa.com/`.
+   - Instagram oficial: **@aptorrescusa**.
 
 3. **Guion.** Propón la estructura en una lista (6–9 diapositivas):
    portada (gancho ≤ 7 palabras) → 2.ª diapositiva igual de fuerte (Instagram la muestra primero a veces)
@@ -62,8 +61,8 @@ Sistema en `instagram-studio/`. Antes de empezar, lee `instagram-studio/docs/06-
   `engine/slides.css`, respeta las curvas `--ease-*` y el patrón `--d` de retardos, documenta en
   `docs/06-referencia-json.md` y en `scripts/validate.mjs` (`TIPOS`, `REQUERIDOS`).
 - Imágenes nuevas: solo arte oficial de aptorrescusa.com (ver `docs/04-arte-oficial.md`). Nunca
-  generes imágenes con IA ni uses `assets/images/` del repositorio; si no hay arte oficial para una
-  idea, haz la diapositiva solo con tipografía y pide la imagen en "Notas" del `caption.md`.
+  generes imágenes con IA; si no hay arte oficial para una idea, haz la diapositiva solo con
+  tipografía y pide la imagen en "Notas" del `caption.md`.
 - Todas las animaciones deben ser CSS (keyframes/transitions): el renderizador las congela con
   `document.getAnimations()` y avanza el reloj. Nada de `setTimeout` ni `requestAnimationFrame` propios.
 

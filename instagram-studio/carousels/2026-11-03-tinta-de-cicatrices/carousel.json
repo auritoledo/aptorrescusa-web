@@ -8,7 +8,7 @@
       "kicker": "Ángel Pérez Torrescusa",
       "titulo": "Tinta de\n*cicatrices*",
       "subtitulo": "Quién escribe detrás del Fénix\ny de Monte Redondo.",
-      "imagen": "instagram-studio/brand/oficial/autor-retrato-1.jpg",
+      "imagen": "brand/oficial/autor-retrato-1.jpg",
       "enfoque": "62% 18%"
     },
     {
@@ -40,7 +40,7 @@
       "kicker": "El fénix",
       "titulo": "Cicatrices\nque *brillan*",
       "texto": "«El fénix no es un mito: es la metáfora más honesta que encontré para nombrar esa parte de nosotros que, tras ser reducida a polvo, insiste en reconstruirse con los dedos temblorosos de la esperanza.»",
-      "imagen": "instagram-studio/brand/oficial/autor-retrato-2.jpg",
+      "imagen": "brand/oficial/autor-retrato-2.jpg",
       "enfoque": "55% 24%"
     },
     {
@@ -48,8 +48,8 @@
       "kicker": "Sus libros",
       "titulo": "Elige tu\n*puerta de entrada*",
       "libros": [
-        "instagram-studio/brand/oficial/fenix-portada.jpg",
-        "instagram-studio/brand/oficial/portadores-portada.jpg"
+        "brand/oficial/fenix-portada.jpg",
+        "brand/oficial/portadores-portada.jpg"
       ],
       "boton": "aptorrescusa.com",
       "url": "Enlace en la bio"

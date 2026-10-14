@@ -4,7 +4,7 @@ Qué se investigó para montar un flujo profesional y cómo encaja cada pieza.
 
 ## La skill propia del proyecto
 
-**`.claude/skills/carrusel-instagram/`** (en la raíz del repositorio). Claude Code la carga
+**`.claude/skills/carrusel-instagram/`**. Claude Code la carga
 sola cuando se le pide "hazme un carrusel sobre…". Sigue el flujo completo: brief → guion →
 JSON → validar → revisar PNG → render → caption. Es la pieza central del sistema.
 
@@ -30,7 +30,7 @@ y es el estándar en 2026 para vídeo programático. Se descartó como motor pri
 
 - Este sistema necesita **plantillas fijas de marca**, no edición de vídeo libre.
 - HTML + CSS + Playwright + ffmpeg no requiere aprender React ni montar un proyecto aparte,
-  y reutiliza tipografías y paleta de la web tal cual.
+  y la paleta sale directamente de las cubiertas oficiales.
 - El resultado es igual de determinista (avance fotograma a fotograma).
 
 Si un día se quieren Reels largos con audio sincronizado o montajes con muchos clips, Remotion

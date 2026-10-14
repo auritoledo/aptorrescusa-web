@@ -10,7 +10,7 @@ Un carrusel es un libro de bolsillo: portada, capítulos y contraportada.
 | 2 | `verso` / `cita` / `texto` | **Segundo gancho.** Instagram vuelve a mostrar el carrusel empezando por la 2.ª diapositiva a quien no deslizó: tiene que funcionar sola. Pon aquí lo más fuerte. |
 | 3–N | `lista`, `personaje`, `verso`, `texto` | **Desarrollo.** Una idea por diapositiva. Alterna tipos para crear ritmo (texto → imagen → texto). |
 | N-1 | `libro` | **Producto** (cuando proceda). |
-| N | `cta` | **Acción concreta**: comentar una pregunta, guardar, pedir firmado. |
+| N | `cta` | **Acción concreta**: comentar una pregunta, guardar, visitar la web. |
 
 ## Fórmulas de portada que encajan con Ángel
 
@@ -18,7 +18,7 @@ Un carrusel es un libro de bolsillo: portada, capítulos y contraportada.
 - **Misterio:** "Monte Redondo te está *mirando*"
 - **Promesa:** "Cómo se *renace* después de arder"
 - **Confesión:** "Escribo porque me *dolía*"
-- **Lista con número:** "5 Sylvánimas que guardan el *bosque*"
+- **Lista con número:** "4 fases de un mismo *fuego*"
 
 Evita las portadas genéricas ("Nuevo post", "Mi libro"). La portada vende la siguiente diapositiva, no el libro.
 
@@ -28,16 +28,16 @@ Evita las portadas genéricas ("Nuevo post", "Mi libro"). La portada vende la si
 - **Títulos ≤ 7 palabras**; textos de apoyo ≤ 25 palabras.
 - **Corta los títulos a mano con `\n`** en el sitio donde respira la frase.
 - **Versos reales**: nunca inventar poemas en nombre de Ángel. Usa los del libro o pídele nuevos.
-- **Datos verificados**: precios, ISBN, tiendas y descripciones salen de la web oficial publicada
-  (aptorrescusa.com), nunca de los HTML del repositorio, que pueden estar desactualizados.
+- **Datos verificados**: precios, ISBN, tiendas y descripciones salen solo de la web oficial
+  (aptorrescusa.com) o del material oficial de `brand/oficial/`.
 - **Habla a una persona** ("tú"), no a "los lectores".
 - **Acentos y signos de apertura** (¿ ¡) siempre: es un escritor.
 
 ## Del borrador a `carousel.json`
 
 1. Escribe el guion en una lista simple: `1. portada — …`, `2. verso — …`.
-2. Elige el tema (`fenix`, `bosque`, `editorial`).
-3. `npm run nuevo -- nombre --tema fenix` y rellena el JSON (ver [06-referencia-json.md](06-referencia-json.md)).
+2. Elige el tema (`fenix-acuarela`, `bosque-acuarela`, `papel`).
+3. `npm run nuevo -- nombre --tema fenix-acuarela` y rellena el JSON (ver [06-referencia-json.md](06-referencia-json.md)).
 4. Escribe `caption.md` a la vez: el caption **amplía**, no repite las diapositivas.
 
 ## Caption

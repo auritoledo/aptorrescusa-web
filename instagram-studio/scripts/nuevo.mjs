@@ -1,5 +1,5 @@
 // Crea un carrusel nuevo a partir de la plantilla.
-// Uso: node scripts/nuevo.mjs <nombre> [--tema fenix-acuarela|bosque-acuarela|papel|fenix|bosque|editorial]
+// Uso: node scripts/nuevo.mjs <nombre> [--tema fenix-acuarela|bosque-acuarela|papel]
 //   → carousels/AAAA-MM-DD-<nombre>/ con carousel.json y caption.md listos para editar.
 import fs from "node:fs";
 import path from "node:path";
@@ -11,7 +11,7 @@ const ti = args.indexOf("--tema");
 const tema = ti >= 0 ? args[ti + 1] : "papel";
 
 if (!name) {
-  console.error("Uso: npm run nuevo -- <nombre> [--tema fenix-acuarela|bosque-acuarela|papel|fenix|bosque|editorial]");
+  console.error("Uso: npm run nuevo -- <nombre> [--tema fenix-acuarela|bosque-acuarela|papel]");
   process.exit(1);
 }
 const clean = name

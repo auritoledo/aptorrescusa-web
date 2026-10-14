@@ -3,8 +3,7 @@
 **Regla:** en los carruseles solo se usa arte publicado en [aptorrescusa.com](https://aptorrescusa.com):
 cubiertas, retratos del autor, ilustraciones de personajes y logotipos de la web.
 
-- **No** se usan imágenes de `assets/images/` de este repositorio: no es la web oficial y
-  pueden estar desfasadas.
+- **No** se usan imágenes de ningún otro sitio (tampoco de otros repositorios o webs antiguas).
 - **No** se generan imágenes con IA ni se usan bancos de imágenes.
 - **No** se repinta el arte oficial. Solo se permiten recortes y márgenes de papel.
 
@@ -20,9 +19,9 @@ sigue teniendo vida aunque una diapositiva no lleve imagen.
 
 1. Descarga la imagen desde aptorrescusa.com (clic derecho → Guardar imagen) o pide el original
    en alta resolución.
-2. Guárdala en `brand/oficial/` con un nombre claro (`personaje-ylvra.jpg`, `autor-retrato-3.jpg`).
+2. Guárdala en `brand/oficial/` con un nombre claro (`personaje-unai.jpg`, `autor-retrato-3.jpg`).
 3. Añade una línea a `brand/oficial/LEEME.md`: qué es, de qué página de la web sale y para qué se usa.
-4. Úsala en el carrusel con `"imagen": "instagram-studio/brand/oficial/personaje-ylvra.jpg"`.
+4. Úsala en el carrusel con `"imagen": "brand/oficial/personaje-unai.jpg"`.
 
 También se puede enlazar directamente (`"imagen": "https://aptorrescusa.com/assets/..."`), pero
 entonces el render necesita conexión. Es mejor guardar una copia.

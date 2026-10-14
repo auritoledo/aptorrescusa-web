@@ -78,8 +78,6 @@
   opacity: 0;
   animation: rise var(--pd) linear var(--pdl) infinite;
 }
-[data-tema="fenix"] .p { animation-name: ember; filter: blur(.3px); }
-[data-tema="bosque"] .p { animation-name: spore; border-radius: 60% 0 60% 0; }
 [data-tema$="acuarela"] .p { animation-name: spore; box-shadow: none; }
 [data-tema="fenix-acuarela"] .p { border-radius: 30% 70% 45% 55%; }   /* pan de oro */
 [data-tema="bosque-acuarela"] .p { border-radius: 70% 0 70% 0; }      /* hojas */
@@ -385,14 +383,6 @@
   15% { opacity: .7; }
   85% { opacity: .5; }
   100% { transform: translate3d(var(--dx), -1450px, 0); opacity: 0; }
-}
-@keyframes ember {
-  0% { transform: translate3d(0, 0, 0) scale(1); opacity: 0; }
-  10% { opacity: 1; }
-  30% { transform: translate3d(calc(var(--dx) * .4), -420px, 0) scale(.9); opacity: .6; }
-  50% { opacity: 1; }
-  70% { transform: translate3d(calc(var(--dx) * -.2), -1000px, 0) scale(.6); opacity: .4; }
-  100% { transform: translate3d(var(--dx), -1450px, 0) scale(.2); opacity: 0; }
 }
 @keyframes spore {
   0% { transform: translate3d(0, 0, 0) rotate(0); opacity: 0; }

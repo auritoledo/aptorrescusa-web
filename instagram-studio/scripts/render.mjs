@@ -87,7 +87,7 @@ const t0 = Date.now();
 async function renderSlide(i) {
   const page = await browser.newPage({ viewport: { width: 1080, height: 1350 }, deviceScaleFactor: scale });
   page.on("pageerror", (e) => console.error(`  [diapositiva ${i + 1}] ${e.message}`));
-  await page.goto(`http://127.0.0.1:${port}/instagram-studio/engine/studio.html?render=1&c=${encodeURIComponent(slug)}&slide=${i}`);
+  await page.goto(`http://127.0.0.1:${port}/engine/studio.html?render=1&c=${encodeURIComponent(slug)}&slide=${i}`);
   await page.waitForFunction(() => window.__ready || window.__error, null, { timeout: 30000 });
   await page.waitForTimeout(300); // primer pintado completo de todas las capas
   const err = await page.evaluate(() => window.__error);

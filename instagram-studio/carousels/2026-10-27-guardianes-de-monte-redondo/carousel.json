@@ -7,7 +7,7 @@
       "tipo": "portada",
       "kicker": "Los Portadores del Ojo Verde",
       "titulo": "Para salvar el bosque,\ntendrá que *convertirse en él*.",
-      "libro": "instagram-studio/brand/oficial/portadores-portada.jpg",
+      "libro": "brand/oficial/portadores-portada.jpg",
       "tamano": 70
     },
     {
@@ -21,7 +21,7 @@
       "kicker": "El portador",
       "titulo": "*Unai*, marcado\npor el ojo verde",
       "texto": "Un joven marcado con el enigmático ojo verde emprende un peligroso viaje hacia las cumbres.",
-      "imagen": "instagram-studio/brand/oficial/portadores-rostros.jpg",
+      "imagen": "brand/oficial/portadores-rostros.jpg",
       "enfoque": "50% 35%"
     },
     {
@@ -59,7 +59,7 @@
       "kicker": "Novela de fantasía",
       "titulo": "Los Portadores del Ojo Verde",
       "texto": "¿Qué terrible precio pagará Unai por devolver el latido al corazón del bosque?",
-      "portada": "instagram-studio/brand/oficial/portadores-portada.jpg",
+      "portada": "brand/oficial/portadores-portada.jpg",
       "precio": "aptorrescusa.com"
     },
     {

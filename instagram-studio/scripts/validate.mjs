@@ -3,7 +3,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { CAROUSELS_DIR, SITE_ROOT, listCarousels } from "./server.mjs";
+import { CAROUSELS_DIR, STUDIO_DIR, listCarousels } from "./server.mjs";
 
 const TIPOS = ["portada", "verso", "personaje", "libro", "texto", "lista", "cita", "cta"];
 const REQUERIDOS = {
@@ -23,12 +23,12 @@ const plain = (s) => String(s ?? "").replace(/\*/g, "");
 
 // Regla de marca: solo se usa arte oficial de aptorrescusa.com, guardado en brand/oficial/
 // o enlazado directamente desde la web.
-const ARTE_OFICIAL = (src) => /^https:\/\/(www\.)?aptorrescusa\.com\//.test(src) || src.replace(/^\//, "").startsWith("instagram-studio/brand/oficial/");
+const ARTE_OFICIAL = (src) => /^https:\/\/(www\.)?aptorrescusa\.com\//.test(src) || src.replace(/^\//, "").startsWith("brand/oficial/");
 
 function resolveAsset(src, slug) {
   if (/^(https?:|data:)/.test(src)) return null;
   const rel = src.replace(/^\//, "");
-  if (rel.startsWith("assets/") || rel.startsWith("instagram-studio/")) return path.join(SITE_ROOT, rel);
+  if (rel.startsWith("brand/")) return path.join(STUDIO_DIR, rel);
   return path.join(CAROUSELS_DIR, slug, src.replace(/^\.\//, ""));
 }
 
@@ -49,8 +49,8 @@ export function validate(slug) {
   if (slides.length > 20) errors.push(`Hay ${slides.length} diapositivas; el máximo de Instagram es 20.`);
   if (slides.length > 10) warns.push("Más de 10 diapositivas: la tasa de finalización suele caer. Valora dividirlo en dos publicaciones.");
   if (slides[0] && slides[0].tipo !== "portada") warns.push("La primera diapositiva no es una portada: el gancho visual es lo que decide el deslizamiento.");
-  if (slides.length && slides.at(-1).tipo !== "cta") warns.push("La última diapositiva no es un CTA: cierra siempre con una acción (guardar, comentar, firmados…).");
-  const TEMAS = ["fenix", "bosque", "editorial", "fenix-acuarela", "bosque-acuarela", "papel"];
+  if (slides.length && slides.at(-1).tipo !== "cta") warns.push("La última diapositiva no es un CTA: cierra siempre con una acción (guardar, comentar, visitar la web…).");
+  const TEMAS = ["fenix-acuarela", "bosque-acuarela", "papel"];
   for (const t of [c.tema, ...slides.map((s) => s.tema)]) if (t && !TEMAS.includes(t)) errors.push(`Tema desconocido "${t}" (usa ${TEMAS.join(", ")}).`);
 
   const images = [];

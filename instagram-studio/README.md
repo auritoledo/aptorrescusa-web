@@ -3,9 +3,10 @@
 Sistema completo para crear **carruseles animados** para el Instagram de Ángel
 ([@aptorrescusa](https://www.instagram.com/aptorrescusa/)).
 
-> **Fuente oficial: la web publicada [aptorrescusa.com](https://aptorrescusa.com).**
-> Los HTML de este repositorio no son la versión oficial: textos, precios, ISBN, tiendas y
-> descripciones de personajes se comprueban siempre contra la web en vivo antes de publicar.
+> **Fuente oficial: la web [aptorrescusa.com](https://aptorrescusa.com)** y el material oficial
+> guardado en `brand/oficial/` (cubiertas, retratos y textos verificados).
+> Esta carpeta es independiente: no usa nada del resto del repositorio en el que está.
+> Se puede copiar a cualquier ordenador y funciona sola.
 
 Escribes el contenido en un archivo de texto (`carousel.json`), lo ves animado en el
 navegador y con un comando obtienes los vídeos MP4 listos para subir.
@@ -26,7 +27,7 @@ npm run render -- 2026-10-20-fenix-fases-del-renacimiento
 
 Los vídeos aparecen en `output/2026-10-20-fenix-fases-del-renacimiento/`.
 
-**Con Claude Code** basta con pedir: *"Hazme un carrusel sobre los Sylvánimas que faltan"*.
+**Con Claude Code** basta con pedir: *"Hazme un carrusel con versos de la fase Vuelo"*.
 La skill [`carrusel-instagram`](../.claude/skills/carrusel-instagram/SKILL.md) se encarga del flujo entero.
 
 ## Qué hay en cada carpeta
@@ -68,12 +69,10 @@ que continúa de una diapositiva a la siguiente.
 
 ## Carruseles de ejemplo
 
-Hechos con las cubiertas oficiales y los textos de sus contraportadas. Lo que todavía sale
-de los HTML del repositorio está señalado en "Notas" de cada `caption.md`.
+Hechos solo con material oficial: cubiertas, contraportadas, retratos y el manuscrito de
+*El amor del Fénix*. Las fuentes de cada texto están en "Notas" de su `caption.md`.
 
-- `2026-10-20-fenix-fases-del-renacimiento` — «Lo que el tiempo no se lleva», tema `fenix-acuarela`, 6 diapositivas.
+- `2026-10-20-fenix-fases-del-renacimiento` — «Lo que el tiempo no se lleva» y las cuatro fases, tema `fenix-acuarela`, 8 diapositivas.
 - `2026-10-27-guardianes-de-monte-redondo` — «El bosque está muriendo», tema `bosque-acuarela`, 8 diapositivas.
 - `2026-11-03-tinta-de-cicatrices` — el autor, tema `papel`, 5 diapositivas.
 
-> Esta carpeta es una herramienta interna: su `.htaccess` impide que se sirva públicamente
-> si se sube al hosting junto a la web.

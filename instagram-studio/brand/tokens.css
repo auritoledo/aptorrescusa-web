@@ -1,21 +1,18 @@
 /* ==========================================================================
    A.P. Torrescusa · Tokens de marca para Instagram
-   Misma paleta y tipografías que aptorrescusa.com (premium-v2.css),
-   ampliadas con tres "temas" narrativos para los carruseles.
+   Paleta medida en las cubiertas oficiales (brand/oficial/): papel crema,
+   tinta marrón y acuarela. Tres temas: fenix-acuarela, bosque-acuarela, papel.
    ========================================================================== */
 @import url("fonts/fonts.css");
 
 :root {
-  /* Base editorial (igual que la web) */
-  --bg: #151513;
-  --bg-2: #1f1e1b;
-  --ink: #eae6d8;
-  --ink-bright: #fff6e8;
-  --muted: #aaa18e;
-  --line: rgba(234, 230, 216, .16);
-  --gold: #d4a373;
-  --gold-deep: #a8743f;
-  --green: #566d4a;
+  /* Papel y tinta de las cubiertas */
+  --bg: #f6edd9;
+  --bg-2: #efe3c9;
+  --ink: #42382c;
+  --ink-bright: #2e261d;
+  --muted: #8a7b66;
+  --line: rgba(66, 56, 44, .2);
 
   /* Tipografía */
   --serif: "Playfair Display", Georgia, serif;
@@ -32,66 +29,7 @@
   --ease-in-out: cubic-bezier(.65, 0, .35, 1);
   --ease-soft: cubic-bezier(.33, 1, .68, 1);
 
-  /* Valores por defecto del tema (editorial) */
-  --accent: var(--gold);
-  --accent-2: #f1d7b0;
-  --glow: rgba(212, 163, 115, .28);
-  --tint: rgba(86, 109, 74, .30);
-  --particle: rgba(241, 215, 176, .85);
-
-  /* Valores que cambian entre temas oscuros y temas de papel */
-  --on-accent: #1a120c;
-  --shade-top: rgba(0, 0, 0, .55);
-  --vignette: rgba(0, 0, 0, .55);
-  --shadow-strong: rgba(0, 0, 0, .6);
-  --grain-op: .09;
-  --grain-blend: overlay;
-  --glow-blend: screen;
-  --glow-bg: radial-gradient(38% 30% at 50% 50%, var(--glow), transparent 70%);
-  --dim-filter: blur(6px) brightness(.38) saturate(.85);
-  --logo-filter: invert(1) brightness(.95);
-}
-
-/* Tema FÉNIX · El amor del Fénix: brasas, oro y rojo profundo */
-[data-tema="fenix"] {
-  --bg: #140d0a;
-  --bg-2: #22130d;
-  --accent: #e39a52;
-  --accent-2: #ffcf8a;
-  --glow: rgba(227, 120, 52, .38);
-  --tint: rgba(150, 38, 18, .40);
-  --particle: rgba(255, 170, 80, .95);
-}
-
-/* Tema BOSQUE · Los Portadores del Ojo Verde: musgo, savia y luz dorada */
-[data-tema="bosque"] {
-  --bg: #0e1410;
-  --bg-2: #16201a;
-  --accent: #c9b46a;
-  --accent-2: #b8d99a;
-  --glow: rgba(120, 190, 110, .26);
-  --tint: rgba(56, 96, 52, .45);
-  --particle: rgba(196, 236, 160, .85);
-}
-
-/* Los temas oscuros calculan su brillo con su propio --glow */
-[data-tema="fenix"], [data-tema="bosque"], [data-tema="editorial"] {
-  --glow-bg: radial-gradient(38% 30% at 50% 50%, var(--glow), transparent 70%);
-}
-
-/* ==========================================================================
-   Temas ACUARELA · basados en las cubiertas oficiales de los libros:
-   papel crema, tinta marrón y manchas de acuarela.
-   ========================================================================== */
-[data-tema="fenix-acuarela"],
-[data-tema="bosque-acuarela"],
-[data-tema="papel"] {
-  --bg: #f6edd9;            /* papel de las cubiertas */
-  --bg-2: #efe3c9;
-  --ink: #42382c;           /* tinta de los textos de contraportada */
-  --ink-bright: #2e261d;
-  --muted: #8a7b66;
-  --line: rgba(66, 56, 44, .2);
+  /* Valores comunes de los temas de papel */
   --on-accent: #fbf5e9;
   --shade-top: rgba(246, 237, 217, .7);
   --vignette: rgba(120, 96, 64, .22);
@@ -102,6 +40,15 @@
   --dim-filter: blur(5px) brightness(1.15) saturate(.7) opacity(.28);
   --logo-filter: none;
   --tint: rgba(214, 192, 160, .35);
+
+  /* Por defecto: tema papel */
+  --accent: #8a6a3e;
+  --accent-2: #8f2d4a;
+  --glow: rgba(190, 160, 120, .2);
+  --particle: rgba(150, 120, 80, .5);
+  --glow-bg:
+    radial-gradient(30% 24% at 20% 24%, rgba(200, 170, 130, .26), transparent 70%),
+    radial-gradient(28% 22% at 80% 74%, rgba(180, 150, 160, .22), transparent 70%);
 }
 
 /* FÉNIX ACUARELA · título en vino, fénix arcoíris y pan de oro */
@@ -129,24 +76,5 @@
     radial-gradient(24% 20% at 70% 86%, rgba(190, 150, 100, .26), transparent 70%);
 }
 
-/* PAPEL · autor, firmados, noticias: el papel de las cubiertas con tinta sepia */
-[data-tema="papel"] {
-  --accent: #8a6a3e;
-  --accent-2: #8f2d4a;
-  --glow: rgba(190, 160, 120, .2);
-  --particle: rgba(150, 120, 80, .5);
-  --glow-bg:
-    radial-gradient(30% 24% at 20% 24%, rgba(200, 170, 130, .26), transparent 70%),
-    radial-gradient(28% 22% at 80% 74%, rgba(180, 150, 160, .22), transparent 70%);
-}
-
-/* Tema EDITORIAL · Autor, firmados, noticias: tinta y papel */
-[data-tema="editorial"] {
-  --bg: #151513;
-  --bg-2: #1f1e1b;
-  --accent: #d4a373;
-  --accent-2: #f1d7b0;
-  --glow: rgba(212, 163, 115, .22);
-  --tint: rgba(86, 109, 74, .28);
-  --particle: rgba(234, 230, 216, .55);
-}
+/* PAPEL · autor y noticias: el papel de las cubiertas con tinta sepia (valores de :root) */
+[data-tema="papel"] { }

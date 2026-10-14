@@ -1,7 +1,7 @@
 # Material oficial
 
-Archivos enviados como versión oficial y vigente (octubre 2026). Tienen prioridad sobre
-cualquier imagen de `assets/images/` del repositorio.
+Archivos enviados como versión oficial y vigente (octubre 2026). Junto con la web
+aptorrescusa.com, son la única fuente de arte y textos de los carruseles.
 
 Instagram oficial de Ángel: **@aptorrescusa**.
 

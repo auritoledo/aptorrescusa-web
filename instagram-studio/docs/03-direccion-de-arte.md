@@ -3,42 +3,25 @@
 ## Identidad
 
 La referencia visual oficial son **las cubiertas de los libros** (`brand/oficial/`): papel crema,
-tinta marrón, acuarela y un título manuscrito. Por eso los temas por defecto son los de acuarela.
-Los temas oscuros se conservan como alternativa (por ejemplo, para historias o contenido nocturno).
-
-### Temas de papel (recomendados)
+tinta marrón, acuarela y un título manuscrito. Todos los temas salen de ellas.
 
 | Tema | Base | Acento | Atmósfera |
 |---|---|---|---|
 | **`fenix-acuarela`** | papel `#F6EDD9`, tinta `#42382C` | vino `#8F2D4A` | Manchas arcoíris (rosa, azul, oro, lila) y pan de oro que flota. |
 | **`bosque-acuarela`** | papel, tinta | musgo `#4F6B2E` y vaquero `#3F5F7C` | Acuarela azul a un lado y musgo al otro, como la cubierta, y hojas que caen. |
-| **`papel`** | papel, tinta | sepia `#8A6A3E`, cursivas en vino | Neutro, para el autor, noticias y firmas. |
+| **`papel`** | papel, tinta | sepia `#8A6A3E`, cursivas en vino | Neutro, para el autor y las noticias. |
 
-### Temas oscuros (alternativos)
-
-Paleta tomada de la hoja de estilos de este repositorio (`premium-v2.css`), que no es la web oficial:
-
-| Elemento | Valor | Uso |
-|---|---|---|
-| Fondo | `#151513` tinta | Oscuro editorial, deja brillar las imágenes. |
-| Texto | `#eae6d8` papel | Nunca blanco puro. |
-| Acento | `#d4a373` oro | Kickers, cursivas, líneas, botones. |
-| Verde | `#566d4a` musgo | Atmósfera del bosque. |
-| Titulares | **Playfair Display** | Serif editorial; la cursiva es la voz poética. |
-| Texto | **Inter** | Lectura limpia en el móvil. |
-| Firma | *Great Vibes* | Solo para la firma "A.P. Torrescusa". Nunca para párrafos. |
+**Tipografía:** Playfair Display (títulos; la cursiva es la voz poética), Inter (textos de apoyo)
+y Great Vibes (solo la firma "A.P. Torrescusa"). Se eligieron para acompañar las cubiertas; si la
+web oficial usa otras, se cambian en `brand/fonts/` y `brand/tokens.css`.
 
 Los tokens viven en [`brand/tokens.css`](../brand/tokens.css) y las fuentes están en local
 (`brand/fonts/`) para que el render sea idéntico sin conexión.
 
-- **`fenix`** — carbón, brasas naranjas que suben, brillo rojizo.
-- **`bosque`** — verde profundo, esporas que flotan, luz dorada.
-- **`editorial`** — tinta oscura, polvo en suspensión.
-
 ## Composición (lienzo 1080 × 1350, 4:5)
 
 - **Margen seguro: 96 px.** El grid del perfil recorta ~34 px por lado; nada importante fuera del margen.
-- **Jerarquía de tres niveles**: kicker (mayúsculas espaciadas, oro) → título (serif grande) → apoyo (sans o serif cursiva).
+- **Jerarquía de tres niveles**: kicker (mayúsculas espaciadas, color de acento) → título (serif grande) → apoyo (sans o serif cursiva).
 - **Cromo constante**: marca arriba a la izquierda, contador `02 / 07` arriba a la derecha, usuario abajo, y el **hilo dorado** que cruza de borde a borde: al deslizar, la línea continúa y el carrusel se siente como una sola pieza.
 - **Grano de película y viñeta** en todas las diapositivas: unifican fotos de distinto origen.
 
@@ -56,7 +39,7 @@ Inspirados en las reglas de diseño de interfaces de Emil Kowalski (skill `emil-
 ## Imágenes
 
 - **Solo arte de la web oficial**, guardado en `brand/oficial/` (ver [04-arte-oficial.md](04-arte-oficial.md)).
-  Nada de `assets/images/` del repositorio, ni imágenes generadas con IA.
+  Nada de imágenes de otras fuentes ni generadas con IA.
 - Pide los originales en la mayor resolución posible (ideal 1600 px o más de ancho): el Ken Burns amplía un 14 %.
 - Retratos del autor: los oficiales en blanco y negro (`autor-retrato-1.jpg`, `autor-retrato-2.jpg`).
 - Sin arte oficial para una idea, la diapositiva se hace solo con tipografía.
