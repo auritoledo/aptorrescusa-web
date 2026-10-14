@@ -13,7 +13,7 @@
     },
     {
       "tipo": "cita",
-      "texto": "Escribo porque hay heridas que necesitan convertirse en *tinta*.",
+      "texto": "Decidí escribir con *tinta de cicatrices*.",
       "autor": "A.P. Torrescusa"
     },
     {
@@ -22,24 +22,24 @@
       "titulo": "De dónde nace\nla *escritura*",
       "items": [
         {
-          "titulo": "Dos tierras",
-          "texto": "Nacido en Extremadura, criado en el País Vasco. Hoy escribe desde Castro Urdiales."
+          "titulo": "Castro Urdiales",
+          "texto": "Donde el mar besa las rocas con la misma furia y ternura con que el amor talló su historia."
         },
         {
-          "titulo": "La dislexia",
-          "texto": "No detuvo su vínculo con las palabras: lo volvió más físico, más atento, más propio."
+          "titulo": "Una paradoja",
+          "texto": "¿Cómo narrar la vida sin glorificar el sufrimiento, ni borrar sus marcas?"
         },
         {
-          "titulo": "La familia",
-          "texto": "Sus historias nacieron imaginando mundos junto a sus hijos."
+          "titulo": "Dos orillas",
+          "texto": "Un amor a distancia, en cartas que cruzaban océanos."
         }
       ]
     },
     {
       "tipo": "texto",
-      "kicker": "Dos territorios",
-      "titulo": "Heridas que brillan,\nbosques que *respiran*",
-      "texto": "En sus libros el sufrimiento no se glorifica ni se borra: se transforma en una materia que acompaña al lector.",
+      "kicker": "El fénix",
+      "titulo": "Cicatrices\nque *brillan*",
+      "texto": "«El fénix no es un mito: es la metáfora más honesta que encontré para nombrar esa parte de nosotros que, tras ser reducida a polvo, insiste en reconstruirse con los dedos temblorosos de la esperanza.»",
       "imagen": "instagram-studio/brand/oficial/autor-retrato-2.jpg",
       "enfoque": "55% 24%"
     },

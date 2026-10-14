@@ -15,13 +15,25 @@
       "tipo": "verso",
       "etiqueta": "Lo que el tiempo no se lleva",
       "marca": "I",
-      "lineas": ["Traigo conmigo", "todas las sombras que he vencido,", "cada cicatriz con su hora exacta,", "su minuto de llanto,", "su eternidad de *silencio*."]
+      "lineas": [
+        "Traigo conmigo",
+        "todas las sombras que he vencido,",
+        "cada cicatriz con su hora exacta,",
+        "su minuto de llanto,",
+        "su eternidad de *silencio*."
+      ]
     },
     {
       "tipo": "verso",
       "etiqueta": "Lo que el tiempo no se lleva",
       "marca": "II",
-      "lineas": ["El futuro no es más que", "un espejismo en movimiento:", "lo miro de frente,", "acepto su niebla,", "y sigo *caminando*."],
+      "lineas": [
+        "El futuro no es más",
+        "que un espejismo en movimiento:",
+        "lo miro de frente,",
+        "acepto su niebla,",
+        "y sigo *caminando*."
+      ],
       "firma": "A.P. Torrescusa"
     },
     {
@@ -29,11 +41,41 @@
       "kicker": "El mapa del poemario",
       "titulo": "Cuatro fases,\nun mismo *fuego*",
       "items": [
-        { "titulo": "Cenizas", "texto": "Mirar el dolor de frente tras la caída." },
-        { "titulo": "Combustión", "texto": "El ardor de la lucha contra las fronteras al amor." },
-        { "titulo": "Renacimiento", "texto": "Un amor que abraza cada cicatriz." },
-        { "titulo": "Vuelo", "texto": "Un sentimiento que trasciende distancia y tiempo." }
+        {
+          "titulo": "Cenizas",
+          "texto": "«naceré sin redes, sin dioses ni dueños»"
+        },
+        {
+          "titulo": "Combustión",
+          "texto": "«Llevo un universo de cicatrices»"
+        },
+        {
+          "titulo": "Renacimiento",
+          "texto": "«Hoy renazco envuelto en llamas que derriten mis cicatrices»"
+        },
+        {
+          "titulo": "Vuelo",
+          "texto": "«sembraron un bosque en las cicatrices»"
+        }
       ]
+    },
+    {
+      "tipo": "verso",
+      "etiqueta": "Fénix en cicatrices",
+      "marca": "III",
+      "lineas": [
+        "Ahora sé:",
+        "el dolor es solo leña mojada,",
+        "y la luz,",
+        "una daga que talla",
+        "*fénix* en las cicatrices."
+      ],
+      "firma": "A.P. Torrescusa"
+    },
+    {
+      "tipo": "cita",
+      "texto": "No te ofrezco respuestas, sino *brasas*.",
+      "autor": "A.P. Torrescusa"
     },
     {
       "tipo": "libro",

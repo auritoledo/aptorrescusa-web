@@ -2,13 +2,13 @@
 
 ## Caption
 
-Me llamo Ángel y escribo porque hay heridas que necesitan convertirse en tinta. ✍️
+"Decidí escribir con tinta de cicatrices." ✍️
 
-Nací en Extremadura, crecí en el País Vasco y hoy escribo desde Castro Urdiales. La dislexia no me separó de las palabras: me obligó a tocarlas de cerca.
+Así empieza el prólogo de "El amor del Fénix". Ángel Pérez Torrescusa escribe desde Castro Urdiales, donde el mar besa las rocas con la misma furia y ternura con que el amor talló su historia.
 
-De ahí nacieron dos territorios: la poesía de "El amor del Fénix" y el bosque vivo de "Los Portadores del Ojo Verde".
+Su pregunta era una paradoja: ¿cómo narrar la vida sin glorificar el sufrimiento, ni borrar sus marcas? La respuesta fue un fénix.
 
-Si alguno de los dos te llama, lo tienes en la web. 🖋️
+Desliza para conocer de dónde nace su escritura. Y si alguno de sus dos libros te llama, lo tienes en la web. 🖋️
 
 📖 Enlace en la bio → aptorrescusa.com
 
@@ -16,14 +16,14 @@ Si alguno de los dos te llama, lo tienes en la web. 🖋️
 
 ## Primer comentario
 
-¿Y tú? ¿Qué herida convertiste alguna vez en algo bonito?
+¿Y tú? ¿Qué cicatriz convertiste alguna vez en algo que brilla?
 
 ## Texto alternativo (accesibilidad)
 
 - Diapositiva 1: Retrato en blanco y negro del autor, sentado, con la mano en la barbilla y gafas. Título: "Tinta de cicatrices".
-- Diapositiva 2: Cita: "Escribo porque hay heridas que necesitan convertirse en tinta."
-- Diapositiva 3: Tres raíces de su escritura: dos tierras, la dislexia y la familia.
-- Diapositiva 4: Otro retrato en blanco y negro del autor, sonriendo. Texto: "Heridas que brillan, bosques que respiran".
+- Diapositiva 2: Frase del prólogo: "Decidí escribir con tinta de cicatrices."
+- Diapositiva 3: Tres raíces de su escritura: Castro Urdiales, una paradoja y dos orillas.
+- Diapositiva 4: Otro retrato en blanco y negro del autor, sonriendo, y la frase del prólogo sobre el fénix.
 - Diapositiva 5: Las cubiertas de sus dos libros, el fénix de acuarela y los dos rostros del bosque, con el botón "aptorrescusa.com".
 
 ## Música sugerida (se añade en la app al publicar)
@@ -32,8 +32,6 @@ Si alguno de los dos te llama, lo tienes en la web. 🖋️
 
 ## Notas de publicación
 
-- Verificado con material oficial: nombre completo (Ángel Pérez Torrescusa), los dos retratos, las cubiertas de los dos libros y la web aptorrescusa.com.
-- ⚠️ PENDIENTE DE VERIFICAR en la web oficial: la cita, las tres raíces (Extremadura/País Vasco, dislexia, familia), el texto de la diapositiva 4 (salen de los HTML del repositorio).
-
+- Verificado con material oficial: retratos, cubiertas, nombre completo (Ángel Pérez Torrescusa), web, y textos del prólogo y el epílogo del manuscrito de "El amor del Fénix".
+- Diapositiva 3: "Castro Urdiales" adapta el epílogo a tercera persona («…con que el amor talló mi historia»); "Dos orillas" resume el prólogo y el epílogo (amor a distancia, versos que cruzaban océanos). Confirmar con Ángel que le parece bien.
 - Día/hora prevista: martes 03/11, 19:30
-- Revisar con Ángel que el caption en primera persona le suena suyo.

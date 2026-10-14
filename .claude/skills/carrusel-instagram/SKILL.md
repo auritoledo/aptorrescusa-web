@@ -22,8 +22,10 @@ Sistema en `instagram-studio/`. Antes de empezar, lee `instagram-studio/docs/06-
    - Consulta la web en vivo (WebFetch) antes de escribir cualquier dato. Si no se puede acceder,
      pide a la persona el texto o capturas de la web y marca en `caption.md` → "Notas" qué datos
      quedan pendientes de verificar. No publiques nada sin verificar.
-   - **Nunca inventes versos ni citas de Ángel**: usa solo los publicados en la web oficial o deja
-     un marcador `[VERSO DE ÁNGEL]` y avisa.
+   - **Nunca inventes versos ni citas de Ángel.** Fuentes válidas: la web oficial, las cubiertas
+     (`brand/oficial/LEEME.md`) y el manuscrito de *El amor del Fénix*. El manuscrito no está en el
+     repositorio: las citas ya verificadas están en `LEEME.md`, y para otras hay que pedir el `.docx`.
+     Respeta los saltos de línea del manuscrito. Si no hay fuente, deja `[VERSO DE ÁNGEL]` y avisa.
    - **Material oficial ya disponible**: `instagram-studio/brand/oficial/` (cubiertas vigentes de
      los dos libros y los textos de sus contraportadas en `LEEME.md`). Úsalo antes que nada.
    - **Arte: solo el de la web oficial.** Nada de `assets/images/` del repositorio ni imágenes

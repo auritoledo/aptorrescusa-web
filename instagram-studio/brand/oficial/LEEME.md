@@ -50,3 +50,31 @@ cualquier imagen de `assets/images/` del repositorio.
 | Tinta | `#42382C` | Títulos y textos |
 | Vaquero | `#3F5F7C` | Acuarela de Unai |
 | Musgo | `#4F6B2E` | Acuarela del Sylvánima |
+
+## Manuscrito de *El amor del Fénix* (fuente de verdad para versos)
+
+El manuscrito completo se recibió en `.docx`, pero **no se guarda en el repositorio**: es el libro
+entero. Para un carrusel nuevo con versos, pide el archivo y copia los versos con sus saltos de
+línea exactos. Estructura del libro:
+
+- Prólogos («Dicen que el fénix no llora cuando arde…», «Antes de que vueles estas páginas…»).
+- **I. Cenizas** · **II. Combustión** · **III. Renacimiento** · **IV. Vuelo**.
+- Poema final «Lo que el tiempo no se lleva» y epílogo «La luz que nunca se apaga», firmado «Ángel».
+
+### Citas ya verificadas (usadas en carruseles)
+
+| Cita | Origen |
+|---|---|
+| «Decidí escribir con tinta de cicatrices.» | Prólogo |
+| «No te ofrezco respuestas, sino brasas.» | Prólogo |
+| «El fénix no es un mito: es la metáfora más honesta que encontré para nombrar esa parte de nosotros que, tras ser reducida a polvo, insiste en reconstruirse con los dedos temblorosos de la esperanza.» | Prólogo |
+| «¿cómo narrar la vida sin glorificar el sufrimiento, ni borrar sus marcas?» | Prólogo |
+| «…naceré sin redes, sin dioses ni dueños: / un fénix de huesos y sueños partidos,» | «Cenizas de la Cruceta» (Cenizas) |
+| «Ahora sé: / el dolor es solo leña mojada, / y la luz, / una daga que talla / fénix en las cicatrices.» | «Fénix en cicatrices» (Cenizas) |
+| «Llevo un universo de cicatrices» | «Amanecer del desollado» (Combustión) |
+| «Hoy renazco envuelto en llamas que derriten mis cicatrices,» | «Renacer en tus ojos» (Renacimiento) |
+| «sembraron un bosque en las cicatrices» | «El mapa que faltaba» (Vuelo) |
+| «Traigo conmigo / todas las sombras que he vencido, / cada cicatriz con su hora exacta, / su minuto de llanto, / su eternidad de silencio.» | «Lo que el tiempo no se lleva» |
+| «El futuro no es más / que un espejismo en movimiento: / lo miro de frente, / acepto su niebla, / y sigo caminando.» | «Lo que el tiempo no se lleva» |
+| «Desde este rincón de Castro Úrdiales, donde el mar besa las rocas con la misma furia y ternura con que el amor talló mi historia…» | Epílogo |
+| «Con el corazón en dos tierras y una sola verdad, / Ángel» | Epílogo |
