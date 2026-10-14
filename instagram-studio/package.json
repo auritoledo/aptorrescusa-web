@@ -18,7 +18,8 @@
     "publicar": "node scripts/publicar.mjs",
     "publicar:simular": "node scripts/publicar.mjs --simular",
     "metricas": "node scripts/metricas.mjs",
-    "instagram:comprobar": "node scripts/comprobar-instagram.mjs"
+    "instagram:comprobar": "node scripts/comprobar-instagram.mjs",
+    "instagram:renovar-token": "node scripts/renovar-token.mjs"
   },
   "devDependencies": {
     "ffmpeg-static": "^5.2.0",

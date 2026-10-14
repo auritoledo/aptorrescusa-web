@@ -49,6 +49,10 @@ los lunes a las 9:00) que ejecute esa skill y abra el PR. El resultado sigue esp
 
 ## 3. Configuración inicial (una sola vez)
 
+> Esta sección cubre la API oficial. Para comparar con otros caminos (servicios intermedios,
+> Make, programadores visuales), ver [09-caminos-de-conexion.md](09-caminos-de-conexion.md).
+> Con Instagram Login, el token se renueva solo con el workflow «Instagram · renovar token».
+
 ### 3.1 Cuenta de Instagram
 - @aptorrescusa debe ser una **cuenta profesional** (Creador o Empresa).
 - Para la subida directa de vídeos (recomendado), vincúlala a una **página de Facebook** desde

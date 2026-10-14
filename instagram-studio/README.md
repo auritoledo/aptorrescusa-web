@@ -68,6 +68,7 @@ npm run publicar:simular                             # ver qué publicaría ahor
 6. [Referencia de `carousel.json`](docs/06-referencia-json.md) — todos los campos y tipos.
 7. [Skills y herramientas](docs/07-skills-y-herramientas.md) — investigación y alternativas.
 8. [Publicación programada y agentes](docs/08-automatizacion.md) — calendario, aprobación, publicación automática, métricas.
+9. [Caminos para conectar Instagram](docs/09-caminos-de-conexion.md) — API oficial, intermediarios, Make/n8n, programadores; comparativa y recomendación.
 
 ## Tipos de diapositiva
 
