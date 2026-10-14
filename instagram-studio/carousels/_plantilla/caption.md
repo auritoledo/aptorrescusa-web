@@ -27,5 +27,6 @@ Pregunta final para provocar comentarios.
 
 ## Notas de publicación
 
+- Datos verificados en aptorrescusa.com (web oficial): sí / no
 - Día/hora prevista:
 - Colaboradores / etiquetas:

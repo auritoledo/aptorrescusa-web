@@ -1,8 +1,11 @@
 # Instagram Studio · A.P. Torrescusa
 
 Sistema completo para crear **carruseles animados** para el Instagram de Ángel
-([@angel19643](https://www.instagram.com/angel19643/)) con la misma identidad visual que
-[aptorrescusa.com](https://aptorrescusa.com).
+([@angel19643](https://www.instagram.com/angel19643/)).
+
+> **Fuente oficial: la web publicada [aptorrescusa.com](https://aptorrescusa.com).**
+> Los HTML de este repositorio no son la versión oficial: textos, precios, ISBN, tiendas y
+> descripciones de personajes se comprueban siempre contra la web en vivo antes de publicar.
 
 Escribes el contenido en un archivo de texto (`carousel.json`), lo ves animado en el
 navegador y con un comando obtienes los vídeos MP4 listos para subir.
@@ -63,7 +66,10 @@ La skill [`carrusel-instagram`](../.claude/skills/carrusel-instagram/SKILL.md) s
 Todas comparten: partículas del tema, grano de película, viñeta, contador y el **hilo dorado**
 que continúa de una diapositiva a la siguiente.
 
-## Carruseles de ejemplo (listos para publicar)
+## Carruseles de ejemplo (pendientes de verificar)
+
+Se montaron con los textos de los HTML del repositorio, que **no** son la web oficial.
+Antes de publicarlos hay que contrastar cada dato con aptorrescusa.com (ver "Notas" en su `caption.md`).
 
 - `2026-10-20-fenix-fases-del-renacimiento` — poesía, tema fénix, 7 diapositivas.
 - `2026-10-27-guardianes-de-monte-redondo` — personajes, tema bosque, 9 diapositivas.

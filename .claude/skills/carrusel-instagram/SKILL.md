@@ -14,10 +14,16 @@ Sistema en `instagram-studio/`. Antes de empezar, lee `instagram-studio/docs/06-
    Bosque (universo, tema `bosque`), Tinta (autor, tema `editorial`) o Firmados (venta).
    Si falta información esencial y no se puede deducir, pregunta una sola vez.
 
-2. **Fuentes de verdad.** Saca todo dato de la web: `index.html`, `obras.html`, `personajes.html`,
-   `poesia.html`, `biografia.html`. Precios, ISBN, páginas y descripciones de personajes salen de ahí.
-   **Nunca inventes versos ni citas de Ángel**: usa solo los publicados o deja un marcador
-   `[VERSO DE ÁNGEL]` y avisa. Las imágenes de personajes están en `assets/images/personajes/*.jpg`.
+2. **Fuentes de verdad.** La única fuente oficial es la web publicada **https://aptorrescusa.com**.
+   Los HTML de este repositorio NO son la versión oficial y pueden estar desactualizados: no saques
+   de ellos precios, ISBN, páginas, tiendas, textos ni descripciones de personajes.
+   - Consulta la web en vivo (WebFetch) antes de escribir cualquier dato. Si no se puede acceder,
+     pide a la persona el texto o capturas de la web y marca en `caption.md` → "Notas" qué datos
+     quedan pendientes de verificar. No publiques nada sin verificar.
+   - **Nunca inventes versos ni citas de Ángel**: usa solo los publicados en la web oficial o deja
+     un marcador `[VERSO DE ÁNGEL]` y avisa.
+   - Las imágenes de `assets/images/` se pueden usar como material gráfico, pero confirma que
+     siguen siendo las vigentes en la web (portadas, retratos de personajes).
 
 3. **Guion.** Propón la estructura en una lista (6–9 diapositivas):
    portada (gancho ≤ 7 palabras) → 2.ª diapositiva igual de fuerte (Instagram la muestra primero a veces)

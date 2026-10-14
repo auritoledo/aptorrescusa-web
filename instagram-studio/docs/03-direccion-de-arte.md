@@ -1,6 +1,9 @@
 # 3 · Dirección de arte y animación
 
-## Identidad (heredada de aptorrescusa.com)
+## Identidad
+
+> Paleta y tipografías tomadas de la hoja de estilos de este repositorio (`premium-v2.css`).
+> Si la web oficial publicada usa otros colores o fuentes, actualiza `brand/tokens.css` y esta tabla.
 
 | Elemento | Valor | Uso |
 |---|---|---|

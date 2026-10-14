@@ -28,6 +28,8 @@ Evita las portadas genéricas ("Nuevo post", "Mi libro"). La portada vende la si
 - **Títulos ≤ 7 palabras**; textos de apoyo ≤ 25 palabras.
 - **Corta los títulos a mano con `\n`** en el sitio donde respira la frase.
 - **Versos reales**: nunca inventar poemas en nombre de Ángel. Usa los del libro o pídele nuevos.
+- **Datos verificados**: precios, ISBN, tiendas y descripciones salen de la web oficial publicada
+  (aptorrescusa.com), nunca de los HTML del repositorio, que pueden estar desactualizados.
 - **Habla a una persona** ("tú"), no a "los lectores".
 - **Acentos y signos de apertura** (¿ ¡) siempre: es un escritor.
 

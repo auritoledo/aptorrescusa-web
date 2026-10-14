@@ -34,5 +34,9 @@ Y ahora te pregunto a ti: ¿en qué fase estás hoy? Te leo en comentarios. 👇
 
 ## Notas de publicación
 
+- ⚠️ PENDIENTE DE VERIFICAR contra la web oficial (aptorrescusa.com): todos los textos, versos,
+  precios, formatos, tiendas y descripciones de este carrusel salen de los HTML del repositorio,
+  que no son la versión oficial. No publicar hasta comprobarlos.
+
 - Día/hora prevista: martes 20/10, 19:30
 - Ubicación: Castro Urdiales

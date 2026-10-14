@@ -32,5 +32,9 @@ Si alguno de los dos te llama, te lo envío firmado y con dedicatoria. 🖋️
 
 ## Notas de publicación
 
+- ⚠️ PENDIENTE DE VERIFICAR contra la web oficial (aptorrescusa.com): todos los textos, versos,
+  precios, formatos, tiendas y descripciones de este carrusel salen de los HTML del repositorio,
+  que no son la versión oficial. No publicar hasta comprobarlos.
+
 - Día/hora prevista: martes 03/11, 19:30
 - Revisar con Ángel que el caption en primera persona le suena suyo.

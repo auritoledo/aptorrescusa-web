@@ -33,5 +33,9 @@ Pista: en la web hay doce Sylvánimas más esperando en la galería del universo
 
 ## Notas de publicación
 
+- ⚠️ PENDIENTE DE VERIFICAR contra la web oficial (aptorrescusa.com): todos los textos, versos,
+  precios, formatos, tiendas y descripciones de este carrusel salen de los HTML del repositorio,
+  que no son la versión oficial. No publicar hasta comprobarlos.
+
 - Día/hora prevista: martes 27/10, 19:30
 - Colaboradores: etiquetar a quien ilustró los personajes si procede.
