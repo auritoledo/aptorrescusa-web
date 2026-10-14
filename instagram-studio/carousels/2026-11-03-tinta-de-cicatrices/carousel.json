@@ -7,9 +7,9 @@
       "tipo": "portada",
       "kicker": "Ángel Pérez Torrescusa",
       "titulo": "Tinta de\n*cicatrices*",
-      "subtitulo": "Quién escribe detrás del Fénix y de Monte Redondo.",
-      "imagen": "assets/images/biografia.png",
-      "enfoque": "50% 22%"
+      "subtitulo": "Quién escribe detrás del Fénix\ny de Monte Redondo.",
+      "imagen": "instagram-studio/brand/oficial/autor-retrato-1.jpg",
+      "enfoque": "62% 18%"
     },
     {
       "tipo": "cita",
@@ -21,9 +21,18 @@
       "kicker": "Tres raíces",
       "titulo": "De dónde nace\nla *escritura*",
       "items": [
-        { "titulo": "Dos tierras", "texto": "Nacido en Extremadura, criado en el País Vasco. Hoy escribe desde Castro Urdiales." },
-        { "titulo": "La dislexia", "texto": "No detuvo su vínculo con las palabras: lo volvió más físico, más atento, más propio." },
-        { "titulo": "La familia", "texto": "Sus historias nacieron imaginando mundos junto a sus hijos." }
+        {
+          "titulo": "Dos tierras",
+          "texto": "Nacido en Extremadura, criado en el País Vasco. Hoy escribe desde Castro Urdiales."
+        },
+        {
+          "titulo": "La dislexia",
+          "texto": "No detuvo su vínculo con las palabras: lo volvió más físico, más atento, más propio."
+        },
+        {
+          "titulo": "La familia",
+          "texto": "Sus historias nacieron imaginando mundos junto a sus hijos."
+        }
       ]
     },
     {
@@ -31,14 +40,17 @@
       "kicker": "Dos territorios",
       "titulo": "Heridas que brillan,\nbosques que *respiran*",
       "texto": "En sus libros el sufrimiento no se glorifica ni se borra: se transforma en una materia que acompaña al lector.",
-      "imagen": "assets/images/Poesia.png",
-      "enfoque": "50% 30%"
+      "imagen": "instagram-studio/brand/oficial/autor-retrato-2.jpg",
+      "enfoque": "55% 24%"
     },
     {
       "tipo": "cta",
       "kicker": "Sus libros",
       "titulo": "Elige tu\n*puerta de entrada*",
-      "libros": ["instagram-studio/brand/oficial/fenix-portada.jpg", "instagram-studio/brand/oficial/portadores-portada.jpg"],
+      "libros": [
+        "instagram-studio/brand/oficial/fenix-portada.jpg",
+        "instagram-studio/brand/oficial/portadores-portada.jpg"
+      ],
       "boton": "aptorrescusa.com",
       "url": "Enlace en la bio"
     }

@@ -9,7 +9,9 @@ cualquier imagen de `assets/images/` del repositorio.
 | `fenix-cubierta-completa.jpg` | Cubierta completa (contraportada, lomo, portada) | Fuente de los recortes |
 | `fenix-portada.jpg` | Portada plana (recorte) | Diapositivas `libro`, `cta` |
 | `fenix-ave.jpg` | El fénix de acuarela con margen de papel (recorte) | Fondo de portadas del Fénix |
-| `autor-contraportada.jpg` | Foto del autor de la contraportada (recorte, baja resolución) | Pedir el original en alta |
+| `autor-contraportada.jpg` | Foto del autor de la contraportada (recorte, baja resolución) | Solo de referencia: usar los retratos |
+| `autor-retrato-1.jpg` | Retrato oficial B/N, sentado, mano en la barbilla (896×1120) | Portadas y fichas del autor |
+| `autor-retrato-2.jpg` | Retrato oficial B/N, variante sonriendo (896×1120) | Bandas de imagen, CTA, historias |
 | `portadores-mockup.png` | Maqueta 3D de *Los Portadores del Ojo Verde* | Referencia, historias |
 | `portadores-cubierta-completa.jpg` | Cubierta completa | Fuente de los recortes y de la sinopsis |
 | `portadores-portada.jpg` | Portada plana (recorte) | Diapositivas `libro`, `portada` con `"libro"` |
