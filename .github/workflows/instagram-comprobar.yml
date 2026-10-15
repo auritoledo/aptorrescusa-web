@@ -1,0 +1,38 @@
+name: "Instagram · comprobar conexión"
+
+# Comprueba token, cuenta, cuota y alojamiento de vídeos. No publica nada.
+# Lánzalo después de configurar los secretos (docs/10-puesta-en-marcha.md).
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  comprobar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    defaults:
+      run:
+        working-directory: instagram-studio
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install --no-audit --no-fund --omit=dev
+      - name: Comprobar
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_LOGIN: ${{ vars.IG_LOGIN }}
+          IG_API_VERSION: ${{ vars.IG_API_VERSION }}
+          IG_MEDIA_MODE: ${{ vars.IG_MEDIA_MODE }}
+          MEDIA_BASE_URL: ${{ vars.MEDIA_BASE_URL }}
+          MEDIA_FTP_HOST: ${{ secrets.MEDIA_FTP_HOST }}
+          MEDIA_FTP_USER: ${{ secrets.MEDIA_FTP_USER }}
+          MEDIA_FTP_PASSWORD: ${{ secrets.MEDIA_FTP_PASSWORD }}
+          MEDIA_FTP_DIR: ${{ vars.MEDIA_FTP_DIR }}
+          MEDIA_FTP_SECURE: ${{ vars.MEDIA_FTP_SECURE }}
+        run: node scripts/comprobar-instagram.mjs

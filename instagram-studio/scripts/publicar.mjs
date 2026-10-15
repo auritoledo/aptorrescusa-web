@@ -77,19 +77,37 @@ function ensureRender(slug, total, formato) {
   });
 }
 
+async function ftpClient() {
+  const { Client } = await import("basic-ftp");
+  const client = new Client();
+  await client.access({
+    host: process.env.MEDIA_FTP_HOST,
+    user: process.env.MEDIA_FTP_USER,
+    password: process.env.MEDIA_FTP_PASSWORD,
+    secure: (process.env.MEDIA_FTP_SECURE ?? "").trim() !== "0",
+  });
+  return client;
+}
+const ftpDir = (slug) => `${process.env.MEDIA_FTP_DIR ?? "/"}/${slug}`.replace(/\/+/g, "/");
+
+/** Tras publicar, borra los vídeos del alojamiento: Instagram ya tiene su copia. */
+async function cleanupFtp(slug) {
+  if (cfg.dryRun) return console.log(`  [simulación] borrar ${ftpDir(slug)} del alojamiento`);
+  const client = await ftpClient();
+  try {
+    await client.removeDir(ftpDir(slug));
+    console.log("  ✓ Vídeos temporales borrados del alojamiento");
+  } finally {
+    client.close();
+  }
+}
+
 /** Modo "url": sube los archivos por FTP al alojamiento que sirve MEDIA_BASE_URL. */
 async function uploadFtp(slug, files) {
   if (cfg.dryRun) return files.map((f) => `${cfg.mediaBaseUrl ?? "https://ejemplo"}/${slug}/${path.basename(f)}`);
-  const { Client } = await import("basic-ftp");
-  const client = new Client();
+  const client = await ftpClient();
   try {
-    await client.access({
-      host: process.env.MEDIA_FTP_HOST,
-      user: process.env.MEDIA_FTP_USER,
-      password: process.env.MEDIA_FTP_PASSWORD,
-      secure: process.env.MEDIA_FTP_SECURE !== "0",
-    });
-    await client.ensureDir(`${process.env.MEDIA_FTP_DIR ?? "/"}/${slug}`.replace(/\/+/g, "/"));
+    await client.ensureDir(ftpDir(slug));
     for (const f of files) await client.uploadFrom(f, path.basename(f));
   } finally {
     client.close();
@@ -137,6 +155,7 @@ async function publishOne(slug, state) {
   if (cfg.dryRun) Object.assign(state, done);
   save(slug, done, `publicado ${slug}`);
   console.log(`  ✓ Publicado: ${permalink}`);
+  if (needsUrl) await cleanupFtp(slug).catch((e) => console.log(`  ! No se pudieron borrar los vídeos temporales: ${e.message}`));
 
   const primer = state.primerComentario === false ? "" : captionSection(slug, "Primer comentario");
   if (primer) {

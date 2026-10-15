@@ -86,8 +86,8 @@ los lunes a las 9:00) que ejecute esa skill y abra el PR. El resultado sigue esp
 |---|---|---|
 | Secret | `IG_USER_ID` | ID de la cuenta de Instagram |
 | Secret | `IG_ACCESS_TOKEN` | Token del paso 3.3 |
-| Variable | `IG_LOGIN` | `facebook` (por defecto) o `instagram` |
-| Variable | `IG_MEDIA_MODE` | `resumable` (por defecto con Facebook Login) o `url` |
+| Variable | `IG_LOGIN` | `instagram` (por defecto, camino elegido) o `facebook` |
+| Variable | `IG_MEDIA_MODE` | `url` (por defecto con Instagram Login) o `resumable` (solo con Facebook Login) |
 | Variable | `IG_API_VERSION` | Opcional; por defecto `v26.0` |
 | Variable | `MEDIA_BASE_URL` | Solo modo `url`: URL pública de la carpeta, p. ej. `https://aptorrescusa.com/ig-media` |
 | Variable | `MEDIA_FTP_DIR` | Solo modo `url`: carpeta del servidor que corresponde a esa URL |
@@ -137,7 +137,7 @@ Para frenar una publicación: «Instagram · aprobar o cancelar» → `cancelar`
 | Diapositivas por carrusel publicado por API | 2–10 (en la app son 20) |
 | Publicaciones por API | 100 en 24 h (algunas páginas de Meta aún dicen 50) |
 | Programación nativa | No existe: la hace este sistema |
-| Música | **No se puede añadir por API.** Si un carrusel la necesita, publícalo a mano desde la app |
+| Música | La de la biblioteca de Instagram **no** se puede añadir por API. Este sistema la mete **dentro de los vídeos** (campo `musica`) |
 | Texto alternativo | Solo en imágenes; en los vídeos no se puede |
 | Hashtags | 5 como máximo |
 

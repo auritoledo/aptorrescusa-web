@@ -1,6 +1,6 @@
 name: "Instagram · renovar token"
 
-# Solo hace falta con Instagram Login (IG_LOGIN=instagram): ese token caduca a los 60 días.
+# Con Instagram Login (el camino elegido, por defecto) el token caduca a los 60 días.
 # Se renueva los días 1 y 15 de cada mes y se guarda en el secreto IG_ACCESS_TOKEN.
 # Necesita el secreto GH_SECRETS_TOKEN: un token de GitHub (fine-grained) con permiso
 # «Secrets: Read and write» sobre este repositorio. Ver instagram-studio/docs/09-caminos-de-conexion.md
@@ -15,7 +15,7 @@ permissions:
 
 jobs:
   renovar:
-    if: vars.IG_LOGIN == 'instagram'
+    if: vars.IG_LOGIN != 'facebook'
     runs-on: ubuntu-latest
     timeout-minutes: 5
     defaults:

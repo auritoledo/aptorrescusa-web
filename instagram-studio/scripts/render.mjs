@@ -12,7 +12,7 @@
 import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
-import { spawn, execSync } from "node:child_process";
+import { spawn, spawnSync, execSync } from "node:child_process";
 import { createRequire } from "node:module";
 import { startServer, STUDIO_DIR } from "./server.mjs";
 import { validate } from "./validate.mjs";
@@ -83,6 +83,45 @@ const { server, port } = await startServer(0);
 const browser = await chromium.launch();
 const scale = BORRADOR ? 0.5 : 1;
 const t0 = Date.now();
+const musica = !FIJAS && carousel.musica ? carousel.musica : null;
+
+/** Duración de cada diapositiva (para saber qué trozo de la canción le toca a cada una). */
+async function slideDurations() {
+  const page = await browser.newPage({ viewport: { width: 1080, height: 1350 } });
+  const durs = [];
+  for (let i = 0; i < total; i++) {
+    await page.goto(`http://127.0.0.1:${port}/engine/studio.html?render=1&c=${encodeURIComponent(slug)}&slide=${i}`);
+    await page.waitForFunction(() => window.__ready || window.__error, null, { timeout: 30000 });
+    durs.push(await page.evaluate(() => window.__info?.dur ?? 0));
+  }
+  await page.close();
+  return durs;
+}
+
+/** Duración de un audio en segundos (sin ffprobe: se lee de la salida de ffmpeg). */
+function audioSeconds(file) {
+  const r = spawnSync(ffmpeg, ["-hide_banner", "-i", file], { encoding: "utf8" });
+  const m = (r.stderr ?? "").match(/Duration: (\d+):(\d+):([\d.]+)/);
+  if (!m) throw new Error(`No puedo leer la duración de ${file}`);
+  return +m[1] * 3600 + +m[2] * 60 + +m[3];
+}
+
+/**
+ * Música continua: cada diapositiva lleva el trozo de canción que le corresponde.
+ * Al deslizar, la canción sigue por donde iba (cada vídeo de un carrusel suena por separado).
+ */
+async function addMusic(base, i, durs) {
+  const file = path.join(STUDIO_DIR, musica.archivo);
+  const largo = audioSeconds(file);
+  const dur = durs[i] / 1000;
+  const offset = ((musica.inicio ?? 0) + durs.slice(0, i).reduce((a, b) => a + b, 0) / 1000) % largo;
+  const vol = musica.volumen ?? 0.9;
+  const tmp = `${base}.audio.mp4`;
+  await run(ffmpeg, ["-y", "-loglevel", "error", "-i", `${base}.mp4`, "-stream_loop", "-1", "-ss", offset.toFixed(3), "-i", file,
+    "-filter_complex", `[1:a]volume=${vol},afade=t=in:st=0:d=0.15,afade=t=out:st=${Math.max(0, dur - 0.35).toFixed(2)}:d=0.35[a]`,
+    "-map", "0:v", "-map", "[a]", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-ar", "44100", "-t", dur.toFixed(3), "-movflags", "+faststart", tmp]);
+  fs.renameSync(tmp, `${base}.mp4`);
+}
 
 async function renderSlide(i) {
   const page = await browser.newPage({ viewport: { width: 1080, height: 1350 }, deviceScaleFactor: scale });
@@ -108,13 +147,18 @@ async function renderSlide(i) {
     await run(
       ffmpeg,
       ["-y", "-loglevel", "error", "-f", "image2pipe", "-framerate", String(fps), "-i", "-",
+        "-vf", "scale=trunc(iw/2)*2:trunc(ih/2)*2", // H.264 exige medidas pares (el borrador sale a 540×675)
         "-c:v", "libx264", "-pix_fmt", "yuv420p", "-profile:v", "high", "-preset", BORRADOR ? "veryfast" : "slow",
         "-crf", BORRADOR ? "26" : "19", "-r", String(fps), "-movflags", "+faststart", `${base}.mp4`],
       async (stdin) => {
-        for (let f = 0; f < frames; f++) {
-          await seekTo((f * 1000) / fps);
-          const buf = await page.screenshot({ type: "jpeg", quality: BORRADOR ? 80 : 95 });
-          if (!stdin.write(buf)) await new Promise((r) => stdin.once("drain", r));
+        try {
+          for (let f = 0; f < frames && !stdin.destroyed; f++) {
+            await seekTo((f * 1000) / fps);
+            const buf = await page.screenshot({ type: "jpeg", quality: BORRADOR ? 80 : 95 });
+            if (!stdin.write(buf)) await new Promise((r) => stdin.once("drain", r));
+          }
+        } catch {
+          // ffmpeg ha fallado y cerrado la entrada: el error real lo da run()
         }
         stdin.end();
       }
@@ -125,8 +169,9 @@ async function renderSlide(i) {
   return base;
 }
 
-console.log(`\nRenderizando "${slug}" · ${solo.length} diapositiva(s) · ${FIJAS ? "solo PNG" : `${fps} fps`}${BORRADOR ? " · BORRADOR" : ""}`);
+console.log(`\nRenderizando "${slug}" · ${solo.length} diapositiva(s) · ${FIJAS ? "solo PNG" : `${fps} fps`}${musica ? " · con música" : ""}${BORRADOR ? " · BORRADOR" : ""}`);
 try {
+  const durs = musica ? await slideDurations() : null;
   // Varias diapositivas en paralelo (cada una en su pestaña)
   const queue = [...solo];
   const done = [];
@@ -139,6 +184,10 @@ try {
   await Promise.all(workers);
 
   const bases = done.filter(Boolean);
+  if (musica) {
+    for (const i of solo) await addMusic(done[i], i, durs);
+    console.log(`  ♪ Música añadida: ${musica.archivo}`);
+  }
   // Hoja de contactos: todas las diapositivas en una sola imagen para aprobar de un vistazo
   if (bases.length > 1) {
     const list = bases.map((b) => ["-i", `${b}.png`]).flat();

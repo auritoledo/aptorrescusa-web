@@ -17,7 +17,9 @@ Una idea del estratega: pilar, tema, gancho, estructura, fuentes y fecha propues
    empiece por la fecha propuesta (AAAA-MM-DD-…).
 2. Escribe `carousel.json` y `caption.md` completos: caption con gancho en la primera línea,
    ≤ 5 hashtags (siempre #aptorrescusa), primer comentario, texto alternativo de cada diapositiva,
-   música sugerida y "Notas" con la **fuente oficial de cada texto e imagen**.
+   música y "Notas" con la **fuente oficial de cada texto e imagen**.
+   Añade `"musica"` en `carousel.json` con una canción de `brand/musica/` que figure en `LICENCIAS.md`
+   (la API de Instagram no permite añadir música después). Si no hay ninguna adecuada, dilo.
 3. `npm run validar -- <slug>` hasta que no haya errores ni avisos.
 4. `npm run fijas -- <slug>` y **mira** `output/<slug>/_hoja-contactos.png` y cada PNG: nada toca el
    hilo dorado ni el margen, caras sin tapar, cortes de línea bonitos, portada legible en miniatura.

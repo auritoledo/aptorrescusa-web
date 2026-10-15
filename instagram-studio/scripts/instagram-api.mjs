@@ -4,10 +4,10 @@
 // Configuración (variables de entorno; en GitHub van como "secrets"):
 //   IG_USER_ID        ID de la cuenta profesional de Instagram (@aptorrescusa)
 //   IG_ACCESS_TOKEN   Token de acceso de larga duración
-//   IG_LOGIN          "facebook" (Facebook Login for Business, por defecto) o "instagram" (Instagram Login)
+//   IG_LOGIN          "instagram" (Instagram Login, por defecto: sin Facebook) o "facebook" (Facebook Login for Business)
 //   IG_API_VERSION    Versión de la API (por defecto v26.0)
-//   IG_MEDIA_MODE     "resumable" (sube el archivo directamente; solo con IG_LOGIN=facebook)
-//                     o "url" (Instagram descarga el archivo de MEDIA_BASE_URL)
+//   IG_MEDIA_MODE     "url" (Instagram descarga los vídeos de MEDIA_BASE_URL; por defecto con Instagram Login)
+//                     o "resumable" (subida directa; solo con IG_LOGIN=facebook)
 //   MEDIA_BASE_URL    Solo modo "url": URL pública donde se suben los vídeos (ver subir-medios.mjs)
 //   IG_DRY_RUN=1      Simula todo sin llamar a Instagram
 import fs from "node:fs";
@@ -17,7 +17,7 @@ const env = (n) => (process.env[n]?.trim() ? process.env[n].trim() : undefined);
 
 export function config() {
   const dryRun = env("IG_DRY_RUN") === "1" || process.argv.includes("--simular");
-  const login = env("IG_LOGIN") ?? "facebook";
+  const login = env("IG_LOGIN") ?? "instagram";
   const version = env("IG_API_VERSION") ?? "v26.0";
   const mode = env("IG_MEDIA_MODE") ?? (login === "facebook" ? "resumable" : "url");
   if (!["facebook", "instagram"].includes(login)) throw new Error(`IG_LOGIN debe ser "facebook" o "instagram" (es "${login}")`);

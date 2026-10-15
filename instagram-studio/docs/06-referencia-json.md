@@ -32,6 +32,7 @@ archivos sueltos en la carpeta del carrusel o imágenes generadas. Ver [04-arte-
 | `particulas` | número o `false` | según tema | Cantidad de partículas. |
 | `duracion` | segundos | 6 | Duración mínima por diapositiva (el motor alarga si el texto lo necesita). |
 | `fps` | 24 · 30 | 30 | Fotogramas por segundo del vídeo. |
+| `musica` | `{ "archivo": "brand/musica/x.mp3", "inicio": 12, "volumen": 0.9 }` | — | Canción que se reparte entre las diapositivas: cada vídeo lleva su trozo y al deslizar suena seguida. `inicio` = segundo de la canción por el que empieza. El archivo tiene que figurar en `brand/musica/LICENCIAS.md`. |
 | `marca` | `{ "usuario": "@…", "web": "…", "logo": ruta }` | @aptorrescusa · aptorrescusa.com · sin logo | Datos de firma. Sin `logo`, el cierre muestra el nombre en versalitas espaciadas, como en las cubiertas. |
 
 Cualquier diapositiva puede sobrescribir `tema`, `hilo`, `particulas`, `duracion` (3–60 s) y `enfoque`.

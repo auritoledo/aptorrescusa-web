@@ -62,6 +62,7 @@ jobs:
           MEDIA_FTP_USER: ${{ secrets.MEDIA_FTP_USER }}
           MEDIA_FTP_PASSWORD: ${{ secrets.MEDIA_FTP_PASSWORD }}
           MEDIA_FTP_DIR: ${{ vars.MEDIA_FTP_DIR }}
+          MEDIA_FTP_SECURE: ${{ vars.MEDIA_FTP_SECURE }}
         run: |
           git config user.name "instagram-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

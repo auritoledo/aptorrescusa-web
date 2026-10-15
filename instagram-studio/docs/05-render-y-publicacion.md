@@ -43,7 +43,7 @@ necesita música o tiene más de 10 diapositivas, que la API de Instagram no per
 1. Pasa los MP4 al móvil (AirDrop, Google Drive, WhatsApp "como documento" para no perder calidad).
 2. Instagram → **+** → Publicación → icono de selección múltiple → elige los vídeos **en orden**.
 3. Comprueba que el formato sea **4:5** (la primera diapositiva fija el formato de todas).
-4. **Música**: añádela en la pantalla siguiente (las diapositivas salen sin audio a propósito; la música de la biblioteca de Instagram evita problemas de derechos). Sugerencia en `caption.md`.
+4. **Música**: si el carrusel ya lleva música integrada (campo `musica`), no añadas otra. Si no, puedes elegirla de la biblioteca de Instagram en la pantalla siguiente.
 5. Pega el caption de `caption.md` (máximo 5 hashtags).
 6. **Configuración avanzada → Accesibilidad → Texto alternativo**: pega el de cada diapositiva.
 7. Ubicación: Castro Urdiales. Etiqueta colaboradores si los hay.

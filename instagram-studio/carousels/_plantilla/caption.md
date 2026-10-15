@@ -21,7 +21,9 @@ Pregunta final para provocar comentarios.
 - Diapositiva 1: …
 - Diapositiva 2: …
 
-## Música sugerida (se añade en la app al publicar)
+## Música
+
+(la canción va integrada en los vídeos: campo `musica` de carousel.json; aquí, título y autor por si hay que citarla)
 
 - …
 

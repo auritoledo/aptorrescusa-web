@@ -68,6 +68,20 @@ export function validate(slug) {
     for (const b of s.libros ?? []) images.push([at, b]);
   });
   if (c.panorama) images.push(["Panorama", typeof c.panorama === "string" ? c.panorama : c.panorama.imagen]);
+  if (!c.musica) warns.push("Sin música: añade \"musica\" en carousel.json (la API de Instagram no permite añadirla después).");
+  if (c.musica) {
+    const m = c.musica;
+    const archivo = String(m.archivo ?? "");
+    if (!archivo.startsWith("brand/musica/")) errors.push(`Música: "${archivo}" tiene que estar en brand/musica/.`);
+    else if (!fs.existsSync(path.join(STUDIO_DIR, archivo))) errors.push(`Música: no existe "${archivo}".`);
+    else {
+      const lic = path.join(STUDIO_DIR, "brand/musica/LICENCIAS.md");
+      const txt = fs.existsSync(lic) ? fs.readFileSync(lic, "utf8") : "";
+      if (!txt.includes(path.basename(archivo))) errors.push(`Música: "${path.basename(archivo)}" no figura en brand/musica/LICENCIAS.md (fuente y licencia obligatorias).`);
+    }
+    if (m.volumen !== undefined && !(m.volumen > 0 && m.volumen <= 1.5)) errors.push("Música: volumen entre 0 y 1.5.");
+    if (m.inicio !== undefined && !(m.inicio >= 0)) errors.push("Música: inicio en segundos, 0 o más.");
+  }
   if (c.marca?.logo) images.push(["Logo", c.marca.logo]);
   for (const [at, src] of images) {
     if (!ARTE_OFICIAL(src)) {

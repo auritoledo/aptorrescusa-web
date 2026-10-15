@@ -16,7 +16,8 @@ Idea → Guion → carousel.json → Estudio (vista previa) → Render MP4 → A
 ```
 
 Un **equipo de agentes** (Claude Code) prepara los carruseles y **GitHub Actions los publica solos**
-a la hora programada, siempre después de que una persona los apruebe. Ver
+a la hora programada, con música integrada, siempre después de que una persona los apruebe.
+**Para conectarlo por primera vez: [docs/10-puesta-en-marcha.md](docs/10-puesta-en-marcha.md).** Ver
 [Publicación programada y agentes](docs/08-automatizacion.md).
 
 ## Empezar en 3 minutos
@@ -69,6 +70,7 @@ npm run publicar:simular                             # ver qué publicaría ahor
 7. [Skills y herramientas](docs/07-skills-y-herramientas.md) — investigación y alternativas.
 8. [Publicación programada y agentes](docs/08-automatizacion.md) — calendario, aprobación, publicación automática, métricas.
 9. [Caminos para conectar Instagram](docs/09-caminos-de-conexion.md) — API oficial, intermediarios, Make/n8n, programadores; comparativa y recomendación.
+10. [Puesta en marcha](docs/10-puesta-en-marcha.md) — **lista paso a paso para conectar @aptorrescusa (camino A2)**.
 
 ## Tipos de diapositiva
 

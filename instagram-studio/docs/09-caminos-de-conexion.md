@@ -5,14 +5,17 @@ un servicio intermedio o una persona) y en **dónde se ejecuta** la publicación
 
 | # | Camino | ¿Automático? | Coste | Dificultad | Música | Encaja con este sistema |
 |---|---|---|---|---|---|---|
-| **A1** | API oficial · Facebook Login + usuario del sistema | ✅ Total | 0 € | Media (una vez) | ❌ | ✅ Ya implementado |
-| **A2** | API oficial · Instagram Login (sin página de Facebook) | ✅ Total | 0 € | Media | ❌ | ✅ Ya implementado (vídeos por FTP) |
+| **A1** | API oficial · Facebook Login + usuario del sistema | ✅ Total | 0 € | Media (una vez) | 🎵 Dentro del vídeo | ✅ Implementado |
+| **A2** ✔ elegido | API oficial · Instagram Login (sin página de Facebook) | ✅ Total | 0 € | Media | 🎵 Dentro del vídeo | ✅ Implementado (por defecto) |
 | **B** | Servicio de publicación con API (Upload-Post, Ayrshare…) | ✅ Total | 16–600 $/mes | Baja | ❌ | 🟡 Requiere un adaptador pequeño |
 | **C** | Automatizador sin código (Make, n8n, Zapier) | ✅ Total | 0–30 €/mes | Media | ❌ | 🟡 Exportar a Drive + escenario |
 | **D** | Programadores visuales (Meta Business Suite, app de Instagram, Metricool…) | 🟡 Se sube a mano una vez; se publica solo | 0–30 €/mes | Muy baja | ✅ En la app | ✅ Con los MP4 de `output/` |
 
-**Recomendación:** **A1** como camino principal (gratis, oficial, sin token que caduque y sin alojar
-vídeos) y **D** (programar en la propia app de Instagram) para los carruseles que necesiten música.
+> **Decisión tomada (octubre 2026): A2** — Instagram Login, sin Facebook, coste cero. Todos los
+> carruseles llevan música, que va **dentro de los vídeos** (campo `musica` de `carousel.json`), porque la
+> API no permite añadir la de la biblioteca de Instagram. Pasos: [10-puesta-en-marcha.md](10-puesta-en-marcha.md).
+
+Recomendación general (para quien parta de cero): **A1** si hay página de Facebook; **A2** si no.
 
 ---
 

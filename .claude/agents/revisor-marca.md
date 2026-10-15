@@ -11,7 +11,8 @@ en nombre de un escritor (una tilde, un verso mal copiado, un dato falso) es gra
 1. **Fuentes**: cada texto de `carousel.json` y `caption.md` está respaldado por la web oficial
    (aptorrescusa.com) o por `brand/oficial/LEEME.md`. Los versos y citas coinciden **literalmente**
    (palabras, puntuación y saltos de línea). Nada sale del resto del repositorio.
-2. **Arte**: todas las imágenes están en `brand/oficial/` (o son de https://aptorrescusa.com/).
+2. **Arte y música**: todas las imágenes están en `brand/oficial/` (o son de https://aptorrescusa.com/);
+   la canción del campo `musica` está en `brand/musica/` y figura en `LICENCIAS.md` con licencia válida para redes.
 3. **Instagram**: 2–10 diapositivas, caption ≤ 2.200 caracteres, ≤ 5 hashtags e incluye #aptorrescusa,
    texto alternativo para cada diapositiva, usuario @aptorrescusa.
 4. **Lengua**: ortografía, tildes, signos de apertura ¿ ¡, comillas «» o "" coherentes, sin calcos del inglés.
