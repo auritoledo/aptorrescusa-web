@@ -1,6 +1,6 @@
 ---
 name: carrusel-instagram
-description: Crea carruseles animados para el Instagram de A.P. Torrescusa (Ángel, @aptorrescusa) con el sistema de instagram-studio/. Úsala siempre que se pida un carrusel, post, publicación de Instagram, contenido para redes, diapositivas animadas, o una pieza sobre El amor del Fénix, Los Portadores del Ojo Verde, Monte Redondo, los Sylvánimas o el autor. También para renderizar, revisar o modificar un carrusel existente.
+description: Crea carruseles animados para el Instagram de A.P. Torrescusa (Ángel, @aptorrescusa) con el sistema de instagram-studio/. Úsala siempre que se pida un carrusel, post, publicación de Instagram, contenido para redes, diapositivas animadas, o una pieza sobre El amor del Fénix, Los portadores del ojo verde, Monte Redondo, los Sylvánimas o el autor. También para renderizar, revisar o modificar un carrusel existente.
 ---
 
 # Carrusel animado para Instagram · A.P. Torrescusa

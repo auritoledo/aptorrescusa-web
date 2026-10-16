@@ -5,7 +5,7 @@
   "slides": [
     {
       "tipo": "portada",
-      "kicker": "A.P. Torrescusa",
+      "kicker": "Fénix o Monte Redondo",
       "titulo": "¿*Fuego*\no bosque?",
       "subtitulo": "Dos libros, una misma firma.\nDesliza y elige el tuyo."
     },
@@ -20,7 +20,7 @@
     {
       "tipo": "libro",
       "tema": "fenix-acuarela",
-      "kicker": "Fuego · Poemario",
+      "kicker": "Fuego · 72 poemas",
       "titulo": "El amor del Fénix",
       "texto": "Cuatro fases: Cenizas, Combustión,\nRenacimiento y Vuelo.",
       "portada": "brand/oficial/fenix-portada.jpg",
@@ -29,7 +29,7 @@
     {
       "tipo": "cita",
       "tema": "fenix-acuarela",
-      "texto": "Con el corazón en dos tierras y una sola *verdad*,",
+      "texto": "Con el corazón\nen dos tierras\ny una sola *verdad*,",
       "autor": "Ángel"
     },
     {
@@ -37,15 +37,15 @@
       "tema": "bosque-acuarela",
       "kicker": "Si eliges bosque",
       "titulo": "Monte Redondo\nte está *mirando*",
-      "texto": "Entre reencuentros inimaginables y pactos de sangre que desafían la vista.",
+      "texto": "Un bosque que recuerda. Un niño que no puede olvidar.",
       "imagen": "brand/oficial/portadores-rostros.jpg",
       "enfoque": "75% 65%"
     },
     {
       "tipo": "libro",
       "tema": "bosque-acuarela",
-      "kicker": "Bosque · Fantasía",
-      "titulo": "Los Portadores del Ojo Verde",
+      "kicker": "Bosque · Fantasía juvenil",
+      "titulo": "Los portadores del ojo verde",
       "texto": "¿Podrán dos primos, separados por un secreto mágico, unir sus destinos para salvar un mundo?",
       "portada": "brand/oficial/portadores-portada.jpg",
       "precio": "aptorrescusa.com"
@@ -54,19 +54,19 @@
       "tipo": "lista",
       "tema": "papel",
       "kicker": "Cara a cara",
-      "titulo": "Dos libros,\nuna misma *firma*",
+      "titulo": "Fuego frente\na *bosque*",
       "items": [
         {
           "titulo": "Fuego",
-          "texto": "Poesía en cuatro fases, de las cenizas al vuelo."
+          "texto": "72 poemas en cuatro fases, de las cenizas al vuelo."
         },
         {
           "titulo": "Bosque",
-          "texto": "Fantasía: un viaje hacia las cumbres para salvar Monte Redondo."
+          "texto": "Fantasía juvenil, libro 1 de una trilogía: Unai sube a las cumbres para salvar Monte Redondo."
         },
         {
           "titulo": "Lo que comparten",
-          "texto": "El mismo papel crema, la acuarela y la firma A.P. Torrescusa."
+          "texto": "Cubiertas de acuarela sobre fondo crema y la firma A.P. Torrescusa."
         }
       ]
     },
@@ -74,7 +74,7 @@
       "tipo": "cta",
       "kicker": "Tu turno",
       "titulo": "¿Por cuál\n*empiezas*?",
-      "texto": "Guárdalo para tu próxima lectura\no envíaselo a quien necesite fuego… o bosque.",
+      "texto": "Envíaselo a quien necesite fuego… o bosque.",
       "libros": [
         "brand/oficial/fenix-portada.jpg",
         "brand/oficial/portadores-portada.jpg"

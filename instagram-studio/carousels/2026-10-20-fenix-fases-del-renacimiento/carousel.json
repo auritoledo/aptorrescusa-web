@@ -79,7 +79,7 @@
     },
     {
       "tipo": "libro",
-      "kicker": "Poemario",
+      "kicker": "Poemario · 72 poemas",
       "titulo": "El amor del Fénix",
       "texto": "Atrévete a arder. Atrévete a renacer.",
       "portada": "brand/oficial/fenix-portada.jpg",
@@ -89,7 +89,7 @@
       "tipo": "cta",
       "kicker": "Tu turno",
       "titulo": "¿Qué sombra\nhas *vencido* tú?",
-      "texto": "Cuéntamelo en comentarios y guarda estos versos para el día que los necesites.",
+      "texto": "Te leo en comentarios.",
       "boton": "El libro, en aptorrescusa.com"
     }
   ],

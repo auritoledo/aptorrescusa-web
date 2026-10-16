@@ -5,6 +5,9 @@ aptorrescusa.com, son la única fuente de arte y textos de los carruseles.
 
 Instagram oficial de Ángel: **@aptorrescusa**.
 
+> **Cómo se escribe el título:** *Los portadores del ojo verde*, con mayúscula solo en la primera
+> palabra, como en la web y en la cubierta. *El amor del Fénix* lleva «Fénix» con mayúscula.
+
 | Archivo | Qué es | Uso |
 |---|---|---|
 | `fenix-mockup.png` | Maqueta 3D de *El amor del Fénix* | Referencia, historias |
@@ -14,12 +17,12 @@ Instagram oficial de Ángel: **@aptorrescusa**.
 | `autor-contraportada.jpg` | Foto del autor de la contraportada (recorte, baja resolución) | Solo de referencia: usar los retratos |
 | `autor-retrato-1.jpg` | Retrato oficial B/N, sentado, mano en la barbilla (896×1120) | Portadas y fichas del autor |
 | `autor-retrato-2.jpg` | Retrato oficial B/N, variante sonriendo (896×1120) | Bandas de imagen, CTA, historias |
-| `portadores-mockup.png` | Maqueta 3D de *Los Portadores del Ojo Verde* | Referencia, historias |
+| `portadores-mockup.png` | Maqueta 3D de *Los portadores del ojo verde* | Referencia, historias |
 | `portadores-cubierta-completa.jpg` | Cubierta completa | Fuente de los recortes y de la sinopsis |
 | `portadores-portada.jpg` | Portada plana (recorte) | Diapositivas `libro`, `portada` con `"libro"` |
 | `portadores-rostros.jpg` | Franja superior de la portada: los dos rostros frente a frente (recorte 618×470 de `portadores-portada.jpg`) | Banda de imagen en `texto` |
 | `fenix-contraportada.jpg` | Contraportada de *El amor del Fénix* sin el lomo: retrato del autor, nombre y dos estrofas de «Lo que el tiempo no se lleva» (recorte 624×962+0+0 de `fenix-cubierta-completa.jpg`) | Banda de imagen en `texto`, historias |
-| `portadores-contraportada.jpg` | Contraportada de *Los Portadores del Ojo Verde* sin el lomo: sinopsis entre dos figuras de acuarela de espaldas (recorte 616×935+0+0 de `portadores-cubierta-completa.jpg`) | Banda de imagen en `texto`, historias |
+| `portadores-contraportada.jpg` | Contraportada de *Los portadores del ojo verde* sin el lomo: sinopsis entre dos figuras de acuarela de espaldas (recorte 616×935+0+0 de `portadores-cubierta-completa.jpg`) | Banda de imagen en `texto`, historias |
 
 ## Textos oficiales (de las cubiertas)
 
@@ -31,7 +34,7 @@ Instagram oficial de Ángel: **@aptorrescusa**.
   > El futuro no es más que un espejismo en movimiento: / lo miro de frente, acepto su niebla, / y sigo caminando.
 - Firma de contraportada: Ángel Pérez Torrescusa · aptorrescusa.com
 
-**Los Portadores del Ojo Verde**
+**Los portadores del ojo verde**
 - Lema: «Para salvar el bosque, tendrá que convertirse en él.»
 - Sinopsis de contraportada:
   > *El bosque de Monte Redondo está muriendo, y el tiempo se acaba.*
@@ -45,6 +48,40 @@ Instagram oficial de Ángel: **@aptorrescusa**.
   > En las profundidades del bosque, entre reencuentros inimaginables y pactos de sangre que desafían la vista, Unai descubrirá que el verdadero coste de la vida no es la distancia recorrida, sino la memoria sacrificada.
   >
   > *¿Podrán dos primos, separados por un secreto mágico, unir sus destinos para salvar un mundo? ¿Y qué terrible precio pagará Unai por devolver el latido al corazón del bosque?*
+
+## Textos oficiales (de la web aptorrescusa.com)
+
+Copiados de la web impresa en PDF el 16/10/2026. Algunas secciones no se imprimieron (la web carga el
+contenido al hacer scroll): Monte Redondo, Los poemas, El autor, Centros y bibliotecas y Prensa siguen
+**sin verificar**. Las imágenes de la web son las mismas cubiertas que ya hay en esta carpeta.
+
+**Los portadores del ojo verde** (portada de la web)
+- Antetítulo: «Libro 1 de una trilogía».
+- Género y edad: «novela de fantasía juvenil, desde 12 años».
+- Titular: «Un bosque que recuerda. Un niño que no puede olvidar.»
+- Entradilla: «Quince criaturas del bosque, una familia con un secreto en la sangre y una prueba que
+  convirtió en hielo a nueve de cada diez. Para lectores desde 12 años y los adultos que los acompañan.»
+- Precio: «desde 4,99 €». Botones: «Comprar · desde 4,99 €» y «Leer el comienzo gratis».
+- Ventajas: «Firmado y dedicado por el autor, si quieres» · «Precio fijo por ley (Ley 10/2007)» ·
+  «Tapa blanda y tapa dura».
+- Personajes: «Así los imaginamos en color. Dentro del libro, cada personaje tiene su retrato a lápiz.»
+
+**El amor del Fénix** (enlace desde la portada)
+- «¿Lees poesía? *El amor del Fénix*: 72 poemas sobre lo que arde y lo que vuelve.»
+
+**Pie de la web**
+- «Fantasía y poesía escritas desde Castro Urdiales, Cantabria. Libros firmados y dedicados a mano.»
+- Secciones de libros: Los portadores del ojo verde · El amor del Fénix · Ejemplares firmados ·
+  Leer el comienzo · **El comienzo y 12 poemas en PDF**.
+- Explorar: Monte Redondo · Los poemas · El autor · Centros y bibliotecas · Prensa.
+- Contacto: Escribir · WhatsApp · Correo. Firma legal: © 2026 Ángel Pérez Torrescusa.
+
+**Uso en Instagram**
+- Llamadas a la acción sin venta agresiva que ofrece la web: **leer el comienzo gratis** y **el comienzo y
+  12 poemas en PDF**. Funcionan mejor que «cómpralo» como única petición del cierre.
+- Datos que se pueden usar tal cual: libro 1 de una trilogía, desde 12 años, 72 poemas, ejemplares firmados
+  y dedicados, tapa blanda y tapa dura, desde 4,99 €. Los precios pueden cambiar: no ponerlos en las
+  diapositivas, como mucho en el caption y comprobándolos antes.
 
 ## Paleta medida en las cubiertas
 

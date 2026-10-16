@@ -8,7 +8,7 @@ Así empieza el prólogo de "El amor del Fénix". Ángel Pérez Torrescusa escri
 
 Su pregunta era una paradoja: ¿cómo narrar la vida sin glorificar el sufrimiento, ni borrar sus marcas? La respuesta fue un fénix.
 
-Desliza para conocer de dónde nace su escritura. Y si alguno de sus dos libros te llama, lo tienes en la web. 🖋️
+Desliza para conocer de dónde nace su escritura. Y si alguno de sus dos libros te llama, lo tienes en la web, firmado y dedicado si quieres. 🖋️
 
 📖 Enlace en la bio → aptorrescusa.com
 
@@ -32,6 +32,7 @@ Desliza para conocer de dónde nace su escritura. Y si alguno de sus dos libros 
 
 ## Notas de publicación
 
+- Web oficial (PDF de aptorrescusa.com, 16/10/2026): «Fantasía y poesía escritas desde Castro Urdiales, Cantabria. Libros firmados y dedicados a mano.» y «Firmado y dedicado por el autor, si quieres». Confirma Castro Urdiales y la oferta de ejemplares dedicados.
 - Verificado con material oficial: retratos, cubiertas, nombre completo (Ángel Pérez Torrescusa), web, y textos del prólogo y el epílogo del manuscrito de "El amor del Fénix".
 - Diapositiva 3: "Castro Urdiales" adapta el epílogo a tercera persona («…con que el amor talló mi historia»); "Dos orillas" resume el prólogo y el epílogo (amor a distancia, versos que cruzaban océanos). Confirmar con Ángel que le parece bien.
 - Día/hora prevista: martes 03/11, 19:30

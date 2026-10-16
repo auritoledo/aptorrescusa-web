@@ -1,11 +1,11 @@
 {
-  "titulo": "Los Portadores del Ojo Verde · El bosque está muriendo",
+  "titulo": "Los portadores del ojo verde · El bosque está muriendo",
   "tema": "bosque-acuarela",
   "hilo": true,
   "slides": [
     {
       "tipo": "portada",
-      "kicker": "Los Portadores del Ojo Verde",
+      "kicker": "Los portadores del ojo verde",
       "titulo": "Para salvar el bosque,\ntendrá que *convertirse en él*.",
       "libro": "brand/oficial/portadores-portada.jpg",
       "tamano": 70
@@ -52,12 +52,12 @@
     {
       "tipo": "cita",
       "texto": "El verdadero coste de la vida no es la distancia recorrida, sino la memoria *sacrificada*.",
-      "autor": "Los Portadores del Ojo Verde"
+      "autor": "Los portadores del ojo verde"
     },
     {
       "tipo": "libro",
-      "kicker": "Novela de fantasía",
-      "titulo": "Los Portadores del Ojo Verde",
+      "kicker": "Libro 1 de una trilogía",
+      "titulo": "Los portadores del ojo verde",
       "texto": "¿Qué terrible precio pagará Unai por devolver el latido al corazón del bosque?",
       "portada": "brand/oficial/portadores-portada.jpg",
       "precio": "aptorrescusa.com"
@@ -66,8 +66,8 @@
       "tipo": "cta",
       "kicker": "Tu turno",
       "titulo": "¿Pagarías *tú*\nese precio?",
-      "texto": "Cuéntamelo en comentarios y guarda el carrusel para volver a Monte Redondo.",
-      "boton": "Descúbrelo en aptorrescusa.com"
+      "texto": "Guárdalo para volver a Monte Redondo.",
+      "boton": "Lee el comienzo gratis"
     }
   ],
   "musica": {
