@@ -15,9 +15,11 @@
   --line: rgba(66, 56, 44, .2);
 
   /* Tipografía */
-  --serif: "Playfair Display", Georgia, serif;
-  --sans: "Inter", system-ui, sans-serif;
-  --script: "Great Vibes", cursive;
+  --serif: "Cormorant Garamond", "Playfair Display", Georgia, serif;   /* títulos y versos */
+  --text: "EB Garamond", Georgia, serif;                                /* textos */
+  --sans: "Inter", system-ui, sans-serif;                               /* etiquetas pequeñas */
+  --script: "Pinyon Script", "Great Vibes", cursive;                    /* firmas */
+  --t-scale: 1.14;   /* Cormorant es más estrecha y baja que Playfair: compensa el tamaño */
 
   /* Lienzo Instagram 4:5 */
   --w: 1080px;

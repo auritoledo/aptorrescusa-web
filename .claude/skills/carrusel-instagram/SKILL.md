@@ -76,6 +76,6 @@ Para preparar varias publicaciones de golpe, usa la skill `semana-instagram`.
 ## Identidad (resumen)
 
 Como las cubiertas: papel `#F6EDD9`, tinta `#42382C`, vino `#8F2D4A` (Fénix), musgo `#4F6B2E` y
-vaquero `#3F5F7C` (Portadores), acuarela. Playfair Display (títulos, cursiva = voz poética),
-Inter (texto), Great Vibes (solo firma).
+vaquero `#3F5F7C` (Portadores), acuarela. Cormorant Garamond (títulos y versos, cursiva = voz poética),
+EB Garamond (texto), Inter (solo etiquetas pequeñas), Pinyon Script (solo firmas).
 Lienzo 1080 × 1350, margen 96 px. Tono: íntimo, literario, segunda persona, sin emojis en las diapositivas.

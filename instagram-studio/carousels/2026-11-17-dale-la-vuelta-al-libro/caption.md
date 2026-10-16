@@ -36,7 +36,7 @@ Los dos libros, en aptorrescusa.com (enlace en la bio).
 
 - Día/hora prevista: martes 17/11/2026, 19:30 (sin proponer todavía).
 - Objetivo principal: envíos (la diapositiva 7 y el caption piden solo eso).
-- Revisión: NO APTO en la primera ronda (dato falso sobre la sinopsis, «el poema que cierra el libro», cierre con tres peticiones, antetítulo de la portada sobre el lomo, nota de hashtags); corregido.
+- Revisión: NO APTO en la segunda ronda (encuadre de D5: la firma chocaba con un renglón de la sinopsis; se vuelve a 50% 90%) y en la primera (dato falso sobre la sinopsis, «el poema que cierra el libro», cierre con tres peticiones, antetítulo de la portada sobre el lomo, nota de hashtags); corregido.
 
 ### Fuentes de cada texto
 

@@ -21,8 +21,11 @@ const RESPIRO = 2600;       // ms de "lectura" tras la última animación de ent
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
 /** Texto con formato mínimo: *cursiva acento*, **negrita** y saltos de línea. */
+// Iniciales que no deben quedarse solas al final de una línea («A.P.» + «Torrescusa»).
+const unbreak = (s) => String(s ?? "").replace(/\b((?:[A-ZÁÉÍÓÚ]\.){1,3}) (?=\p{Lu})/gu, "$1\u00a0");
+
 export function inline(s) {
-  return esc(s)
+  return esc(unbreak(s))
     .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
     .replace(/\*(.+?)\*/g, "<em>$1</em>")
     .replace(/\n/g, "<br>");
@@ -41,11 +44,11 @@ export function resolveAsset(src, slug) {
 function words(text, t0, step = 80) {
   let t = t0;
   let em = false;
-  const html = String(text ?? "")
+  const html = unbreak(text)
     .split("\n")
     .map((line) =>
       line
-        .split(/\s+/)
+        .split(/[ \t]+/)
         .filter(Boolean)
         .map((tok) => {
           // Signos de apertura (¿ ¡ « “ ( ") antes del asterisco: "¿*Fuego*" → ¿ + cursiva.

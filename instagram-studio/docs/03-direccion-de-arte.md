@@ -11,9 +11,15 @@ tinta marrón, acuarela y un título manuscrito. Todos los temas salen de ellas.
 | **`bosque-acuarela`** | papel, tinta | musgo `#4F6B2E` y vaquero `#3F5F7C` | Acuarela azul a un lado y musgo al otro, como la cubierta, y hojas que caen. |
 | **`papel`** | papel, tinta | sepia `#8A6A3E`, cursivas en vino | Neutro, para el autor y las noticias. |
 
-**Tipografía:** Playfair Display (títulos; la cursiva es la voz poética), Inter (textos de apoyo)
-y Great Vibes (solo la firma "A.P. Torrescusa"). Se eligieron para acompañar las cubiertas; si la
-web oficial usa otras, se cambian en `brand/fonts/` y `brand/tokens.css`.
+**Tipografía** (octubre 2026, todas OFL y en local en `brand/fonts/`):
+- **Cormorant Garamond**: títulos y versos. Es una garamond de libro; su cursiva es la voz poética.
+- **EB Garamond**: textos (44 px; 36 px en las listas). Se lee bien en el móvil y suena a página impresa.
+- **Inter**: solo etiquetas pequeñas en mayúsculas (antetítulos, contador, botones, @usuario).
+- **Pinyon Script**: solo firmas («Ángel», «A.P. Torrescusa»).
+
+Un halo del color del papel rodea el texto para separarlo de la acuarela. «A.P.» nunca se separa de
+«Torrescusa» al cambiar de línea (lo hace el motor). Los tamaños y las familias están en
+`brand/tokens.css` (`--serif`, `--text`, `--sans`, `--script`, `--t-scale`).
 
 Los tokens viven en [`brand/tokens.css`](../brand/tokens.css) y las fuentes están en local
 (`brand/fonts/`) para que el render sea idéntico sin conexión.

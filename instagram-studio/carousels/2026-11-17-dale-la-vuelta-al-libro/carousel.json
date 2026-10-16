@@ -8,14 +8,15 @@
       "titulo": "Dale la vuelta\nal *libro*",
       "subtitulo": "Uno de los dos no lleva\nsinopsis detrás.",
       "imagen": "brand/oficial/portadores-cubierta-completa.jpg",
-      "enfoque": "70% 50%"
+      "enfoque": "70% 50%",
+      "tamano": 94
     },
     {
       "tipo": "texto",
       "tema": "fenix-acuarela",
       "kicker": "Contraportada · El amor del Fénix",
       "titulo": "En vez de sinopsis,\nun *poema*",
-      "texto": "Dale la vuelta al Fénix y encontrarás dos estrofas de «Lo que el tiempo no se lleva», el poema final del libro.",
+      "texto": "Detrás hay dos estrofas de «Lo que el tiempo no se lleva», el poema final del libro.",
       "imagen": "brand/oficial/fenix-contraportada.jpg",
       "enfoque": "50% 81%"
     },
@@ -44,7 +45,7 @@
       "titulo": "Y por detrás,\nla *pregunta*",
       "texto": "«¿Podrán dos primos, separados por un secreto mágico, unir sus destinos para salvar un mundo?»",
       "imagen": "brand/oficial/portadores-contraportada.jpg",
-      "enfoque": "50% 80%"
+      "enfoque": "50% 90%"
     },
     {
       "tipo": "lista",
@@ -73,7 +74,7 @@
       "tipo": "cta",
       "kicker": "Envíaselo",
       "titulo": "A quien elige libros\npor la *portada*",
-      "texto": "Que les dé la vuelta a los dos, como has hecho tú.",
+      "texto": "Que les dé la vuelta a los dos,\ncomo has hecho tú.",
       "libros": [
         "brand/oficial/fenix-portada.jpg",
         "brand/oficial/portadores-portada.jpg"
