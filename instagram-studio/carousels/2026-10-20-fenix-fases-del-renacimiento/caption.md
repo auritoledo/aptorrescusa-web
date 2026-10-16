@@ -29,9 +29,9 @@ Desliza para leer versos de cada fase y el poema que cierra el libro, "Lo que el
 - Diapositiva 7: La cubierta de "El amor del Fénix" flotando sobre papel.
 - Diapositiva 8: Pregunta final "¿Qué sombra has vencido tú?".
 
-## Música sugerida (se añade en la app al publicar)
+## Música
 
-- Piano lento o cuerdas suaves, sin voz (buscar: "soft piano", "emotional strings").
+- «Marioneta» · Auri Toledo (disco Libro en Blanco), integrada en los vídeos desde el segundo 43. Música propia.
 
 ## Notas de publicación
 

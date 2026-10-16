@@ -26,9 +26,9 @@ Desliza para conocer de dónde nace su escritura. Y si alguno de sus dos libros 
 - Diapositiva 4: Otro retrato en blanco y negro del autor, sonriendo, y la frase del prólogo sobre el fénix.
 - Diapositiva 5: Las cubiertas de sus dos libros, el fénix de acuarela y los dos rostros del bosque, con el botón "aptorrescusa.com".
 
-## Música sugerida (se añade en la app al publicar)
+## Música
 
-- Guitarra acústica íntima o piano minimalista.
+- «Libro en Blanco» · Auri Toledo (disco Libro en Blanco), integrada en los vídeos desde el segundo 36. Música propia.
 
 ## Notas de publicación
 

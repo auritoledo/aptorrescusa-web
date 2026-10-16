@@ -29,9 +29,9 @@ Desliza y entra en el bosque. Y dime: ¿pagarías tú ese precio? 👇
 - Diapositiva 7: La cubierta del libro y la pregunta "¿Qué terrible precio pagará Unai?".
 - Diapositiva 8: Pregunta final "¿Pagarías tú ese precio?".
 
-## Música sugerida (se añade en la app al publicar)
+## Música
 
-- Folk celta instrumental o ambient de bosque (buscar: "fantasy ambient", "celtic harp").
+- «Eres Mi Mago» · Auri Toledo (disco Libro en Blanco), integrada en los vídeos desde el segundo 3. Música propia.
 
 ## Notas de publicación
 

@@ -92,5 +92,10 @@
       "texto": "Cuéntamelo en comentarios y guarda estos versos para el día que los necesites.",
       "boton": "El libro, en aptorrescusa.com"
     }
-  ]
+  ],
+  "musica": {
+    "archivo": "brand/musica/auri-toledo-marioneta.mp3",
+    "inicio": 43,
+    "volumen": 0.9
+  }
 }

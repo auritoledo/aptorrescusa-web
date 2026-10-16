@@ -69,5 +69,10 @@
       "texto": "Cuéntamelo en comentarios y guarda el carrusel para volver a Monte Redondo.",
       "boton": "Descúbrelo en aptorrescusa.com"
     }
-  ]
+  ],
+  "musica": {
+    "archivo": "brand/musica/auri-toledo-eres-mi-mago.mp3",
+    "inicio": 3,
+    "volumen": 0.9
+  }
 }

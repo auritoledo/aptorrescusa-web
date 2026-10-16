@@ -54,5 +54,10 @@
       "boton": "aptorrescusa.com",
       "url": "Enlace en la bio"
     }
-  ]
+  ],
+  "musica": {
+    "archivo": "brand/musica/auri-toledo-libro-en-blanco.mp3",
+    "inicio": 36,
+    "volumen": 0.9
+  }
 }
