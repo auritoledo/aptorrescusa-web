@@ -2,7 +2,7 @@
 
 ## Caption
 
-Para salvar el bosque, tendrá que convertirse en él. 🌿👁️
+Para salvar el bosque, tendrá que convertirse en él. 🌿
 
 El bosque de Monte Redondo está muriendo, y el tiempo se acaba. Unai, un joven marcado con el enigmático ojo verde, emprende un peligroso viaje hacia las cumbres junto a su primo Eneko.
 
