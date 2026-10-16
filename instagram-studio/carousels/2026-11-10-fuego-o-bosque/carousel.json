@@ -1,0 +1,91 @@
+{
+  "titulo": "¿Fuego o bosque? · Los dos libros",
+  "tema": "papel",
+  "hilo": true,
+  "slides": [
+    {
+      "tipo": "portada",
+      "kicker": "A.P. Torrescusa",
+      "titulo": "¿*Fuego*\no bosque?",
+      "subtitulo": "Dos libros, una misma firma.\nDesliza y elige el tuyo."
+    },
+    {
+      "tipo": "texto",
+      "tema": "fenix-acuarela",
+      "kicker": "Prólogo de El amor del Fénix",
+      "titulo": "«Dicen que el fénix\nno llora cuando arde:\n*canta*.»",
+      "imagen": "brand/oficial/fenix-ave.jpg",
+      "enfoque": "50% 20%"
+    },
+    {
+      "tipo": "libro",
+      "tema": "fenix-acuarela",
+      "kicker": "Fuego · Poemario",
+      "titulo": "El amor del Fénix",
+      "texto": "Cuatro fases: Cenizas, Combustión,\nRenacimiento y Vuelo.",
+      "portada": "brand/oficial/fenix-portada.jpg",
+      "precio": "aptorrescusa.com"
+    },
+    {
+      "tipo": "cita",
+      "tema": "fenix-acuarela",
+      "texto": "Con el corazón en dos tierras y una sola *verdad*,",
+      "autor": "Ángel"
+    },
+    {
+      "tipo": "texto",
+      "tema": "bosque-acuarela",
+      "kicker": "Si eliges bosque",
+      "titulo": "Monte Redondo\nte está *mirando*",
+      "texto": "Entre reencuentros inimaginables y pactos de sangre que desafían la vista.",
+      "imagen": "brand/oficial/portadores-rostros.jpg",
+      "enfoque": "75% 65%"
+    },
+    {
+      "tipo": "libro",
+      "tema": "bosque-acuarela",
+      "kicker": "Bosque · Fantasía",
+      "titulo": "Los Portadores del Ojo Verde",
+      "texto": "¿Podrán dos primos, separados por un secreto mágico, unir sus destinos para salvar un mundo?",
+      "portada": "brand/oficial/portadores-portada.jpg",
+      "precio": "aptorrescusa.com"
+    },
+    {
+      "tipo": "lista",
+      "tema": "papel",
+      "kicker": "Cara a cara",
+      "titulo": "Dos libros,\nuna misma *firma*",
+      "items": [
+        {
+          "titulo": "Fuego",
+          "texto": "Poesía en cuatro fases, de las cenizas al vuelo."
+        },
+        {
+          "titulo": "Bosque",
+          "texto": "Fantasía: un viaje hacia las cumbres para salvar Monte Redondo."
+        },
+        {
+          "titulo": "Lo que comparten",
+          "texto": "El mismo papel crema, la acuarela y la firma A.P. Torrescusa."
+        }
+      ]
+    },
+    {
+      "tipo": "cta",
+      "kicker": "Tu turno",
+      "titulo": "¿Por cuál\n*empiezas*?",
+      "texto": "Guárdalo para tu próxima lectura\no envíaselo a quien necesite fuego… o bosque.",
+      "libros": [
+        "brand/oficial/fenix-portada.jpg",
+        "brand/oficial/portadores-portada.jpg"
+      ],
+      "boton": "Los dos, en aptorrescusa.com",
+      "url": "Enlace en la bio"
+    }
+  ],
+  "musica": {
+    "archivo": "brand/musica/auri-toledo-cera-de-la-vela.mp3",
+    "inicio": 17,
+    "volumen": 0.9
+  }
+}

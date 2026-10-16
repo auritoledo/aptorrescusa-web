@@ -48,10 +48,11 @@ function words(text, t0, step = 80) {
         .split(/\s+/)
         .filter(Boolean)
         .map((tok) => {
-          const m = tok.match(/^(\*?)(.*?)(\*?)([.,;:!?…»”")]*)$/);
-          const [, open, word, close, punct] = m;
+          // Signos de apertura (¿ ¡ « “ ( ") antes del asterisco: "¿*Fuego*" → ¿ + cursiva.
+          const m = tok.match(/^([¿¡«“"(]*)(\*?)(.*?)(\*?)([.,;:!?…»”")]*)$/);
+          const [, pre, open, word, close, punct] = m;
           if (open) em = true;
-          const inner = em ? `<em>${esc(word)}</em>${esc(punct)}` : esc(word + punct);
+          const inner = em ? `${esc(pre)}<em>${esc(word)}</em>${esc(punct)}` : esc(pre + word + punct);
           if (close) em = false;
           const out = `<span class="w"><span class="wi" style="--d:${t}ms">${inner}</span></span>`;
           t += step;
