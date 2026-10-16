@@ -18,6 +18,8 @@ Nunca canciones comerciales: Instagram silencia el vídeo o bloquea la publicaci
 | `auri-toledo-libro-en-blanco.mp3` | «Libro en Blanco» · Auri Toledo | Disco *Libro en Blanco* | Música propia | Tinta de cicatrices · 3/11 |
 | `auri-toledo-cera-de-la-vela.mp3` | «Cera de la Vela» · Auri Toledo | Disco *Libro en Blanco* | Música propia | ¿Fuego o bosque? · 10/11 |
 | `auri-toledo-tres-yo.mp3` | «Tres Yo» · Auri Toledo | Disco *Libro en Blanco* | Música propia | Dale la vuelta al libro · 17/11 |
+| `auri-toledo-abrazame.mp3` | «Abrázame» · Auri Toledo | Disco *Jardín de Risas* (pista 13, próximo) | Música propia | Disponible. Pendiente de confirmar si puede sonar antes del lanzamiento del disco |
+| `auri-toledo-agora-e-tarde.mp3` | «Agora é Tarde» · Auri Toledo | Sencillo posterior a *Jardín de Risas* | Música propia | Disponible. Pendiente de confirmar si puede sonar antes de su lanzamiento |
 
 ### Resto del disco *Libro en Blanco* (recibido, aún sin subir al repositorio)
 
@@ -27,7 +29,6 @@ Nunca canciones comerciales: Instagram silencia el vídeo o bloquea la publicaci
 | «The Night Comes», «Raised My Glass» | En inglés |
 | «Estoy Contigo» | |
 | «Beijos Perfeitos» | En portugués |
-| «Agora é Tarde» | Sencillo previsto para después del disco *Jardín de Risas*: **no usar** hasta que se publique, salvo que Auri lo autorice |
 
 Próximo disco de Auri Toledo: *Jardín de Risas* (Jardín de Risas, Carrusel, Paraíso, Loca Espera, No fui yo,
 Muñecos de Cartón, Mi única Frontera, Libre, Montes Verdes, Quinto Cielo, Luz Enamorada, Paz, Abrázame,

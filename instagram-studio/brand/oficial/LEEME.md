@@ -17,6 +17,9 @@ Instagram oficial de Ángel: **@aptorrescusa**.
 | `portadores-mockup.png` | Maqueta 3D de *Los Portadores del Ojo Verde* | Referencia, historias |
 | `portadores-cubierta-completa.jpg` | Cubierta completa | Fuente de los recortes y de la sinopsis |
 | `portadores-portada.jpg` | Portada plana (recorte) | Diapositivas `libro`, `portada` con `"libro"` |
+| `portadores-rostros.jpg` | Franja superior de la portada: los dos rostros frente a frente (recorte 618×470 de `portadores-portada.jpg`) | Banda de imagen en `texto` |
+| `fenix-contraportada.jpg` | Contraportada de *El amor del Fénix* sin el lomo: retrato del autor, nombre y dos estrofas de «Lo que el tiempo no se lleva» (recorte 624×962+0+0 de `fenix-cubierta-completa.jpg`) | Banda de imagen en `texto`, historias |
+| `portadores-contraportada.jpg` | Contraportada de *Los Portadores del Ojo Verde* sin el lomo: sinopsis entre dos figuras de acuarela de espaldas (recorte 616×935+0+0 de `portadores-cubierta-completa.jpg`) | Banda de imagen en `texto`, historias |
 
 ## Textos oficiales (de las cubiertas)
 
@@ -67,6 +70,7 @@ línea exactos. Estructura del libro:
 
 | Cita | Origen |
 |---|---|
+| «Dicen que el fénix no llora cuando arde: canta.» | Prólogo (primera frase) |
 | «Decidí escribir con tinta de cicatrices.» | Prólogo |
 | «No te ofrezco respuestas, sino brasas.» | Prólogo |
 | «El fénix no es un mito: es la metáfora más honesta que encontré para nombrar esa parte de nosotros que, tras ser reducida a polvo, insiste en reconstruirse con los dedos temblorosos de la esperanza.» | Prólogo |

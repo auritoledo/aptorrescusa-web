@@ -1,0 +1,91 @@
+{
+  "titulo": "Dale la vuelta al libro · Las cubiertas",
+  "tema": "papel",
+  "hilo": true,
+  "slides": [
+    {
+      "tipo": "portada",
+      "kicker": "Los libros de A.P. Torrescusa",
+      "titulo": "Dale la vuelta\nal *libro*",
+      "subtitulo": "Lo que cuentan sus cubiertas,\npor delante y por detrás.",
+      "imagen": "brand/oficial/portadores-cubierta-completa.jpg",
+      "enfoque": "70% 50%"
+    },
+    {
+      "tipo": "texto",
+      "tema": "fenix-acuarela",
+      "kicker": "Contraportada · El amor del Fénix",
+      "titulo": "En vez de sinopsis,\nun *poema*",
+      "texto": "Detrás del Fénix no hay resumen: hay dos estrofas de «Lo que el tiempo no se lleva», el poema que cierra el libro.",
+      "imagen": "brand/oficial/fenix-contraportada.jpg",
+      "enfoque": "50% 81%"
+    },
+    {
+      "tipo": "texto",
+      "tema": "fenix-acuarela",
+      "kicker": "Portada",
+      "titulo": "Un fénix\nde *acuarela*",
+      "texto": "Plumas de colores sobre papel crema y, encima, «Fénix» manuscrito en vino. Abajo, el lema: «Atrévete a arder. Atrévete a renacer.»",
+      "imagen": "brand/oficial/fenix-ave.jpg",
+      "enfoque": "50% 15%"
+    },
+    {
+      "tipo": "texto",
+      "tema": "bosque-acuarela",
+      "kicker": "Portada · Portadores del Ojo Verde",
+      "titulo": "Cara a *cara*",
+      "texto": "Un chico pelirrojo en acuarela azul frente a un ser del bosque hecho de musgo. Entre los dos, el lema:\n«Para salvar el bosque,\ntendrá que convertirse en él.»",
+      "imagen": "brand/oficial/portadores-rostros.jpg",
+      "enfoque": "50% 55%"
+    },
+    {
+      "tipo": "texto",
+      "tema": "bosque-acuarela",
+      "kicker": "Contraportada",
+      "titulo": "Y por detrás,\nla *pregunta*",
+      "texto": "«¿Podrán dos primos, separados por un secreto mágico, unir sus destinos para salvar un mundo?»",
+      "imagen": "brand/oficial/portadores-contraportada.jpg",
+      "enfoque": "50% 90%"
+    },
+    {
+      "tipo": "lista",
+      "kicker": "La paleta",
+      "titulo": "Cuatro colores,\ndos *mundos*",
+      "items": [
+        {
+          "titulo": "Papel",
+          "texto": "El fondo de las dos cubiertas · #F6EDD9"
+        },
+        {
+          "titulo": "Vino",
+          "texto": "El «Fénix» manuscrito · #8F2D4A"
+        },
+        {
+          "titulo": "Vaquero",
+          "texto": "La acuarela azul de la portada de Portadores · #3F5F7C"
+        },
+        {
+          "titulo": "Musgo",
+          "texto": "La acuarela verde del ser del bosque · #4F6B2E"
+        }
+      ]
+    },
+    {
+      "tipo": "cta",
+      "kicker": "Tu turno",
+      "titulo": "¿Qué cubierta te\n*llamó* primero?",
+      "texto": "Guárdalo para mirar las cubiertas despacio\no envíaselo a quien elige libros por la portada.",
+      "libros": [
+        "brand/oficial/fenix-portada.jpg",
+        "brand/oficial/portadores-portada.jpg"
+      ],
+      "boton": "Los dos, en aptorrescusa.com",
+      "url": "Enlace en la bio"
+    }
+  ],
+  "musica": {
+    "archivo": "brand/musica/auri-toledo-tres-yo.mp3",
+    "inicio": 38,
+    "volumen": 0.9
+  }
+}
