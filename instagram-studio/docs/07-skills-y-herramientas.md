@@ -18,6 +18,8 @@ Ver [08-automatizacion.md](08-automatizacion.md).
 
 | Skill | Uso en este flujo |
 |---|---|
+| `instagram-marketing` | Criterios 2026 de carrusel, caption, hashtags y pase antiIA. Resumidos en [11-criterios-instagram.md](11-criterios-instagram.md) y aplicados por los agentes y el validador. |
+| `pluma-de-angel` | Perfil, voz y canon de Ángel (sacado de aptorrescusa.com). Referencia de tono para captions y textos. |
 | `emil-design-eng` | Criterio de animación (curvas, duraciones, nada de rebotes). Ya aplicado en `engine/slides.css`. |
 | `marketing:content-creation`, `small-business:social-content-engine` | Lluvia de ideas y calendarios de contenido. |
 | `design:design-critique` | Segunda opinión sobre una hoja de contactos antes de publicar. |

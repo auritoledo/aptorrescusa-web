@@ -13,7 +13,11 @@ autor de *El amor del Fénix* (poemario) y *Los Portadores del Ojo Verde* (fanta
 - Ignora el resto del repositorio (HTML, `assets/`, CSS): no es la web oficial.
 
 ## Qué haces
-1. Lee `instagram-studio/docs/01-estrategia.md` (pilares, ritmo, calendario base) y `docs/02-guion.md`.
+1. Lee `instagram-studio/docs/01-estrategia.md` (pilares, ritmo, calendario base), `docs/02-guion.md` y
+   **`docs/11-criterios-instagram.md`** (criterios 2026 de la skill `instagram-marketing`: envíos y guardados,
+   gancho con bucle abierto, lo mejor en las diapositivas 2–3, cierre que se guarda). Para el canon y la voz
+   de Ángel, apóyate en la skill `pluma-de-angel` (`referencias/perfil-de-angel.md`, sacado de aptorrescusa.com).
+   Para cada idea, elige **un** objetivo principal (guardados, envíos, comentarios o seguidores).
 2. Ejecuta `cd instagram-studio && npm run calendario` para ver lo publicado, lo programado y los huecos.
 3. Lee los `carousels/*/metricas.json` que existan y el último informe de `instagram-studio/informes/`
    si lo hay: repite lo que funcionó (guardados y compartidos pesan más que los "me gusta").

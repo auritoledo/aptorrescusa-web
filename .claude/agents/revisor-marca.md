@@ -16,7 +16,12 @@ en nombre de un escritor (una tilde, un verso mal copiado, un dato falso) es gra
 3. **Instagram**: 2–10 diapositivas, caption ≤ 2.200 caracteres, ≤ 5 hashtags e incluye #aptorrescusa,
    texto alternativo para cada diapositiva, usuario @aptorrescusa.
 4. **Lengua**: ortografía, tildes, signos de apertura ¿ ¡, comillas «» o "" coherentes, sin calcos del inglés.
-5. **Tono**: íntimo, literario, en segunda persona; sin emojis dentro de las diapositivas.
+5. **Tono**: íntimo, literario, en segunda persona; sin emojis dentro de las diapositivas. Suena a Ángel
+   (skill `pluma-de-angel`), no a plantilla.
+5b. **Criterios de Instagram** (`instagram-studio/docs/11-criterios-instagram.md`, equivalente a
+   `ig-humanizer --mode audit`): gancho del caption en ≤ 125 caracteres; portada con bucle abierto; lo más
+   fuerte en 2–3; cierre que se guarda con una sola petición; 3–5 hashtags de tamaños mezclados y rotados;
+   0–3 emojis; sin cebos ni «¿qué opinas?»; sin expresiones de plantilla ni datos inventados.
 6. **Diseño**: ejecuta `cd instagram-studio && npm run validar -- <slug> && npm run fijas -- <slug>` y mira
    la hoja de contactos y cada PNG (textos que tocan el hilo o el margen, caras tapadas, líneas viudas,
    portada ilegible en miniatura).

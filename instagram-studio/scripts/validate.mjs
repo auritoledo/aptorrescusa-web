@@ -102,6 +102,17 @@ export function validate(slug) {
     if (text.length > 2200) errors.push(`El caption tiene ${text.length} caracteres; Instagram admite 2.200.`);
     const tags = cap.match(/(^|\s)#[\p{L}\p{N}_]+/gu) ?? [];
     if (tags.length > 5) errors.push(`caption.md tiene ${tags.length} hashtags; Instagram admite como máximo 5 por publicación.`);
+    if (tags.length && tags.length < 3) warns.push(`Solo ${tags.length} hashtag(s): lo recomendado son 3–5 de tamaños mezclados (docs/11).`);
+    // Criterios de docs/11-criterios-instagram.md
+    const first = text.split("\n").find((l) => l.trim()) ?? "";
+    if ([...first].length > 125) warns.push(`La primera línea del caption tiene ${[...first].length} caracteres: el gancho debe caber en 125 (lo que se ve antes de «más»).`);
+    const emojis = (text.replace(/#[\p{L}\p{N}_]+/gu, "").match(/\p{Extended_Pictographic}/gu) ?? []).length;
+    if (emojis > 3) warns.push(`El caption tiene ${emojis} emojis; recomendado 0–3.`);
+    if (/¿\s*(qué|que) (opinas|os parece|piensas)\s*\?/i.test(text)) warns.push("Cierre con «¿qué opinas?»: cámbialo por una pregunta concreta o un motivo para guardar o enviar.");
+    if (/comenta (s[ií]|yes)\b|etiqueta a \d|doble (toque|tap)/i.test(text)) warns.push("Cebo de interacción («comenta SÍ», «etiqueta a…»): Instagram lo penaliza.");
+    for (const f of ["no es solo", "en el mundo actual", "sumérgete", "descubre el poder", "un tapiz", "cabe destacar", "en definitiva", "desbloquea"]) {
+      if (text.toLowerCase().includes(f)) warns.push(`Expresión de plantilla en el caption: «${f}» (docs/11, pase antiIA).`);
+    }
   }
   return { errors, warns, total: slides.length };
 }

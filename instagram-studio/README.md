@@ -71,6 +71,7 @@ npm run publicar:simular                             # ver qué publicaría ahor
 8. [Publicación programada y agentes](docs/08-automatizacion.md) — calendario, aprobación, publicación automática, métricas.
 9. [Caminos para conectar Instagram](docs/09-caminos-de-conexion.md) — API oficial, intermediarios, Make/n8n, programadores; comparativa y recomendación.
 10. [Puesta en marcha](docs/10-puesta-en-marcha.md) — **lista paso a paso para conectar @aptorrescusa (camino A2)**.
+11. [Criterios de Instagram 2026](docs/11-criterios-instagram.md) — gancho, estructura, caption, hashtags y pase antiIA (skill `instagram-marketing`).
 
 ## Tipos de diapositiva
 
