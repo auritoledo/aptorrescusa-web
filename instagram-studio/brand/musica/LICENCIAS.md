@@ -25,7 +25,7 @@ Nunca canciones comerciales: Instagram silencia el vídeo o bloquea la publicaci
 
 | Canción | Notas |
 |---|---|
-| «Lágrimas de Diamante» / «No Quiero Agua Fresca» | **Los dos archivos recibidos son la misma grabación**: uno está mal etiquetado. No usar hasta aclararlo. «Lágrimas de diamantes» es también el primer poema de la fase *Vuelo* del Fénix |
+| «Lágrimas de Diamante» / «No Quiero Agua Fresca» | **Los dos archivos recibidos son la misma grabación**: uno está mal etiquetado. Se volvió a enviar «Lágrimas de Diamante» el 16/10/2026 y sigue siendo el mismo audio (403 s, idéntico a «No Quiero Agua Fresca»): el error está en el archivo de origen. No usar hasta aclararlo. «Lágrimas de diamantes» es también el primer poema de la fase *Vuelo* del Fénix |
 | «The Night Comes», «Raised My Glass» | En inglés |
 | «Estoy Contigo» | |
 | «Beijos Perfeitos» | En portugués |

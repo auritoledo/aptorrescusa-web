@@ -29,7 +29,7 @@
     {
       "tipo": "cita",
       "tema": "fenix-acuarela",
-      "texto": "Con el corazón\nen dos tierras\ny una sola *verdad*,",
+      "texto": "Con el corazón en dos tierras y una sola *verdad*,",
       "autor": "Ángel"
     },
     {
@@ -37,9 +37,9 @@
       "tema": "bosque-acuarela",
       "kicker": "Si eliges bosque",
       "titulo": "Monte Redondo\nte está *mirando*",
-      "texto": "Un bosque que recuerda. Un niño que no puede olvidar.",
+      "texto": "Un bosque que recuerda.\nUn niño que no puede olvidar.",
       "imagen": "brand/oficial/portadores-rostros.jpg",
-      "enfoque": "75% 65%"
+      "enfoque": "75% 55%"
     },
     {
       "tipo": "libro",
@@ -72,7 +72,7 @@
     },
     {
       "tipo": "cta",
-      "kicker": "Tu turno",
+      "kicker": "Para quien lo necesite",
       "titulo": "¿Por cuál\n*empiezas*?",
       "texto": "Envíaselo a quien necesite fuego… o bosque.",
       "libros": [

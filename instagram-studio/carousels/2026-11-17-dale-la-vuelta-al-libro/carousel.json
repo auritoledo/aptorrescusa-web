@@ -5,9 +5,8 @@
   "slides": [
     {
       "tipo": "portada",
-      "kicker": "Los libros de A.P. Torrescusa",
       "titulo": "Dale la vuelta\nal *libro*",
-      "subtitulo": "Lo que cuentan sus cubiertas,\npor delante y por detrás.",
+      "subtitulo": "Uno de los dos no lleva\nsinopsis detrás.",
       "imagen": "brand/oficial/portadores-cubierta-completa.jpg",
       "enfoque": "70% 50%"
     },
@@ -16,7 +15,7 @@
       "tema": "fenix-acuarela",
       "kicker": "Contraportada · El amor del Fénix",
       "titulo": "En vez de sinopsis,\nun *poema*",
-      "texto": "Detrás del Fénix no hay resumen: hay dos estrofas de «Lo que el tiempo no se lleva», el poema que cierra el libro.",
+      "texto": "Dale la vuelta al Fénix y encontrarás dos estrofas de «Lo que el tiempo no se lleva», el poema final del libro.",
       "imagen": "brand/oficial/fenix-contraportada.jpg",
       "enfoque": "50% 81%"
     },
@@ -25,18 +24,18 @@
       "tema": "fenix-acuarela",
       "kicker": "Portada",
       "titulo": "Un fénix\nde *acuarela*",
-      "texto": "Plumas de colores sobre papel crema y, encima, «Fénix» manuscrito en vino. Abajo, el lema: «Atrévete a arder. Atrévete a renacer.»",
+      "texto": "Plumas de colores sobre papel crema y, arriba, «Fénix» manuscrito en color vino. Abajo, el lema: «Atrévete a arder. Atrévete a renacer.»",
       "imagen": "brand/oficial/fenix-ave.jpg",
       "enfoque": "50% 15%"
     },
     {
       "tipo": "texto",
       "tema": "bosque-acuarela",
-      "kicker": "Portada · Portadores del Ojo Verde",
+      "kicker": "Portada · Los portadores",
       "titulo": "Cara a *cara*",
-      "texto": "Un chico pelirrojo en acuarela azul frente a un ser del bosque hecho de musgo. Entre los dos, el lema:\n«Para salvar el bosque,\ntendrá que convertirse en él.»",
+      "texto": "Un chico pelirrojo frente a un ser del bosque hecho de musgo. Entre los dos, el lema:\n«Para salvar el bosque,\ntendrá que convertirse en él.»",
       "imagen": "brand/oficial/portadores-rostros.jpg",
-      "enfoque": "50% 55%"
+      "enfoque": "50% 30%"
     },
     {
       "tipo": "texto",
@@ -45,12 +44,12 @@
       "titulo": "Y por detrás,\nla *pregunta*",
       "texto": "«¿Podrán dos primos, separados por un secreto mágico, unir sus destinos para salvar un mundo?»",
       "imagen": "brand/oficial/portadores-contraportada.jpg",
-      "enfoque": "50% 90%"
+      "enfoque": "50% 80%"
     },
     {
       "tipo": "lista",
       "kicker": "La paleta",
-      "titulo": "Cuatro colores,\ndos *mundos*",
+      "titulo": "Cuatro colores\nde dos *mundos*",
       "items": [
         {
           "titulo": "Papel",
@@ -72,9 +71,9 @@
     },
     {
       "tipo": "cta",
-      "kicker": "Tu turno",
-      "titulo": "¿Qué cubierta te\n*llamó* primero?",
-      "texto": "Guárdalo para mirar las cubiertas despacio\no envíaselo a quien elige libros por la portada.",
+      "kicker": "Envíaselo",
+      "titulo": "A quien elige libros\npor la *portada*",
+      "texto": "Que les dé la vuelta a los dos, como has hecho tú.",
       "libros": [
         "brand/oficial/fenix-portada.jpg",
         "brand/oficial/portadores-portada.jpg"
