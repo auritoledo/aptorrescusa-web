@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Estudio de carruseles · A.P. Torrescusa</title>
+  <link rel="stylesheet" href="slides.css">
+  <style>
+    :root { --ui-bg: #0c0c0b; --ui-panel: #181816; --ui-line: rgba(234,230,216,.14); --ui-ink: #eae6d8; --ui-muted: #9a937f; --ui-gold: #d4a373; }
+    html, body { margin: 0; height: 100%; }
+    body.studio { background: var(--ui-bg); color: var(--ui-ink); font: 14px/1.4 "Inter", system-ui, sans-serif; display: grid; grid-template-rows: auto 1fr auto; }
+    .bar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; padding: 12px 16px; border-bottom: 1px solid var(--ui-line); background: var(--ui-panel); }
+    .bar h1 { font: 600 16px/1 "Playfair Display", serif; margin: 0 12px 0 0; letter-spacing: .02em; }
+    .bar h1 span { color: var(--ui-gold); }
+    select, button { font: inherit; color: var(--ui-ink); background: #24231f; border: 1px solid var(--ui-line); border-radius: 8px; padding: 8px 12px; cursor: pointer; }
+    button:hover, select:hover { border-color: var(--ui-gold); }
+    button[aria-pressed="true"] { background: var(--ui-gold); color: #1a120c; }
+    .info { margin-left: auto; color: var(--ui-muted); font-variant-numeric: tabular-nums; }
+    .viewport { position: relative; overflow: auto; display: grid; place-items: center; padding: 20px; }
+    .frame { position: relative; box-shadow: 0 30px 80px rgba(0,0,0,.6); border-radius: 6px; overflow: hidden; }
+    .frame .slide { position: absolute; top: 0; left: 0; transform-origin: 0 0; }
+    .strip { display: flex; gap: 0; }
+    .strip .cell { position: relative; overflow: hidden; outline: 1px dashed rgba(255,255,255,.12); }
+    .strip .cell .slide { position: absolute; top: 0; left: 0; transform-origin: 0 0; }
+    .foot { display: flex; justify-content: center; gap: 8px; padding: 10px; border-top: 1px solid var(--ui-line); background: var(--ui-panel); flex-wrap: wrap; }
+    .dot { width: 34px; height: 6px; border-radius: 3px; background: #33312c; border: 0; padding: 0; }
+    .dot.on { background: var(--ui-gold); }
+    .err { max-width: 640px; padding: 24px; border: 1px solid #a33; border-radius: 10px; background: #2a1414; white-space: pre-wrap; }
+    .hint { color: var(--ui-muted); font-size: 12px; }
+    /* Modo render: solo la diapositiva, a tamaño real, sin interfaz */
+    body.render { display: block; background: #000; overflow: hidden; }
+    body.render .slide { position: absolute; top: 0; left: 0; }
+  </style>
+</head>
+<body>
+  <script type="module">
+    import { loadCarousel, buildSlide, whenReady, seek, replay } from "./engine.js";
+
+    const params = new URLSearchParams(location.search);
+    const isRender = params.has("render");
+    let slug = params.get("c");
+
+    /* ---------------- MODO RENDER (lo usa scripts/render.mjs) ---------------- */
+    if (isRender) {
+      document.body.className = "render";
+      try {
+        const c = await loadCarousel(slug);
+        const i = Number(params.get("slide") ?? 0);
+        const { el, dur } = buildSlide(c, i);
+        document.body.append(el);
+        await whenReady(el);
+        seek(0);
+        window.__seek = (ms) => seek(ms);
+        window.__info = { dur, total: c.slides.length, fps: c.fps ?? 30, tipo: c.slides[i].tipo };
+        window.__ready = true;
+      } catch (e) {
+        window.__error = String(e.stack || e);
+      }
+    } else {
+      /* ---------------- MODO ESTUDIO (vista previa) ---------------- */
+      document.body.className = "studio";
+      document.body.innerHTML = `
+        <div class="bar">
+          <h1>Estudio <span>·</span> Carruseles</h1>
+          <select id="pick" aria-label="Carrusel"></select>
+          <button id="prev" title="Anterior (←)">◀</button>
+          <button id="next" title="Siguiente (→)">▶</button>
+          <button id="again" title="Repetir animación (R)">↻ Repetir</button>
+          <button id="strip" aria-pressed="false" title="Ver todas en tira (T)">Tira continua</button>
+          <span class="info" id="info"></span>
+        </div>
+        <div class="viewport" id="vp"></div>
+        <div class="foot" id="foot"></div>`;
+
+      const $ = (id) => document.getElementById(id);
+      const vp = $("vp");
+      let c, idx = Number(params.get("slide") ?? 0), stripMode = params.has("tira");
+
+      async function listCarousels() {
+        try {
+          const r = await fetch("/__carousels.json", { cache: "no-store" });
+          if (r.ok) return await r.json();
+        } catch {}
+        return slug ? [slug] : [];
+      }
+
+      function scaleFor(availW, availH) {
+        return Math.min(availW / 1080, availH / 1350);
+      }
+
+      function showError(e) {
+        vp.innerHTML = `<div class="err">⚠️ ${String(e.message || e).replace(/</g, "&lt;")}</div>`;
+      }
+
+      function render() {
+        vp.innerHTML = "";
+        $("foot").innerHTML = "";
+        if (!c) return;
+        try {
+          if (stripMode) {
+            const k = scaleFor((vp.clientWidth - 40) / c.slides.length, vp.clientHeight - 40);
+            const strip = document.createElement("div");
+            strip.className = "strip";
+            c.slides.forEach((_, i) => {
+              const { el } = buildSlide(c, i);
+              const cell = document.createElement("div");
+              cell.className = "cell";
+              cell.style.cssText = `width:${1080 * k}px;height:${1350 * k}px`;
+              el.style.transform = `scale(${k})`;
+              cell.append(el);
+              strip.append(cell);
+            });
+            vp.append(strip);
+            $("info").textContent = `${c.slides.length} diapositivas · tira continua (comprueba el hilo y el panorama)`;
+            return;
+          }
+          idx = Math.max(0, Math.min(idx, c.slides.length - 1));
+          const { el, dur } = buildSlide(c, idx);
+          const k = scaleFor(vp.clientWidth - 40, vp.clientHeight - 40);
+          const frame = document.createElement("div");
+          frame.className = "frame";
+          frame.style.cssText = `width:${1080 * k}px;height:${1350 * k}px`;
+          el.style.transform = `scale(${k})`;
+          frame.append(el);
+          vp.append(frame);
+          const s = c.slides[idx];
+          $("info").textContent = `${String(idx + 1).padStart(2, "0")} / ${c.slides.length} · ${s.tipo} · ${(dur / 1000).toFixed(1)} s · tema ${s.tema ?? c.tema ?? "papel"}`;
+          c.slides.forEach((_, i) => {
+            const b = document.createElement("button");
+            b.className = "dot" + (i === idx ? " on" : "");
+            b.title = `Diapositiva ${i + 1}`;
+            b.onclick = () => go(i);
+            $("foot").append(b);
+          });
+          const url = new URL(location);
+          url.searchParams.set("c", slug);
+          url.searchParams.set("slide", idx);
+          history.replaceState(null, "", url);
+        } catch (e) {
+          showError(e);
+        }
+      }
+
+      const go = (i) => { idx = i; render(); };
+
+      async function load(s) {
+        slug = s;
+        try {
+          c = await loadCarousel(slug);
+          render();
+        } catch (e) {
+          showError(e);
+        }
+      }
+
+      const list = await listCarousels();
+      $("pick").innerHTML = list.map((s) => `<option ${s === slug ? "selected" : ""}>${s}</option>`).join("");
+      $("pick").onchange = (e) => { idx = 0; load(e.target.value); };
+      $("prev").onclick = () => go(idx - 1);
+      $("next").onclick = () => go(idx + 1);
+      $("again").onclick = () => vp.querySelectorAll(".slide").forEach(replay);
+      $("strip").setAttribute("aria-pressed", stripMode);
+      $("strip").onclick = (e) => { stripMode = !stripMode; e.currentTarget.setAttribute("aria-pressed", stripMode); render(); };
+      addEventListener("keydown", (e) => {
+        if (e.key === "ArrowRight") go(idx + 1);
+        if (e.key === "ArrowLeft") go(idx - 1);
+        if (e.key.toLowerCase() === "r") $("again").click();
+        if (e.key.toLowerCase() === "t") $("strip").click();
+      });
+      addEventListener("resize", () => render());
+      let x0 = null;
+      vp.addEventListener("pointerdown", (e) => (x0 = e.clientX));
+      vp.addEventListener("pointerup", (e) => {
+        if (x0 !== null && Math.abs(e.clientX - x0) > 50) go(idx + (e.clientX < x0 ? 1 : -1));
+        x0 = null;
+      });
+      if (!slug && list.length) slug = list[0];
+      if (slug) load(slug);
+      else showError("No hay carruseles todavía. Crea uno con: npm run nuevo -- mi-carrusel");
+    }
+  </script>
+</body>
+</html>

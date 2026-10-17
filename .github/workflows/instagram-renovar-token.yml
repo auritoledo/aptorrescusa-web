@@ -1,0 +1,39 @@
+name: "Instagram · renovar token"
+
+# Con Instagram Login (el camino elegido, por defecto) el token caduca a los 60 días.
+# Se renueva los días 1 y 15 de cada mes y se guarda en el secreto IG_ACCESS_TOKEN.
+# Necesita el secreto GH_SECRETS_TOKEN: un token de GitHub (fine-grained) con permiso
+# «Secrets: Read and write» sobre este repositorio. Ver instagram-studio/docs/09-caminos-de-conexion.md
+
+on:
+  schedule:
+    - cron: "41 6 1,15 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  renovar:
+    if: vars.IG_LOGIN != 'facebook'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    defaults:
+      run:
+        working-directory: instagram-studio
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Renovar y guardar
+        env:
+          IG_LOGIN: instagram
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_SECRETS_TOKEN }}
+        run: |
+          set -e
+          node scripts/renovar-token.mjs --salida "$RUNNER_TEMP/token"
+          echo "::add-mask::$(cat "$RUNNER_TEMP/token")"
+          gh secret set IG_ACCESS_TOKEN --repo "$GITHUB_REPOSITORY" < "$RUNNER_TEMP/token"
+          rm -f "$RUNNER_TEMP/token"

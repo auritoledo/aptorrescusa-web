@@ -1,0 +1,82 @@
+/* ==========================================================================
+   A.P. Torrescusa · Tokens de marca para Instagram
+   Paleta medida en las cubiertas oficiales (brand/oficial/): papel crema,
+   tinta marrón y acuarela. Tres temas: fenix-acuarela, bosque-acuarela, papel.
+   ========================================================================== */
+@import url("fonts/fonts.css");
+
+:root {
+  /* Papel y tinta de las cubiertas */
+  --bg: #f6edd9;
+  --bg-2: #efe3c9;
+  --ink: #42382c;
+  --ink-bright: #2e261d;
+  --muted: #8a7b66;
+  --line: rgba(66, 56, 44, .2);
+
+  /* Tipografía */
+  --serif: "Cormorant Garamond", "Playfair Display", Georgia, serif;   /* títulos y versos */
+  --text: "EB Garamond", Georgia, serif;                                /* textos */
+  --sans: "Inter", system-ui, sans-serif;                               /* etiquetas pequeñas */
+  --script: "Pinyon Script", "Great Vibes", cursive;                    /* firmas */
+  --t-scale: 1.14;   /* Cormorant es más estrecha y baja que Playfair: compensa el tamaño */
+
+  /* Lienzo Instagram 4:5 */
+  --w: 1080px;
+  --h: 1350px;
+  --margin: 96px;          /* margen seguro: el grid de perfil recorta ~34px por lado */
+
+  /* Movimiento (curvas "expo-out": arrancan rápido y se posan con calma) */
+  --ease-out: cubic-bezier(.16, 1, .3, 1);
+  --ease-in-out: cubic-bezier(.65, 0, .35, 1);
+  --ease-soft: cubic-bezier(.33, 1, .68, 1);
+
+  /* Valores comunes de los temas de papel */
+  --on-accent: #fbf5e9;
+  --shade-top: rgba(246, 237, 217, .7);
+  --vignette: rgba(120, 96, 64, .22);
+  --shadow-strong: rgba(66, 48, 28, .32);
+  --grain-op: .16;
+  --grain-blend: multiply;
+  --glow-blend: multiply;
+  --dim-filter: blur(5px) brightness(1.15) saturate(.7) opacity(.28);
+  --logo-filter: none;
+  --tint: rgba(214, 192, 160, .35);
+
+  /* Por defecto: tema papel */
+  --accent: #8a6a3e;
+  --accent-2: #8f2d4a;
+  --glow: rgba(190, 160, 120, .2);
+  --particle: rgba(150, 120, 80, .5);
+  --glow-bg:
+    radial-gradient(30% 24% at 20% 24%, rgba(200, 170, 130, .26), transparent 70%),
+    radial-gradient(28% 22% at 80% 74%, rgba(180, 150, 160, .22), transparent 70%);
+}
+
+/* FÉNIX ACUARELA · título en vino, fénix arcoíris y pan de oro */
+[data-tema="fenix-acuarela"] {
+  --accent: #8f2d4a;
+  --accent-2: #8f2d4a;
+  --glow: rgba(214, 120, 150, .22);
+  --particle: rgba(201, 160, 70, .9);
+  --glow-bg:
+    radial-gradient(28% 22% at 24% 30%, rgba(236, 150, 170, .30), transparent 70%),
+    radial-gradient(26% 20% at 76% 38%, rgba(150, 190, 225, .30), transparent 70%),
+    radial-gradient(30% 22% at 50% 70%, rgba(245, 205, 120, .32), transparent 70%),
+    radial-gradient(22% 18% at 66% 18%, rgba(185, 160, 215, .24), transparent 70%);
+}
+
+/* BOSQUE ACUARELA · azul vaquero de Unai frente al musgo del Sylvánima */
+[data-tema="bosque-acuarela"] {
+  --accent: #4f6b2e;
+  --accent-2: #3f5f7c;
+  --glow: rgba(110, 140, 80, .22);
+  --particle: rgba(92, 138, 60, .85);
+  --glow-bg:
+    radial-gradient(30% 34% at 8% 40%, rgba(90, 125, 165, .34), transparent 70%),
+    radial-gradient(30% 34% at 92% 46%, rgba(120, 140, 70, .38), transparent 70%),
+    radial-gradient(24% 20% at 70% 86%, rgba(190, 150, 100, .26), transparent 70%);
+}
+
+/* PAPEL · autor y noticias: el papel de las cubiertas con tinta sepia (valores de :root) */
+[data-tema="papel"] { }

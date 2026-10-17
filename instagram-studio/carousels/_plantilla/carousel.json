@@ -1,0 +1,28 @@
+{
+  "titulo": "Nombre interno del carrusel",
+  "tema": "papel",
+  "hilo": true,
+  "slides": [
+    {
+      "tipo": "portada",
+      "kicker": "Categoría corta",
+      "titulo": "Un gancho\nque obligue a *deslizar*",
+      "subtitulo": "Una promesa concreta de lo que viene.",
+      "imagen": "brand/oficial/autor-retrato-1.jpg",
+      "enfoque": "62% 18%"
+    },
+    {
+      "tipo": "texto",
+      "kicker": "Idea 1",
+      "titulo": "Una idea por diapositiva",
+      "texto": "Frase breve que desarrolla la idea. Máximo dos o tres líneas."
+    },
+    {
+      "tipo": "cta",
+      "kicker": "Tu turno",
+      "titulo": "Guárdalo para *releerlo*",
+      "texto": "Cuéntame en comentarios qué te ha removido.",
+      "boton": "aptorrescusa.com"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "titulo": "Tinta de cicatrices · El autor",
+  "tema": "papel",
+  "hilo": true,
+  "slides": [
+    {
+      "tipo": "portada",
+      "kicker": "Ángel Pérez Torrescusa",
+      "titulo": "Tinta de\n*cicatrices*",
+      "subtitulo": "Quién escribe detrás del Fénix\ny de Monte Redondo.",
+      "imagen": "brand/oficial/autor-retrato-1.jpg",
+      "enfoque": "62% 18%"
+    },
+    {
+      "tipo": "cita",
+      "texto": "Decidí escribir con *tinta de cicatrices*.",
+      "autor": "A.P. Torrescusa"
+    },
+    {
+      "tipo": "lista",
+      "kicker": "Tres raíces",
+      "titulo": "De dónde nace\nla *escritura*",
+      "items": [
+        {
+          "titulo": "Castro Urdiales",
+          "texto": "Donde el mar besa las rocas con la misma furia y ternura con que el amor talló su historia."
+        },
+        {
+          "titulo": "Una paradoja",
+          "texto": "¿Cómo narrar la vida sin glorificar el sufrimiento, ni borrar sus marcas?"
+        },
+        {
+          "titulo": "Dos orillas",
+          "texto": "Un amor a distancia, en cartas que cruzaban océanos."
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "kicker": "El fénix",
+      "titulo": "Cicatrices\nque *brillan*",
+      "texto": "«El fénix no es un mito: es la metáfora más honesta que encontré para nombrar esa parte de nosotros que, tras ser reducida a polvo, insiste en reconstruirse con los dedos temblorosos de la esperanza.»",
+      "imagen": "brand/oficial/autor-retrato-2.jpg",
+      "enfoque": "55% 24%"
+    },
+    {
+      "tipo": "cta",
+      "kicker": "Sus libros",
+      "titulo": "Elige tu\n*puerta de entrada*",
+      "libros": [
+        "brand/oficial/fenix-portada.jpg",
+        "brand/oficial/portadores-portada.jpg"
+      ],
+      "boton": "aptorrescusa.com",
+      "url": "Enlace en la bio"
+    }
+  ],
+  "musica": {
+    "archivo": "brand/musica/instrumental-papel-suno.mp3",
+    "inicio": 100,
+    "volumen": 0.75
+  }
+}

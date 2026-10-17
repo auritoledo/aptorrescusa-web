@@ -1,0 +1,78 @@
+{
+  "titulo": "Los portadores del ojo verde · El bosque está muriendo",
+  "tema": "bosque-acuarela",
+  "hilo": true,
+  "slides": [
+    {
+      "tipo": "portada",
+      "kicker": "Los portadores del ojo verde",
+      "titulo": "Para salvar el bosque,\ntendrá que *convertirse en él*.",
+      "libro": "brand/oficial/portadores-portada.jpg",
+      "tamano": 70
+    },
+    {
+      "tipo": "texto",
+      "kicker": "Monte Redondo",
+      "titulo": "El bosque está *muriendo*",
+      "texto": "Y el tiempo se acaba. Para los Sylvánimas, los espíritus del bosque, solo hay una esperanza: las trufas doradas, un antiguo tesoro vegetal capaz de devolver la vida a la tierra."
+    },
+    {
+      "tipo": "texto",
+      "kicker": "El portador",
+      "titulo": "*Unai*, marcado\npor el ojo verde",
+      "texto": "Un joven marcado con el enigmático ojo verde emprende un peligroso viaje hacia las cumbres.",
+      "imagen": "brand/oficial/portadores-rostros.jpg",
+      "enfoque": "50% 35%"
+    },
+    {
+      "tipo": "texto",
+      "kicker": "Su primo",
+      "titulo": "*Eneko*,\nsin la marca",
+      "texto": "¿Cómo puede ayudar a Unai a cruzar los velos de un mundo que no puede ver ni oír?"
+    },
+    {
+      "tipo": "lista",
+      "kicker": "La misión",
+      "titulo": "Antes de que la *cicatriz* sea permanente",
+      "items": [
+        {
+          "titulo": "Viajar hacia las cumbres",
+          "texto": "Unai, Eneko y un guía espiritual."
+        },
+        {
+          "titulo": "Encontrar a los portadores",
+          "texto": "Los otros poblados de portadores."
+        },
+        {
+          "titulo": "Reunir las trufas doradas",
+          "texto": "Antes de que la cicatriz de la tala se vuelva permanente."
+        }
+      ]
+    },
+    {
+      "tipo": "cita",
+      "texto": "El verdadero coste de la vida no es la distancia recorrida, sino la memoria *sacrificada*.",
+      "autor": "Los portadores del ojo verde"
+    },
+    {
+      "tipo": "libro",
+      "kicker": "Libro 1 de una trilogía",
+      "titulo": "Los portadores del ojo verde",
+      "texto": "¿Qué terrible precio pagará Unai por devolver el latido al corazón del bosque?",
+      "portada": "brand/oficial/portadores-portada.jpg",
+      "precio": "aptorrescusa.com"
+    },
+    {
+      "tipo": "cta",
+      "kicker": "Tu turno",
+      "titulo": "¿Pagarías *tú*\nese precio?",
+      "texto": "Guárdalo para volver a Monte Redondo.",
+      "boton": "Lee el comienzo gratis"
+    }
+  ],
+  "musica": {
+    "archivo": "brand/musica/instrumental-bosque-suno.mp3",
+    "inicio": 32,
+    "volumen": 0.75
+  }
+}
