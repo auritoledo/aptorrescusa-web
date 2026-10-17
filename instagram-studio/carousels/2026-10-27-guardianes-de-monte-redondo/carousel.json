@@ -71,8 +71,8 @@
     }
   ],
   "musica": {
-    "archivo": "brand/musica/instrumental-bosque.mp3",
-    "inicio": 1,
+    "archivo": "brand/musica/instrumental-bosque-suno.mp3",
+    "inicio": 32,
     "volumen": 0.75
   }
 }

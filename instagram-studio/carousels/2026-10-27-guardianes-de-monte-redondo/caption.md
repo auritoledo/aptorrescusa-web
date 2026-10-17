@@ -33,7 +33,7 @@ Desliza y entra en el bosque. Y dime: ¿pagarías tú ese precio? 👇
 
 ## Música
 
-- Instrumental «Bosque» (piano, cuerdas y flauta, mi dórico), composición original para @aptorrescusa (`brand/musica/instrumental-bosque.mp3`), integrada en los vídeos desde el segundo 1. Sin voz, para no competir con los textos.
+- «Instrumental Bosque», generada en Suno por el equipo (`brand/musica/instrumental-bosque-suno.mp3`), integrada en los vídeos desde el segundo 32. Sin voz, para no competir con los textos.
 
 ## Notas de publicación
 
