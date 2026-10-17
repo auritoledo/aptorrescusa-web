@@ -28,7 +28,7 @@ Desliza para conocer de dónde nace su escritura. Y si alguno de sus dos libros 
 
 ## Música
 
-- Instrumental «Papel» (piano solo, la menor), composición original para @aptorrescusa (`brand/musica/instrumental-papel.mp3`), integrada en los vídeos desde el segundo 1. Sin voz, para no competir con los textos.
+- «Instrumental Papel», generada en Suno por el equipo (`brand/musica/instrumental-papel-suno.mp3`), integrada en los vídeos desde el segundo 100. Sin voz, para no competir con los textos.
 
 ## Notas de publicación
 

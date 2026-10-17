@@ -56,8 +56,8 @@
     }
   ],
   "musica": {
-    "archivo": "brand/musica/instrumental-papel.mp3",
-    "inicio": 1,
+    "archivo": "brand/musica/instrumental-papel-suno.mp3",
+    "inicio": 100,
     "volumen": 0.75
   }
 }
