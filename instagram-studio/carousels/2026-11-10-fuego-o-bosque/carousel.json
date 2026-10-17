@@ -84,8 +84,8 @@
     }
   ],
   "musica": {
-    "archivo": "brand/musica/auri-toledo-cera-de-la-vela.mp3",
-    "inicio": 17,
-    "volumen": 0.9
+    "archivo": "brand/musica/instrumental-papel.mp3",
+    "inicio": 55,
+    "volumen": 0.75
   }
 }

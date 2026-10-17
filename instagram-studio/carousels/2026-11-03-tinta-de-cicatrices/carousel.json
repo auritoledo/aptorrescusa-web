@@ -56,8 +56,8 @@
     }
   ],
   "musica": {
-    "archivo": "brand/musica/auri-toledo-libro-en-blanco.mp3",
-    "inicio": 36,
-    "volumen": 0.9
+    "archivo": "brand/musica/instrumental-papel.mp3",
+    "inicio": 1,
+    "volumen": 0.75
   }
 }

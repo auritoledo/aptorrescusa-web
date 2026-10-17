@@ -84,8 +84,8 @@
     }
   ],
   "musica": {
-    "archivo": "brand/musica/auri-toledo-tres-yo.mp3",
-    "inicio": 38,
-    "volumen": 0.9
+    "archivo": "brand/musica/instrumental-fenix.mp3",
+    "inicio": 55,
+    "volumen": 0.75
   }
 }

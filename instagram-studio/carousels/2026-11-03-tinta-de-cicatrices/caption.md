@@ -28,7 +28,7 @@ Desliza para conocer de dónde nace su escritura. Y si alguno de sus dos libros 
 
 ## Música
 
-- «Libro en Blanco» · Auri Toledo (disco Libro en Blanco), integrada en los vídeos desde el segundo 36. Música propia.
+- Instrumental «Papel» (piano solo, la menor), composición original para @aptorrescusa (`brand/musica/instrumental-papel.mp3`), integrada en los vídeos desde el segundo 1. Sin voz, para no competir con los textos.
 
 ## Notas de publicación
 

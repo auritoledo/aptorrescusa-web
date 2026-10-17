@@ -78,6 +78,7 @@ export function validate(slug) {
       const lic = path.join(STUDIO_DIR, "brand/musica/LICENCIAS.md");
       const txt = fs.existsSync(lic) ? fs.readFileSync(lic, "utf8") : "";
       if (!txt.includes(path.basename(archivo))) errors.push(`Música: "${path.basename(archivo)}" no figura en brand/musica/LICENCIAS.md (fuente y licencia obligatorias).`);
+      if (!path.basename(archivo).startsWith("instrumental-")) warns.push(`Música: "${path.basename(archivo)}" no es una instrumental. Las canciones con voz distraen de los textos (ver LICENCIAS.md).`);
     }
     if (m.volumen !== undefined && !(m.volumen > 0 && m.volumen <= 1.5)) errors.push("Música: volumen entre 0 y 1.5.");
     if (m.inicio !== undefined && !(m.inicio >= 0)) errors.push("Música: inicio en segundos, 0 o más.");

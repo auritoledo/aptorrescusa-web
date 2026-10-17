@@ -94,8 +94,8 @@
     }
   ],
   "musica": {
-    "archivo": "brand/musica/auri-toledo-marioneta.mp3",
-    "inicio": 43,
-    "volumen": 0.9
+    "archivo": "brand/musica/instrumental-fenix.mp3",
+    "inicio": 1,
+    "volumen": 0.75
   }
 }

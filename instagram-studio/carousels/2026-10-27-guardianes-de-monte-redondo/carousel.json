@@ -71,8 +71,8 @@
     }
   ],
   "musica": {
-    "archivo": "brand/musica/auri-toledo-eres-mi-mago.mp3",
-    "inicio": 3,
-    "volumen": 0.9
+    "archivo": "brand/musica/instrumental-bosque.mp3",
+    "inicio": 1,
+    "volumen": 0.75
   }
 }

@@ -33,7 +33,7 @@ Una pista por si dudas: si llevas algo ardiendo por dentro, empieza por el fuego
 
 ## Música
 
-- «Cera de la Vela» · Auri Toledo (disco Libro en Blanco), integrada en los vídeos desde el segundo 17. Música propia.
+- Instrumental «Papel» (piano solo, la menor), composición original para @aptorrescusa (`brand/musica/instrumental-papel.mp3`), integrada en los vídeos desde el segundo 55. Sin voz, para no competir con los textos.
 
 ## Notas de publicación
 

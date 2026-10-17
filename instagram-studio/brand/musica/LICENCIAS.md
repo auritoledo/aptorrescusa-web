@@ -11,13 +11,31 @@ Solo música con derechos claros para Instagram:
 
 Nunca canciones comerciales: Instagram silencia el vídeo o bloquea la publicación.
 
+> **Decisión (17/10/2026): en los carruseles, solo música instrumental, sin voz.** Las canciones con
+> letra llaman la atención y la quitan de los versos y los textos. Las canciones de Auri Toledo se
+> guardan aquí, pero no se usan de fondo.
+
+## Instrumentales (las que se usan)
+
+Composiciones originales hechas para @aptorrescusa con `scripts/componer-musica.py`: piano, cuerdas
+suaves y flauta sintetizados, sin muestras ni música de terceros. Se pueden regenerar o variar
+cambiando la semilla o la progresión en el script.
+
 | Archivo | Título y autor | Fuente | Licencia | Notas |
 |---|---|---|---|---|
-| `auri-toledo-marioneta.mp3` | «Marioneta» · Auri Toledo | Disco *Libro en Blanco* | Música propia (Auri Toledo; enviada por él para @aptorrescusa) | Fénix · 20/10. Relacionada con «Cenizas de la Cruceta» («Soy la marioneta que danza en tu hilo»), pendiente de confirmar |
-| `auri-toledo-eres-mi-mago.mp3` | «Eres Mi Mago» · Auri Toledo | Disco *Libro en Blanco* | Música propia | Portadores · 27/10 |
-| `auri-toledo-libro-en-blanco.mp3` | «Libro en Blanco» · Auri Toledo | Disco *Libro en Blanco* | Música propia | Tinta de cicatrices · 3/11 |
-| `auri-toledo-cera-de-la-vela.mp3` | «Cera de la Vela» · Auri Toledo | Disco *Libro en Blanco* | Música propia | ¿Fuego o bosque? · 10/11 |
-| `auri-toledo-tres-yo.mp3` | «Tres Yo» · Auri Toledo | Disco *Libro en Blanco* | Música propia | Dale la vuelta al libro · 17/11 |
+| `instrumental-fenix.mp3` | «Fénix» · instrumental original | `scripts/componer-musica.py` | Propia, sin derechos de terceros | Piano y cuerdas, re mayor, cálida. Fénix · 20/10 (desde 1 s) y Dale la vuelta · 17/11 (desde 55 s) |
+| `instrumental-bosque.mp3` | «Bosque» · instrumental original | `scripts/componer-musica.py` | Propia, sin derechos de terceros | Piano, cuerdas y flauta, mi dórico. Portadores · 27/10 |
+| `instrumental-papel.mp3` | «Papel» · instrumental original | `scripts/componer-musica.py` | Propia, sin derechos de terceros | Piano solo, la menor, íntima. Tinta · 3/11 (desde 1 s) y ¿Fuego o bosque? · 10/11 (desde 55 s) |
+
+## Canciones de Auri Toledo (con voz: no se usan de fondo)
+
+| Archivo | Título y autor | Fuente | Licencia | Notas |
+|---|---|---|---|---|
+| `auri-toledo-marioneta.mp3` | «Marioneta» · Auri Toledo | Disco *Libro en Blanco* | Música propia (Auri Toledo; enviada por él para @aptorrescusa) | Ya no se usa (era Fénix · 20/10). Relacionada con «Cenizas de la Cruceta» («Soy la marioneta que danza en tu hilo»), pendiente de confirmar |
+| `auri-toledo-eres-mi-mago.mp3` | «Eres Mi Mago» · Auri Toledo | Disco *Libro en Blanco* | Música propia | Ya no se usa |
+| `auri-toledo-libro-en-blanco.mp3` | «Libro en Blanco» · Auri Toledo | Disco *Libro en Blanco* | Música propia | Ya no se usa |
+| `auri-toledo-cera-de-la-vela.mp3` | «Cera de la Vela» · Auri Toledo | Disco *Libro en Blanco* | Música propia | Ya no se usa |
+| `auri-toledo-tres-yo.mp3` | «Tres Yo» · Auri Toledo | Disco *Libro en Blanco* | Música propia | Ya no se usa |
 | `auri-toledo-abrazame.mp3` | «Abrázame» · Auri Toledo | Disco *Jardín de Risas* (pista 13, próximo) | Música propia | Disponible. Pendiente de confirmar si puede sonar antes del lanzamiento del disco |
 | `auri-toledo-agora-e-tarde.mp3` | «Agora é Tarde» · Auri Toledo | Sencillo posterior a *Jardín de Risas* | Música propia | Disponible. Pendiente de confirmar si puede sonar antes de su lanzamiento |
 

@@ -30,7 +30,7 @@ Los dos libros, en aptorrescusa.com (enlace en la bio).
 
 ## Música
 
-- «Tres Yo» · Auri Toledo (disco Libro en Blanco), integrada en los vídeos desde el segundo 38. Música propia.
+- Instrumental «Fénix» (piano y cuerdas, re mayor), composición original para @aptorrescusa (`brand/musica/instrumental-fenix.mp3`), integrada en los vídeos desde el segundo 55. Sin voz, para no competir con los textos.
 
 ## Notas de publicación
 

@@ -33,7 +33,7 @@ Desliza y entra en el bosque. Y dime: ¿pagarías tú ese precio? 👇
 
 ## Música
 
-- «Eres Mi Mago» · Auri Toledo (disco Libro en Blanco), integrada en los vídeos desde el segundo 3. Música propia.
+- Instrumental «Bosque» (piano, cuerdas y flauta, mi dórico), composición original para @aptorrescusa (`brand/musica/instrumental-bosque.mp3`), integrada en los vídeos desde el segundo 1. Sin voz, para no competir con los textos.
 
 ## Notas de publicación
 
