@@ -94,8 +94,8 @@
     }
   ],
   "musica": {
-    "archivo": "brand/musica/instrumental-fenix.mp3",
-    "inicio": 1,
+    "archivo": "brand/musica/instrumental-fenix-suno.mp3",
+    "inicio": 0,
     "volumen": 0.75
   }
 }

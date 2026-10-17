@@ -31,7 +31,7 @@ Desliza para leer versos de cada fase y el poema que cierra el libro, "Lo que el
 
 ## Música
 
-- Instrumental «Fénix» (piano y cuerdas, re mayor), composición original para @aptorrescusa (`brand/musica/instrumental-fenix.mp3`), integrada en los vídeos desde el segundo 1. Sin voz, para no competir con los textos.
+- «Instrumental Fénix», generada en Suno por el equipo (`brand/musica/instrumental-fenix-suno.mp3`), integrada en los vídeos desde el segundo 0. Sin voz, para no competir con los textos.
 
 ## Notas de publicación
 

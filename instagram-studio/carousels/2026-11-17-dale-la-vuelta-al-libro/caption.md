@@ -30,7 +30,7 @@ Los dos libros, en aptorrescusa.com (enlace en la bio).
 
 ## Música
 
-- Instrumental «Fénix» (piano y cuerdas, re mayor), composición original para @aptorrescusa (`brand/musica/instrumental-fenix.mp3`), integrada en los vídeos desde el segundo 55. Sin voz, para no competir con los textos.
+- «Instrumental Fénix», generada en Suno por el equipo (`brand/musica/instrumental-fenix-suno.mp3`), integrada en los vídeos desde el segundo 119. Sin voz, para no competir con los textos.
 
 ## Notas de publicación
 

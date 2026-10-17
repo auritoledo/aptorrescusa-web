@@ -17,13 +17,14 @@ Nunca canciones comerciales: Instagram silencia el vídeo o bloquea la publicaci
 
 ## Instrumentales (las que se usan)
 
-Composiciones originales hechas para @aptorrescusa con `scripts/componer-musica.py`: piano, cuerdas
+Las de Suno las genera el equipo. Las `instrumental-fenix/bosque/papel.mp3` son composiciones originales hechas para @aptorrescusa con `scripts/componer-musica.py`: piano, cuerdas
 suaves y flauta sintetizados, sin muestras ni música de terceros. Se pueden regenerar o variar
 cambiando la semilla o la progresión en el script.
 
 | Archivo | Título y autor | Fuente | Licencia | Notas |
 |---|---|---|---|---|
-| `instrumental-fenix.mp3` | «Fénix» · instrumental original | `scripts/componer-musica.py` | Propia, sin derechos de terceros | Piano y cuerdas, re mayor, cálida. Fénix · 20/10 (desde 1 s) y Dale la vuelta · 17/11 (desde 55 s) |
+| `instrumental-fenix-suno.mp3` | «Instrumental Fénix» · generada en Suno | Suno (creada el 17/10/2026; id 56e850cc-db1e-4d89-ba5c-9f287af1516d) | Según el plan de Suno de quien la generó: **el uso comercial exige plan de pago** (Pro o Premier) | Piano y cuerdas, 3:09. Fénix · 20/10 (desde 0 s) y Dale la vuelta · 17/11 (desde 119 s). Pausa casi en silencio hacia 1:55: evitarla |
+| `instrumental-fenix.mp3` | «Fénix» · instrumental original | `scripts/componer-musica.py` | Propia, sin derechos de terceros | Piano y cuerdas, re mayor, cálida. De reserva: sustituida por la versión de Suno |
 | `instrumental-bosque.mp3` | «Bosque» · instrumental original | `scripts/componer-musica.py` | Propia, sin derechos de terceros | Piano, cuerdas y flauta, mi dórico. Portadores · 27/10 |
 | `instrumental-papel.mp3` | «Papel» · instrumental original | `scripts/componer-musica.py` | Propia, sin derechos de terceros | Piano solo, la menor, íntima. Tinta · 3/11 (desde 1 s) y ¿Fuego o bosque? · 10/11 (desde 55 s) |
 
